@@ -19,6 +19,9 @@ CREATE TABLE need_images (
     FOREIGN KEY (need_id) REFERENCES needs(id) ON DELETE CASCADE
 );
 
+-- Allow listing owner to enable/disable public comments
+ALTER TABLE needs ADD COLUMN allow_comments BOOLEAN DEFAULT 1;
+
 -- Table for ratings
 CREATE TABLE ratings (
     id INT AUTO_INCREMENT PRIMARY KEY,

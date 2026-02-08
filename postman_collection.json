@@ -1,882 +1,913 @@
 {
-  "info": {
-    "_postman_id": "8f8e7d2a-4a2b-4c3d-8e9f-5c2b1a8d9e7f",
-    "name": "Acil Alalım Full API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "1. Kimlik & Profil (Auth)",
-      "item": [
-        {
-          "name": "Register (Üye Ol)",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\": \"Görkem\",\n    \"email\": \"gorkem@example.com\",\n    \"password\": \"Gorkem123.\",\n    \"province_id\": 34,\n    \"district_id\": 1421,\n    \"latitude\": 41.0082,\n    \"longitude\": 28.9784,\n    \"phone\": \"+905551112233\",\n    \"whatsapp\": \"+905551112233\",\n    \"bio\": \"Kısa tanıtım cümlesi\",\n    \"website\": \"https://ornek.com\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/auth/register",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "register"
-              ]
-            }
-          },
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Status is 201\", function () {",
-                  "    pm.response.to.have.status(201);",
-                  "});",
-                  "let jsonData = {};",
-                  "try { jsonData = pm.response.json(); } catch (e) {}",
-                  "if (jsonData.token) {",
-                  "    pm.collectionVariables.set(\"token\", jsonData.token);",
-                  "}",
-                  "if (jsonData.user && jsonData.user.id) {",
-                  "    pm.collectionVariables.set(\"userId\", String(jsonData.user.id));",
-                  "}"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "name": "Login (Giriş)",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"email\": \"gorkem@example.com\",\n    \"password\": \"Gorkem123.\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/auth/login",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "login"
-              ]
-            }
-          },
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Status is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "let jsonData = {};",
-                  "try { jsonData = pm.response.json(); } catch (e) {}",
-                  "if (jsonData.token) {",
-                  "    pm.collectionVariables.set(\"token\", jsonData.token);",
-                  "}",
-                  "if (jsonData.user && jsonData.user.id) {",
-                  "    pm.collectionVariables.set(\"userId\", String(jsonData.user.id));",
-                  "}"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "name": "Forgot Password",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"email\": \"gorkem@example.com\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/auth/forgot-password",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "forgot-password"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Reset Password",
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"email\": \"gorkem@example.com\",\n    \"token\": \"TOKEN_FROM_FORGOT_PASS\",\n    \"password\": \"NewPassword123!\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/auth/reset-password",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "reset-password"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get My Profile",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/auth/profile",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "profile"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Update Profile",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\": \"Görkem Güncel\",\n    \"province_id\": 34,\n    \"district_id\": 1421,\n    \"profile_photo\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==\",\n    \"phone\": \"+905551112233\",\n    \"whatsapp\": \"+905551112233\",\n    \"bio\": \"Kısa tanıtım cümlesi\",\n    \"website\": \"https://ornek.com\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/auth/profile",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "profile"
-              ]
-            }
-          },
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Status is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "let jsonData = {};",
-                  "try { jsonData = pm.response.json(); } catch (e) {}",
-                  "if (jsonData.token) {",
-                  "    pm.collectionVariables.set(\"token\", jsonData.token);",
-                  "}"
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "name": "Get My Products",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/auth/my-products",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "my-products"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Delete Account",
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/auth/delete-account",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "auth",
-                "delete-account"
-              ]
-            }
-          }
-        }
-      ]
+    "info": {
+        "_postman_id": "8f8e7d2a-4a2b-4c3d-8e9f-5c2b1a8d9e7f",
+        "name": "Acil Alalım Full API",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
-    {
-      "name": "2. Ürün & İlanlar (Products)",
-      "item": [
+    "item": [
         {
-          "name": "Add Product (Ürün Yükle)",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"title\": \"Acil Matkap Lazım\",\n    \"description\": \"Duvar delmek için darbeli matkap arıyorum, 2 saatlik işim var.\",\n    \"category_id\": 15230,\n    \"latitude\": 41.0082,\n    \"longitude\": 28.9784,\n    \"province_id\": 34,\n    \"district_id\": 1421,\n    \"images\": [\n        \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==\"\n    ]\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
+            "name": "1. Kimlik & Profil (Auth)",
+            "item": [
+                {
+                    "name": "Register (Üye Ol)",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Gorkem\",\n    \"surname\": \"Ozturk\",\n    \"email\": \"gorkem{{$timestamp}}@example.com\",\n    \"password\": \"Gorkem123.\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/register",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "register"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text\/javascript",
+                                "exec": [
+                                    "pm.test(\"Status is 201\", function () {",
+                                    "    pm.response.to.have.status(201);",
+                                    "});",
+                                    "let jsonData = {};",
+                                    "try { jsonData = pm.response.json(); } catch (e) {}",
+                                    "if (jsonData.token) {",
+                                    "    pm.collectionVariables.set(\"token\", jsonData.token);",
+                                    "}",
+                                    "if (jsonData.user && jsonData.user.id) {",
+                                    "    pm.collectionVariables.set(\"userId\", String(jsonData.user.id));",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Login (Giriş)",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"gorkem@example.com\",\n    \"password\": \"Gorkem123.\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/login",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "login"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text\/javascript",
+                                "exec": [
+                                    "pm.test(\"Status is 200\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "let jsonData = {};",
+                                    "try { jsonData = pm.response.json(); } catch (e) {}",
+                                    "if (jsonData.token) {",
+                                    "    pm.collectionVariables.set(\"token\", jsonData.token);",
+                                    "}",
+                                    "if (jsonData.user && jsonData.user.id) {",
+                                    "    pm.collectionVariables.set(\"userId\", String(jsonData.user.id));",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Forgot Password",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"gorkem@example.com\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/forgot-password",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "forgot-password"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Reset Password",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"gorkem@example.com\",\n    \"token\": \"TOKEN_FROM_FORGOT_PASS\",\n    \"password\": \"NewPassword123!\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/reset-password",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "reset-password"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get My Profile",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/profile",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "profile"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Profile",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Görkem Güncel\",\n    \"province_id\": 34,\n    \"district_id\": 1421,\n    \"profile_photo\": \"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8\/5+hHgAHggJ\/PchI7wAAAABJRU5ErkJggg==\",\n    \"phone\": \"+905551112233\",\n    \"whatsapp\": \"+905551112233\",\n    \"bio\": \"Kısa tanıtım cümlesi\",\n    \"website\": \"https:\/\/ornek.com\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/profile",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "profile"
+                            ]
+                        }
+                    },
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "type": "text\/javascript",
+                                "exec": [
+                                    "pm.test(\"Status is 200\", function () {",
+                                    "    pm.response.to.have.status(200);",
+                                    "});",
+                                    "let jsonData = {};",
+                                    "try { jsonData = pm.response.json(); } catch (e) {}",
+                                    "if (jsonData.token) {",
+                                    "    pm.collectionVariables.set(\"token\", jsonData.token);",
+                                    "}"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Get My Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/my-products",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "my-products"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Account",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/auth\/delete-account",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "auth",
+                                "delete-account"
+                            ]
+                        }
+                    }
                 }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/products",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products"
-              ]
-            }
-          }
+            ]
         },
         {
-          "name": "Get All Products",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/products?page=1&per_page=10&category_id=15705&province_id=34&district_id=1421&q=matkap",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products"
-              ],
-              "query": [
+            "name": "2. Ürün & İlanlar (Products)",
+            "item": [
                 {
-                  "key": "page",
-                  "value": "1"
+                    "name": "Add Product (Ürün Yükle)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"title\": \"Acil Matkap Lazım\",\n    \"description\": \"Duvar delmek için darbeli matkap arıyorum, 2 saatlik işim var.\",\n    \"category_id\": 15230,\n    \"latitude\": 41.0082,\n    \"longitude\": 28.9784,\n    \"province_id\": 34,\n    \"district_id\": 1421,\n    \"images\": [\n        \"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8\/5+hHgAHggJ\/PchI7wAAAABJRU5ErkJggg==\"\n    ]\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/products",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "per_page",
-                  "value": "10"
+                    "name": "Get All Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/products?page=1&per_page=10&category_id=15705&province_id=34&district_id=1421&q=matkap",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products"
+                            ],
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1"
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "10"
+                                },
+                                {
+                                    "key": "category_id",
+                                    "value": "15705"
+                                },
+                                {
+                                    "key": "province_id",
+                                    "value": "34"
+                                },
+                                {
+                                    "key": "district_id",
+                                    "value": "1421"
+                                },
+                                {
+                                    "key": "q",
+                                    "value": "matkap"
+                                }
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "category_id",
-                  "value": "15705"
+                    "name": "Get All Products (Body)",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"category_id\": 15705,\n  \"province_id\": 34,\n  \"district_id\": 1421,\n  \"query\": \"matkap\",\n  \"page\": 1,\n  \"per_page\": 10,\n  \"sort\": \"recent\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/products\/list",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                "list"
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "province_id",
-                  "value": "34"
+                    "name": "Get Product Detail",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/products\/1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                "1"
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "district_id",
-                  "value": "1421"
+                    "name": "Live Search",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/products\/search?q=matkap",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                "search"
+                            ],
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "matkap"
+                                }
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "q",
-                  "value": "matkap"
+                    "name": "Get Near Products",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/products\/near?lat=41.0&lng=28.9&radius=5",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                "near"
+                            ],
+                            "query": [
+                                {
+                                    "key": "lat",
+                                    "value": "41.0"
+                                },
+                                {
+                                    "key": "lng",
+                                    "value": "28.9"
+                                },
+                                {
+                                    "key": "radius",
+                                    "value": "5"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Product",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"title\": \"Matkap Lazım (güncel)\",\n    \"description\": \"Daha detaylı açıklama\",\n    \"category_id\": 15705,\n    \"remove_image_ids\": [\n        2\n    ],\n    \"main_image_id\": 1\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/products\/1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "products",
+                                "1"
+                            ]
+                        }
+                    }
                 }
-              ]
-            }
-          }
+            ]
         },
         {
-          "name": "Get Product Detail",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/products/1",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products",
-                "1"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Live Search",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/products/search?q=matkap",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products",
-                "search"
-              ],
-              "query": [
+            "name": "3. Favoriler",
+            "item": [
                 {
-                  "key": "q",
-                  "value": "matkap"
-                }
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Near Products",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/products/near?lat=41.0&lng=28.9&radius=5",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products",
-                "near"
-              ],
-              "query": [
-                {
-                  "key": "lat",
-                  "value": "41.0"
+                    "name": "Add Favorite",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"need_id\": 1\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/favorites",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "favorites"
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "lng",
-                  "value": "28.9"
+                    "name": "Get My Favorites",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/favorites",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "favorites"
+                            ]
+                        }
+                    }
                 },
                 {
-                  "key": "radius",
-                  "value": "5"
+                    "name": "Remove Favorite",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"need_id\": 1\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/favorites",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "favorites"
+                            ]
+                        }
+                    }
                 }
-              ]
-            }
-          }
+            ]
         },
         {
-          "name": "Update Product",
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"title\": \"Matkap Lazım (güncel)\",\n    \"description\": \"Daha detaylı açıklama\",\n    \"category_id\": 15705,\n    \"remove_image_ids\": [\n        2\n    ],\n    \"main_image_id\": 1\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
+            "name": "4. Sosyal & Engel (Users)",
+            "item": [
+                {
+                    "name": "Block User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 5\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/users\/block",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "block"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Unblock User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"user_id\": 5\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/users\/unblock",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "unblock"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Blocked List",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/users\/blocked-list",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users",
+                                "blocked-list"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Report User\/Product",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"reported_need_id\": 1,\n    \"reason\": \"Spam içerik\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/reports",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "reports"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Reports",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/reports",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "reports"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update Report Status",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"status\": \"resolved\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/reports\/1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "reports",
+                                "1"
+                            ]
+                        }
+                    }
                 }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/products/1",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "products",
-                "1"
-              ]
-            }
-          }
+            ]
+        },
+        {
+            "name": "5. Yorumlar & Bildirimler",
+            "item": [
+                {
+                    "name": "Add Comment",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"need_id\": 1,\n    \"comment\": \"Bende var, verebilirim.\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/comments",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "comments"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Comments By Need",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/comments\/1",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "comments",
+                                "1"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Notifications",
+                    "request": {
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{baseUrl}}\/notifications",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "notifications"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Rate User",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{token}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"rated_id\": 2,\n    \"score\": 5,\n    \"comment\": \"Güvenilir kullanıcı\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}\/ratings",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "ratings"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "6. Sistem Verileri (Static Data)",
+            "item": [
+                {
+                    "name": "Get Provinces (İller)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/locations\/provinces",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "locations",
+                                "provinces"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Districts (İlçeler)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/locations\/districts\/34",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "locations",
+                                "districts",
+                                "34"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Get Categories (Kategoriler)",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}\/categories",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "categories"
+                            ]
+                        }
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "3. Favoriler",
-      "item": [
+    ],
+    "variable": [
         {
-          "name": "Add Favorite",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"need_id\": 1\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/favorites",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "favorites"
-              ]
-            }
-          }
+            "key": "baseUrl",
+            "value": "http:\/\/localhost:8000\/index.php?path=",
+            "type": "string"
         },
         {
-          "name": "Get My Favorites",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/favorites",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "favorites"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Remove Favorite",
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"need_id\": 1\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/favorites",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "favorites"
-              ]
-            }
-          }
+            "key": "token",
+            "value": "TOKENI_BURAYA_YAPISTIRIN",
+            "type": "string"
         }
-      ]
-    },
-    {
-      "name": "4. Sosyal & Engel (Users)",
-      "item": [
-        {
-          "name": "Block User",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"user_id\": 5\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/users/block",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "users",
-                "block"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Unblock User",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"user_id\": 5\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/users/unblock",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "users",
-                "unblock"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Blocked List",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/users/blocked-list",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "users",
-                "blocked-list"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Report User/Product",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"reported_need_id\": 1,\n    \"reason\": \"Spam içerik\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/reports",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "reports"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Reports",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/reports",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "reports"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Update Report Status",
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"status\": \"resolved\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/reports/1",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "reports",
-                "1"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "5. Yorumlar & Bildirimler",
-      "item": [
-        {
-          "name": "Add Comment",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"need_id\": 1,\n    \"comment\": \"Bende var, verebilirim.\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/comments",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "comments"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Comments By Need",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/comments/1",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "comments",
-                "1"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Notifications",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "url": {
-              "raw": "{{baseUrl}}/notifications",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "notifications"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Rate User",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"rated_id\": 2,\n    \"score\": 5,\n    \"comment\": \"Güvenilir kullanıcı\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{baseUrl}}/ratings",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "ratings"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "6. Sistem Verileri (Static Data)",
-      "item": [
-        {
-          "name": "Get Provinces (İller)",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/locations/provinces",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "locations",
-                "provinces"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Districts (İlçeler)",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/locations/districts/34",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "locations",
-                "districts",
-                "34"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Get Categories (Kategoriler)",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{baseUrl}}/categories",
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "path": [
-                "categories"
-              ]
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "variable": [
-    {
-      "key": "baseUrl",
-      "value": "http://localhost:8000/index.php?path=",
-      "type": "string"
-    },
-    {
-      "key": "token",
-      "value": "TOKENI_BURAYA_YAPISTIRIN",
-      "type": "string"
-    }
-  ]
+    ]
 }

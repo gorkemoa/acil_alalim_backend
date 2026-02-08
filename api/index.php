@@ -6,6 +6,15 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
+// If server ignores .htaccess/.user.ini, still enforce a soft cap and return JSON
+$incomingSize = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
+$maxBytes = 20 * 1024 * 1024; // 20MB
+if ($incomingSize > $maxBytes) {
+    http_response_code(413);
+    echo json_encode(["error" => "Payload too large. Max 20MB."]);
+    exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     http_response_code(200);
     exit();
@@ -73,7 +82,8 @@ switch ($resource) {
             elseif ($id) $controller->getOne($id);
             else $controller->getAll();
         } elseif ($method == 'POST') {
-            $controller->create();
+            if ($id === 'list') $controller->getAll(); // Body-based filtering support
+            else $controller->create();
         } elseif ($method == 'PUT' && $id) {
             if ($pathParts[2] ?? '' === 'sponsor') $controller->setSponsor($id);
             else $controller->update($id);

@@ -8,6 +8,10 @@ class Comment {
         $this->pdo = $pdo;
     }
 
+    public function getPdo() {
+        return $this->pdo;
+    }
+
     public function create($data) {
         $sql = "INSERT INTO comments (sender_id, need_id, comment) 
                 VALUES (:sender_id, :need_id, :comment)";

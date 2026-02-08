@@ -3,8 +3,8 @@
 
 class ValidationService {
     public static function validateRegister($data) {
-        if (empty($data['name']) || empty($data['email']) || empty($data['password'])) {
-            return "Name, email and password are required.";
+        if (empty($data['name']) || empty($data['surname']) || empty($data['email']) || empty($data['password'])) {
+            return "Name, surname, email and password are required.";
         }
         if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             return "Invalid email format.";

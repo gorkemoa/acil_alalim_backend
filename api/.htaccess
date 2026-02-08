@@ -1,4 +1,12 @@
 RewriteEngine On
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]
+
+# Upload & body size limits (override php.ini for local)
+php_value post_max_size 20M
+php_value upload_max_filesize 20M
+php_value max_input_time 300
+php_value max_execution_time 300

@@ -3,7 +3,7 @@
 
 class FileService {
     private static $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp'];
-    private static $maxSize = 5 * 1024 * 1024; // 5MB
+    private static $maxSize = 20 * 1024 * 1024; // 20MB
 
     public static function upload($file, $targetDir) {
         if (!isset($file) || $file['error'] !== UPLOAD_ERR_OK) {
@@ -23,6 +23,7 @@ class FileService {
         $targetPath = $targetDir . $fileName;
 
         if (move_uploaded_file($file['tmp_name'], $targetPath)) {
+            self::compressIfPossible($targetPath, $ext);
             return ["path" => $fileName];
         }
 
@@ -49,9 +50,54 @@ class FileService {
             $targetPath = $targetDir . $fileName;
 
             if (file_put_contents($targetPath, $data)) {
+                self::compressIfPossible($targetPath, $ext);
                 return ["path" => $fileName];
             }
         }
         return ["error" => "Invalid image format."];
+    }
+
+    /**
+     * Best-effort compression to reduce file size without changing filename.
+     */
+    private static function compressIfPossible(string $path, string $ext): void {
+        $ext = strtolower($ext);
+        // Skip very small files
+        if (!file_exists($path) || filesize($path) < 200 * 1024) {
+            return;
+        }
+
+        // Only compress known raster formats
+        if (!in_array($ext, ['jpg', 'jpeg', 'png', 'webp'])) {
+            return;
+        }
+
+        $image = @imagecreatefromstring(@file_get_contents($path));
+        if (!$image) {
+            return;
+        }
+
+        // Choose quality settings
+        $jpegQuality = 80; // 0-100
+        $pngCompression = 6; // 0-9 (higher is smaller)
+        $webpQuality = 80; // 0-100
+
+        switch ($ext) {
+            case 'png':
+                @imagepng($image, $path, $pngCompression);
+                break;
+            case 'webp':
+                if (function_exists('imagewebp')) {
+                    @imagewebp($image, $path, $webpQuality);
+                    break;
+                }
+                // fall through to jpeg if webp unsupported
+            case 'jpg':
+            case 'jpeg':
+            default:
+                @imagejpeg($image, $path, $jpegQuality);
+                break;
+        }
+        imagedestroy($image);
     }
 }

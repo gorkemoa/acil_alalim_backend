@@ -12,6 +12,18 @@ class Need {
         return $this->pdo;
     }
 
+    private function buildUploadUrl($folder, $fileName) {
+        if (empty($fileName)) return null;
+
+        $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+        $host = $_SERVER['HTTP_HOST'] ?? 'localhost:8000';
+        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '/index.php';
+        $basePath = rtrim(str_replace('\\', '/', dirname($scriptName)), '/');
+        $basePath = $basePath === '/' ? '' : $basePath;
+
+        return $scheme . '://' . $host . $basePath . '/uploads/' . $folder . '/' . $fileName;
+    }
+
     public function getAll(array $filters = [], array $pagination = []) {
         $where = ["n.status = 'active'"];
         $params = [];
@@ -34,8 +46,9 @@ class Need {
         }
         if (!empty($filters['viewer_id'])) {
             $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu WHERE bu.blocker_id = :viewer AND bu.blocked_id = n.user_id)";
-            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer AND bu2.blocker_id = n.user_id)";
+            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer2 AND bu2.blocker_id = n.user_id)";
             $params['viewer'] = $filters['viewer_id'];
+            $params['viewer2'] = $filters['viewer_id'];
         }
 
         $order = "ORDER BY n.is_sponsor DESC, n.created_at DESC";
@@ -46,13 +59,14 @@ class Need {
         }
 
         $page = max((int)($pagination['page'] ?? 1), 1);
-        $perPage = min(max((int)($pagination['per_page'] ?? 20), 1), 100);
+        $perPage = min(max((int)($pagination['per_page'] ?? 20), 1), 20);
         $offset = ($page - 1) * $perPage;
 
         $distanceSelect = "";
         if (!empty($filters['lat']) && !empty($filters['lng'])) {
-            $distanceSelect = ", (6371 * acos(\n                    cos(radians(:lat)) * cos(radians(n.latitude)) *\n                    cos(radians(n.longitude) - radians(:lng)) +\n                    sin(radians(:lat)) * sin(radians(n.latitude))\n                )) AS distance";
-            $params['lat'] = $filters['lat'];
+            $distanceSelect = ", (6371 * acos(\n                    cos(radians(:lat1)) * cos(radians(n.latitude)) *\n                    cos(radians(n.longitude) - radians(:lng)) +\n                    sin(radians(:lat2)) * sin(radians(n.latitude))\n                )) AS distance";
+            $params['lat1'] = $filters['lat'];
+            $params['lat2'] = $filters['lat'];
             $params['lng'] = $filters['lng'];
         }
 
@@ -79,10 +93,13 @@ class Need {
         $needs = $stmt->fetchAll();
         foreach ($needs as &$need) {
             if (!empty($need['main_image'])) {
-                $need['main_image_url'] = "http://localhost:8000/uploads/needs/" . $need['main_image'];
+                $need['main_image_file'] = $need['main_image'];
+                $need['main_image_url'] = $this->buildUploadUrl('needs', $need['main_image']);
+                // Backward-compatible: expose full URL in main_image as well.
+                $need['main_image'] = $need['main_image_url'];
             }
             if (!empty($need['user_avatar'])) {
-                $need['user_avatar_url'] = "http://localhost:8000/uploads/profiles/" . $need['user_avatar'];
+                $need['user_avatar_url'] = $this->buildUploadUrl('profiles', $need['user_avatar']);
             }
         }
 
@@ -121,8 +138,9 @@ class Need {
         }
         if (!empty($filters['viewer_id'])) {
             $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu WHERE bu.blocker_id = :viewer AND bu.blocked_id = n.user_id)";
-            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer AND bu2.blocker_id = n.user_id)";
+            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer2 AND bu2.blocker_id = n.user_id)";
             $params['viewer'] = $filters['viewer_id'];
+            $params['viewer2'] = $filters['viewer_id'];
         }
 
         $sql = "SELECT COUNT(*) as cnt FROM needs n WHERE " . implode(' AND ', $where);
@@ -156,13 +174,40 @@ class Need {
             $stmtImages->execute(['need_id' => $id]);
             $images = $stmtImages->fetchAll();
             foreach ($images as &$img) {
-                $img['url'] = "http://localhost:8000/uploads/needs/" . $img['image_path'];
+                $img['image_file'] = $img['image_path'];
+                $img['url'] = $this->buildUploadUrl('needs', $img['image_path']);
+                // Backward-compatible: expose full URL in image_path as well.
+                $img['image_path'] = $img['url'];
             }
             $need['images'] = $images;
 
             // User Avatar URL
             if ($need['user_avatar']) {
-                $need['user_avatar_url'] = "http://localhost:8000/uploads/profiles/" . $need['user_avatar'];
+                $need['user_avatar_url'] = $this->buildUploadUrl('profiles', $need['user_avatar']);
+            }
+
+            // Comments (public thread)
+            $allowComments = isset($need['allow_comments']) ? (bool)$need['allow_comments'] : true;
+            if ($allowComments) {
+                $stmtComments = $this->pdo->prepare(
+                    "SELECT c.id, c.comment, c.created_at, u.id as user_id, u.name as user_name, u.profile_photo 
+                     FROM comments c 
+                     JOIN users u ON c.sender_id = u.id 
+                     WHERE c.need_id = :need_id 
+                     ORDER BY c.created_at ASC"
+                );
+                $stmtComments->execute(['need_id' => $id]);
+                $comments = $stmtComments->fetchAll();
+                foreach ($comments as &$c) {
+                    if (!empty($c['profile_photo'])) {
+                        $c['profile_photo_url'] = $this->buildUploadUrl('profiles', $c['profile_photo']);
+                    }
+                }
+                $need['comments'] = $comments;
+                $need['comments_count'] = count($comments);
+            } else {
+                $need['comments'] = [];
+                $need['comments_count'] = 0;
             }
         }
         return $need;
@@ -182,15 +227,20 @@ class Need {
         $needs = $stmt->fetchAll();
         foreach ($needs as &$need) {
             if ($need['main_image']) {
-                $need['main_image_url'] = "http://localhost:8000/uploads/needs/" . $need['main_image'];
+                $need['main_image_file'] = $need['main_image'];
+                $need['main_image_url'] = $this->buildUploadUrl('needs', $need['main_image']);
+                $need['main_image'] = $need['main_image_url'];
             }
         }
         return $needs;
     }
 
     public function create($data) {
-        $sql = "INSERT INTO needs (user_id, title, description, category_id, latitude, longitude, province_id, district_id) 
-                VALUES (:user_id, :title, :description, :category_id, :latitude, :longitude, :province_id, :district_id)";
+        if (!$this->categoryExists($data['category_id'])) {
+            throw new InvalidArgumentException("Invalid category_id");
+        }
+        $sql = "INSERT INTO needs (user_id, title, description, category_id, latitude, longitude, province_id, district_id, allow_comments) 
+                VALUES (:user_id, :title, :description, :category_id, :latitude, :longitude, :province_id, :district_id, :allow_comments)";
         $stmt = $this->pdo->prepare($sql);
         if ($stmt->execute([
             'user_id' => $data['user_id'],
@@ -200,11 +250,19 @@ class Need {
             'latitude' => $data['latitude'],
             'longitude' => $data['longitude'],
             'province_id' => $data['province_id'],
-            'district_id' => $data['district_id']
+            'district_id' => $data['district_id'],
+            'allow_comments' => isset($data['allow_comments']) ? (int)$data['allow_comments'] : 1
         ])) {
             return $this->pdo->lastInsertId();
         }
         return false;
+    }
+
+    private function categoryExists($categoryId) {
+        if (empty($categoryId)) return false;
+        $stmt = $this->pdo->prepare("SELECT 1 FROM categories WHERE id = :id");
+        $stmt->execute(['id' => $categoryId]);
+        return (bool)$stmt->fetchColumn();
     }
 
     public function addImage($need_id, $path, $isMain = 0) {
@@ -255,7 +313,7 @@ class Need {
     public function update($id, $data) {
         $fields = [];
         $params = ['id' => $id];
-        $allowed = ['title', 'description', 'category_id', 'latitude', 'longitude', 'province_id', 'district_id', 'status', 'is_sponsor'];
+        $allowed = ['title', 'description', 'category_id', 'latitude', 'longitude', 'province_id', 'district_id', 'status', 'is_sponsor', 'allow_comments'];
         foreach ($allowed as $field) {
             if (isset($data[$field])) {
                 $fields[] = "$field = :$field";
@@ -279,8 +337,9 @@ class Need {
 
         if ($viewerId) {
             $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu WHERE bu.blocker_id = :viewer AND bu.blocked_id = n.user_id)";
-            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer AND bu2.blocker_id = n.user_id)";
+            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer2 AND bu2.blocker_id = n.user_id)";
             $params['viewer'] = $viewerId;
+            $params['viewer2'] = $viewerId;
         }
 
         $sql = "SELECT n.id, n.title, n.is_sponsor, n.category_id, p.name as province_name, d.name as district_name, c.name as category_name
@@ -309,21 +368,22 @@ class Need {
 
         if ($viewerId) {
             $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu WHERE bu.blocker_id = :viewer AND bu.blocked_id = n.user_id)";
-            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer AND bu2.blocker_id = n.user_id)";
+            $where[] = "NOT EXISTS (SELECT 1 FROM blocked_users bu2 WHERE bu2.blocked_id = :viewer2 AND bu2.blocker_id = n.user_id)";
             $params['viewer'] = $viewerId;
+            $params['viewer2'] = $viewerId;
         }
 
         $page = max((int)$page, 1);
-        $perPage = min(max((int)$perPage, 1), 100);
+        $perPage = min(max((int)$perPage, 1), 20);
         $offset = ($page - 1) * $perPage;
 
         $sql = "SELECT n.*, u.name as user_name, u.karma_score as user_karma, i.image_path as main_image,
                 p.name as province_name, d.name as district_name, c.name as category_name,
                 (6371 * acos(
-                    cos(radians(:lat)) *
+                    cos(radians(:lat1)) *
                     cos(radians(n.latitude)) *
                     cos(radians(n.longitude) - radians(:lng)) +
-                    sin(radians(:lat)) *
+                    sin(radians(:lat2)) *
                     sin(radians(n.latitude))
                 )) AS distance
                 FROM needs n
@@ -337,6 +397,8 @@ class Need {
                 ORDER BY distance
                 LIMIT :offset, :perPage";
         $stmt = $this->pdo->prepare($sql);
+        $params['lat1'] = $lat;
+        $params['lat2'] = $lat;
         foreach ($params as $k => $v) {
             $stmt->bindValue(':' . $k, $v);
         }
@@ -346,7 +408,9 @@ class Need {
         $needs = $stmt->fetchAll();
         foreach ($needs as &$need) {
             if (!empty($need['main_image'])) {
-                $need['main_image_url'] = "http://localhost:8000/uploads/needs/" . $need['main_image'];
+                $need['main_image_file'] = $need['main_image'];
+                $need['main_image_url'] = $this->buildUploadUrl('needs', $need['main_image']);
+                $need['main_image'] = $need['main_image_url'];
             }
         }
         return $needs;

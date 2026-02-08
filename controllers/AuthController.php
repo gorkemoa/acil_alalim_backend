@@ -12,6 +12,10 @@ class AuthController {
         $json = file_get_contents('php://input');
         $data = json_decode($json, true);
 
+        $givenName = trim($data['name'] ?? '');
+        $surname = trim($data['surname'] ?? '');
+        $data['name'] = trim($givenName . ' ' . $surname);
+
         $validation = ValidationService::validateRegister($data);
         if ($validation !== true) {
             http_response_code(400);
@@ -34,7 +38,9 @@ class AuthController {
                 "token" => $token,
                 "user" => [
                     "id" => $user['id'],
-                    "name" => $user['name'],
+                    "name" => $givenName,
+                    "surname" => $surname,
+                    "full_name" => $user['name'],
                     "email" => $user['email']
                 ]
             ]);
@@ -119,6 +125,7 @@ class AuthController {
 
         $user = $this->userModel->findById($userId);
         if ($user) {
+            $this->normalizeUserPhoto($user);
             echo json_encode($user);
         } else {
             http_response_code(404);
@@ -158,6 +165,7 @@ class AuthController {
 
         if ($this->userModel->updateProfile($userId, $data)) {
             $user = $this->userModel->findById($userId);
+            $this->normalizeUserPhoto($user);
             $token = TokenService::create(['id' => $user['id'], 'email' => $user['email']], 86400);
             echo json_encode([
                 "message" => "Profile updated successfully.",
@@ -201,6 +209,9 @@ class AuthController {
     public function getBlockedList() {
         $userId = self::getAuthenticatedUser();
         $list = $this->userModel->getBlockedUsers($userId);
+        foreach ($list as &$user) {
+            $this->normalizeUserPhoto($user);
+        }
         echo json_encode($list);
     }
 
@@ -216,8 +227,7 @@ class AuthController {
 
     // Utility to get authenticated user from token
     public static function getAuthenticatedUser() {
-        $headers = getallheaders();
-        $authHeader = $headers['Authorization'] ?? '';
+        $authHeader = self::getAuthorizationHeader();
         if (preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
             $payload = TokenService::verify($matches[1]);
             if ($payload && isset($payload['id'])) {
@@ -225,5 +235,59 @@ class AuthController {
             }
         }
         return null;
+    }
+
+    private static function getAuthorizationHeader() {
+        // Direct server vars (works on many PHP-FPM / Apache setups)
+        $candidates = [
+            $_SERVER['HTTP_AUTHORIZATION'] ?? null,
+            $_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ?? null
+        ];
+        foreach ($candidates as $value) {
+            if (!empty($value)) {
+                return trim($value);
+            }
+        }
+
+        // getallheaders can return different key casing depending on server
+        if (function_exists('getallheaders')) {
+            $headers = getallheaders();
+            foreach ($headers as $key => $value) {
+                if (strtolower($key) === 'authorization' && !empty($value)) {
+                    return trim($value);
+                }
+            }
+        }
+
+        // apache_request_headers fallback for some Apache configs
+        if (function_exists('apache_request_headers')) {
+            $headers = apache_request_headers();
+            foreach ($headers as $key => $value) {
+                if (strtolower($key) === 'authorization' && !empty($value)) {
+                    return trim($value);
+                }
+            }
+        }
+
+        return '';
+    }
+
+    private function normalizeUserPhoto(array &$user) {
+        if (empty($user['profile_photo'])) {
+            return;
+        }
+        $file = $user['profile_photo'];
+        $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+        $host = $_SERVER['HTTP_HOST'] ?? 'localhost:8000';
+        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '/index.php';
+        $basePath = rtrim(str_replace('\\', '/', dirname($scriptName)), '/');
+        $basePath = $basePath === '/' ? '' : $basePath;
+        $url = $scheme . '://' . $host . $basePath . '/uploads/profiles/' . $file;
+
+        // Keep original file name in a separate field.
+        $user['profile_photo_file'] = $file;
+        // Backward-compatible: profile_photo now contains full URL.
+        $user['profile_photo'] = $url;
+        $user['profile_photo_url'] = $url;
     }
 }

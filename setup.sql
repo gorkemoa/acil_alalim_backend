@@ -51,6 +51,7 @@ CREATE TABLE needs (
   longitude DECIMAL(10,7) NOT NULL,
   province_id INT,
   district_id INT,
+  allow_comments BOOLEAN DEFAULT 1,
   status VARCHAR(50) DEFAULT 'active',
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,

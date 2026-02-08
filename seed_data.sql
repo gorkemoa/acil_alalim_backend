@@ -26,19 +26,23 @@ INSERT INTO users (id, name, email, password, province_id, district_id, karma_sc
 (5, 'Selin Kaya', 'selin@web.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 16, 1829, 30, 40.1885, 29.0610, NULL, NULL, NULL, NULL);
 
 -- 2. Needs / Products
-INSERT INTO needs (id, user_id, title, description, category_id, latitude, longitude, province_id, district_id, status, is_sponsor) VALUES
-(1, 2, 'Matkap Lazım', 'Duvara raf takmak için 2 saatliğine darbeli matkap arıyorum.', 15705, 39.9350, 32.8600, 6, 1231, 'active', 1),
-(2, 3, 'Laptop Şarj Cihazı', 'Asus marka laptopumun şarjı bozuldu, emanet verebilecek var mı?', 15706, 38.4200, 27.1300, 35, 1819, 'active', 0),
-(3, 1, 'Kamp Çadırı', 'Hafta sonu için 2 kişilik çadır arıyorum.', 15707, 41.0100, 28.9800, 34, 1421, 'active', 1),
-(4, 4, 'Bisiklet Pompası', 'Lastiğim indi, acil pompa lazım.', 15708, 41.0150, 28.9700, 34, 1421, 'active', 0),
-(5, 5, 'Matematik Özel Ders', 'Üniversite sınavına hazırlık için yardımcı olabilecek var mı?', 15709, 40.1900, 29.0600, 16, 1829, 'active', 0);
+INSERT INTO needs (id, user_id, title, description, category_id, latitude, longitude, province_id, district_id, allow_comments, status, is_sponsor) VALUES
+(1, 2, 'Matkap Lazım', 'Duvara raf takmak için 2 saatliğine darbeli matkap arıyorum.', 15705, 39.9350, 32.8600, 6, 1231, 1, 'active', 1),
+(2, 3, 'Laptop Şarj Cihazı', 'Asus marka laptopumun şarjı bozuldu, emanet verebilecek var mı?', 15706, 38.4200, 27.1300, 35, 1819, 1, 'active', 0),
+(3, 1, 'Kamp Çadırı', 'Hafta sonu için 2 kişilik çadır arıyorum.', 15707, 41.0100, 28.9800, 34, 1421, 1, 'active', 1),
+(4, 4, 'Bisiklet Pompası', 'Lastiğim indi, acil pompa lazım.', 15708, 41.0150, 28.9700, 34, 1421, 1, 'active', 0),
+(5, 5, 'Matematik Özel Ders', 'Üniversite sınavına hazırlık için yardımcı olabilecek var mı?', 15709, 40.1900, 29.0600, 16, 1829, 0, 'active', 0);
 
 -- 3. Comments (Halka Açık Mesajlaşma)
 INSERT INTO comments (sender_id, need_id, comment) VALUES
 (1, 1, 'Bende var Ahmet Bey, gelip alabilirsiniz.'),
 (2, 1, 'Harika olur Görkem Bey, teşekkürler.'),
 (3, 2, 'Bende yedek var ama ucu uyar mı bakmak lazım.'),
-(1, 3, 'Çadırı temiz teslim ederim, merak etmeyin.');
+(1, 3, 'Çadırı temiz teslim ederim, merak etmeyin.'),
+(2, 3, 'Zemin brandası da getirebilirim.'),
+(4, 4, 'Pompa ve yama kiti var, Kadıköy Rıhtımda teslim edebilirim.'),
+(5, 5, '50 fotoğraf teslim, 2 saatlik çekim yapabilirim.'),
+(3, 6, 'Başlangıç için uygun gitarım var, yanında pena veririm.');
 
 -- 4. Favorites
 INSERT INTO favorites (user_id, need_id) VALUES

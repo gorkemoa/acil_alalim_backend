@@ -28,8 +28,12 @@ class TokenService {
 
         if (!hash_equals(self::sign($signingInput), $signature)) return null;
 
-        $payload = json_decode(self::base64UrlDecode($encodedPayload), true);
-        if (!$payload || !isset($payload['exp']) || $payload['exp'] < time()) return null;
+        $payloadJson = self::base64UrlDecode($encodedPayload);
+        if ($payloadJson === null) return null;
+
+        $payload = json_decode($payloadJson, true);
+        $leeway = (int)(getenv('TOKEN_CLOCK_SKEW') ?: 60);
+        if (!$payload || !isset($payload['exp']) || ((int)$payload['exp'] + $leeway) < time()) return null;
 
         return $payload;
     }
@@ -44,6 +48,7 @@ class TokenService {
     }
 
     private static function base64UrlDecode(string $data) {
-        return base64_decode(strtr($data, '-_', '+/'));
+        $decoded = base64_decode(strtr($data, '-_', '+/'), true);
+        return $decoded === false ? null : $decoded;
     }
 }

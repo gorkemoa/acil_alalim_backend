@@ -9,24 +9,36 @@ class NeedController {
     }
 
     public function getAll() {
+        $body = $this->readJsonBody();
+        $requestData = array_merge($body, $_GET);
+
         $filters = [
-            'category_id' => $_GET['category_id'] ?? null,
-            'province_id' => $_GET['province_id'] ?? null,
-            'district_id' => $_GET['district_id'] ?? null,
-            'query' => $_GET['q'] ?? null,
-            'sort' => $_GET['sort'] ?? null,
-            'lat' => $_GET['lat'] ?? null,
-            'lng' => $_GET['lng'] ?? null,
+            'category_id' => $requestData['category_id'] ?? null,
+            'province_id' => $requestData['province_id'] ?? null,
+            'district_id' => $requestData['district_id'] ?? null,
+            'query' => $requestData['q'] ?? ($requestData['query'] ?? null),
+            'sort' => $requestData['sort'] ?? null,
+            'lat' => $requestData['lat'] ?? null,
+            'lng' => $requestData['lng'] ?? null,
             'viewer_id' => AuthController::getAuthenticatedUser()
         ];
 
         $pagination = [
-            'page' => $_GET['page'] ?? 1,
-            'per_page' => $_GET['per_page'] ?? 20
+            'page' => $requestData['page'] ?? 1,
+            'per_page' => $requestData['per_page'] ?? 20
         ];
 
         $result = $this->needModel->getAll($filters, $pagination);
         echo json_encode($result);
+    }
+
+    private function readJsonBody() {
+        $raw = file_get_contents('php://input');
+        if (!$raw) {
+            return [];
+        }
+        $decoded = json_decode($raw, true);
+        return is_array($decoded) ? $decoded : [];
     }
 
     public function getOne($id) {
@@ -38,6 +50,7 @@ class NeedController {
                 echo json_encode(["error" => "Access denied due to blocking."]);
                 return;
             }
+            $need['allow_comments'] = (bool)($need['allow_comments'] ?? 1);
             echo json_encode($need);
         } else {
             http_response_code(404);
@@ -60,6 +73,11 @@ class NeedController {
         if (!$data) {
             $data = $_POST;
         }
+        if (empty($data['category_id'])) {
+            http_response_code(400);
+            echo json_encode(["error" => "category_id is required."]);
+            return;
+        }
         
         $data['user_id'] = $userId;
 
@@ -70,7 +88,18 @@ class NeedController {
             return;
         }
 
-        $needId = $this->needModel->create($data);
+        try {
+            $needId = $this->needModel->create($data);
+        } catch (InvalidArgumentException $e) {
+            http_response_code(400);
+            echo json_encode(["error" => $e->getMessage()]);
+            return;
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(["error" => "Failed to create need."]);
+            return;
+        }
+
         if ($needId) {
             $uploadDir = dirname(__DIR__) . '/uploads/needs/';
             
