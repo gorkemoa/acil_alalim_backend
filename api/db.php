@@ -1,10 +1,6 @@
 <?php
 // api/db.php
 
-$host = getenv('DB_HOST') ?: 'localhost';
-$db   = getenv('DB_DATABASE') ?: 'acil_alalim';
-$user = getenv('DB_USERNAME') ?: 'root';
-$pass = getenv('DB_PASSWORD') ?: 'Gorkem123.';
 $charset = 'utf8mb4';
 
 // Optional: allow overriding from a local .env without extra deps
@@ -16,6 +12,11 @@ if (file_exists(__DIR__ . '/../.env')) {
         }
     }
 }
+
+$host = getenv('DB_HOST') ?: 'localhost';
+$db   = getenv('DB_DATABASE') ?: 'acil_alalim';
+$user = getenv('DB_USERNAME') ?: 'root';
+$pass = getenv('DB_PASSWORD') ?: 'Gorkem123.';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [

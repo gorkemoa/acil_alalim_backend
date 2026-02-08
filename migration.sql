@@ -4,6 +4,10 @@
 ALTER TABLE users ADD COLUMN karma_score INT DEFAULT 0;
 ALTER TABLE users ADD COLUMN latitude DECIMAL(10,7);
 ALTER TABLE users ADD COLUMN longitude DECIMAL(10,7);
+ALTER TABLE users ADD COLUMN phone VARCHAR(30);
+ALTER TABLE users ADD COLUMN whatsapp VARCHAR(30);
+ALTER TABLE users ADD COLUMN bio VARCHAR(500);
+ALTER TABLE users ADD COLUMN website VARCHAR(255);
 
 -- Table for need images
 CREATE TABLE need_images (

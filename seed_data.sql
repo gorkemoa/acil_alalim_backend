@@ -18,12 +18,12 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 -- 1. Users
 -- Passwords are 'Gorkem123.' hashed
-INSERT INTO users (id, name, email, password, province_id, district_id, karma_score, latitude, longitude) VALUES
-(1, 'Görkem', 'gorkem@example.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 34, 1421, 100, 41.0082, 28.9784),
-(2, 'Ahmet Yılmaz', 'ahmet@mail.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 6, 1231, 50, 39.9334, 32.8597),
-(3, 'Ayşe Demir', 'ayse@test.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 35, 1819, 75, 38.4192, 27.1287),
-(4, 'Mehmet Can', 'mehmet@corp.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 34, 1421, 20, 41.0122, 28.9760),
-(5, 'Selin Kaya', 'selin@web.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 16, 1829, 30, 40.1885, 29.0610);
+INSERT INTO users (id, name, email, password, province_id, district_id, karma_score, latitude, longitude, phone, whatsapp, bio, website) VALUES
+(1, 'Görkem', 'gorkem@example.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 34, 1421, 100, 41.0082, 28.9784, '+905551112233', '+905551112233', 'Yardım etmeyi severim.', 'https://gorkem.dev'),
+(2, 'Ahmet Yılmaz', 'ahmet@mail.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 6, 1231, 50, 39.9334, 32.8597, '+905551112234', '+905551112234', NULL, NULL),
+(3, 'Ayşe Demir', 'ayse@test.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 35, 1819, 75, 38.4192, 27.1287, NULL, NULL, 'Outdoor ve kamp seviyorum.', NULL),
+(4, 'Mehmet Can', 'mehmet@corp.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 34, 1421, 20, 41.0122, 28.9760, NULL, NULL, NULL, NULL),
+(5, 'Selin Kaya', 'selin@web.com', '$2y$10$T1K7.5lI.0lO2U7o8s6v6uX5R5r5r5r5r5r5r5r5r5r5r5r5r5r5r', 16, 1829, 30, 40.1885, 29.0610, NULL, NULL, NULL, NULL);
 
 -- 2. Needs / Products
 INSERT INTO needs (id, user_id, title, description, category_id, latitude, longitude, province_id, district_id, status, is_sponsor) VALUES

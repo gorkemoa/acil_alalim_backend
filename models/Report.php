@@ -23,4 +23,9 @@ class Report {
     public function getAll() {
         return $this->pdo->query("SELECT * FROM reports ORDER BY created_at DESC")->fetchAll();
     }
+
+    public function updateStatus($id, $status) {
+        $stmt = $this->pdo->prepare("UPDATE reports SET status = :status WHERE id = :id");
+        return $stmt->execute(['status' => $status, 'id' => $id]);
+    }
 }

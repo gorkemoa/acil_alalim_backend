@@ -32,6 +32,10 @@ CREATE TABLE users (
   profile_photo VARCHAR(255),
   province_id INT,
   district_id INT,
+  phone VARCHAR(30),
+  whatsapp VARCHAR(30),
+  bio VARCHAR(500),
+  website VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   ,FOREIGN KEY (province_id) REFERENCES provinces(id) ON DELETE SET NULL
   ,FOREIGN KEY (district_id) REFERENCES districts(id) ON DELETE SET NULL
