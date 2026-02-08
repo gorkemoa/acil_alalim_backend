@@ -3,3 +3,5 @@ RENAME TABLE messages TO comments;
 ALTER TABLE comments CHANGE message comment TEXT NOT NULL;
 ALTER TABLE comments DROP FOREIGN KEY comments_ibfk_2; -- Dropping receiver constraint
 ALTER TABLE comments DROP COLUMN receiver_id; -- Comments are public, no specific receiver
+ALTER TABLE comments ADD COLUMN parent_id INT NULL AFTER need_id;
+ALTER TABLE comments ADD CONSTRAINT fk_comments_parent FOREIGN KEY (parent_id) REFERENCES comments(id) ON DELETE CASCADE;

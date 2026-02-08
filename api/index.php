@@ -1,17 +1,52 @@
 <?php
 // api/index.php
 
+// Keep API responses JSON-only, log PHP warnings to a temp file instead of sending HTML to clients.
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0'); // suppress startup warnings (e.g., post_max_size)
+ini_set('log_errors', '1');
+ini_set('error_log', sys_get_temp_dir() . '/acil_alalim_backend.log');
+
+// Helper to convert php.ini shorthand sizes (e.g., 8M, 1G) to bytes
+function bytes_from_shorthand($value) {
+    $value = trim((string)$value);
+    if ($value === '') return 0;
+    $unit = strtolower(substr($value, -1));
+    $number = (int)$value;
+    switch ($unit) {
+        case 'g':
+            return $number * 1024 * 1024 * 1024;
+        case 'm':
+            return $number * 1024 * 1024;
+        case 'k':
+            return $number * 1024;
+        default:
+            return (int)$value;
+    }
+}
+
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-// If server ignores .htaccess/.user.ini, still enforce a soft cap and return JSON
+// Enforce payload cap based on php.ini limits and our own soft cap.
+// Files are compressed later in upload flow, so request cap is intentionally high.
 $incomingSize = (int)($_SERVER['CONTENT_LENGTH'] ?? 0);
-$maxBytes = 20 * 1024 * 1024; // 20MB
-if ($incomingSize > $maxBytes) {
+$phpPostMax = bytes_from_shorthand(ini_get('post_max_size')); // often 8M in CLI server
+$phpUploadMax = bytes_from_shorthand(ini_get('upload_max_filesize'));
+$softCap = 128 * 1024 * 1024; // 128MB request cap
+
+// Pick the smallest non-zero limit for request body safety.
+$limits = array_filter([$phpPostMax, $softCap], function ($v) { return $v > 0; });
+$effectiveCap = $limits ? min($limits) : $softCap;
+
+if ($incomingSize > $effectiveCap) {
     http_response_code(413);
-    echo json_encode(["error" => "Payload too large. Max 20MB."]);
+    $mb = round($effectiveCap / (1024 * 1024), 1);
+    $uploadMb = $phpUploadMax > 0 ? round($phpUploadMax / (1024 * 1024), 1) : null;
+    $uploadHint = $uploadMb ? " upload_max_filesize={$uploadMb}MB." : "";
+    echo json_encode(["error" => "Payload too large. Current request cap is {$mb}MB." . $uploadHint]);
     exit();
 }
 

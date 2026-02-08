@@ -42,9 +42,9 @@ class NeedController {
     }
 
     public function getOne($id) {
-        $need = $this->needModel->getById($id);
+        $viewerId = AuthController::getAuthenticatedUser();
+        $need = $this->needModel->getById($id, $viewerId);
         if ($need) {
-            $viewerId = AuthController::getAuthenticatedUser();
             if ($viewerId && $this->needModel->isBlockedBetween($viewerId, $need['user_id'])) {
                 http_response_code(403);
                 echo json_encode(["error" => "Access denied due to blocking."]);
@@ -90,61 +90,62 @@ class NeedController {
 
         try {
             $needId = $this->needModel->create($data);
+            if ($needId) {
+                $uploadDir = dirname(__DIR__) . '/uploads/needs/';
+                
+                // 1. Handle Multipart Images
+                if (!empty($_FILES['images'])) {
+                    $files = $_FILES['images'];
+                    foreach ($files['name'] as $key => $name) {
+                        $file = [
+                            'name' => $files['name'][$key],
+                            'type' => $files['type'][$key],
+                            'tmp_name' => $files['tmp_name'][$key],
+                            'error' => $files['error'][$key],
+                            'size' => $files['size'][$key]
+                        ];
+                        $upload = FileService::upload($file, $uploadDir);
+                        if (isset($upload['path'])) {
+                            $this->needModel->addImage($needId, $upload['path'], $key === 0 ? 1 : 0);
+                        }
+                    }
+                }
+
+                // 2. Handle Base64 Images (from JSON)
+                if (!empty($data['images']) && is_array($data['images'])) {
+                    foreach ($data['images'] as $key => $base64) {
+                        $upload = FileService::uploadBase64($base64, $uploadDir);
+                        if (isset($upload['path'])) {
+                            $this->needModel->addImage($needId, $upload['path'], $key === 0 ? 1 : 0);
+                        }
+                    }
+                }
+
+                // Proximity Notifications
+                try {
+                    $nearbyUsers = $this->needModel->findNearbyUsers($data['latitude'], $data['longitude'], 5);
+                    $notificationModel = new Notification($this->needModel->getPdo());
+                    foreach ($nearbyUsers as $user) {
+                        if ($user['id'] != $userId) {
+                            $notificationModel->create($user['id'], "Yakınında Yeni İlan!", $data['title'] . " ilanına göz at.");
+                        }
+                    }
+                } catch (Exception $e) {
+                    error_log("Notification failed: " . $e->getMessage());
+                }
+
+                http_response_code(201);
+                echo json_encode(["message" => "Need created successfully.", "id" => $needId]);
+            } else {
+                http_response_code(500);
+                echo json_encode(["error" => "Failed to create need: No ID returned after execution."]);
+            }
         } catch (InvalidArgumentException $e) {
             http_response_code(400);
             echo json_encode(["error" => $e->getMessage()]);
-            return;
         } catch (Exception $e) {
             http_response_code(500);
-            echo json_encode(["error" => "Failed to create need."]);
-            return;
-        }
-
-        if ($needId) {
-            $uploadDir = dirname(__DIR__) . '/uploads/needs/';
-            
-            // 1. Handle Multipart Images
-            if (!empty($_FILES['images'])) {
-                $files = $_FILES['images'];
-                foreach ($files['name'] as $key => $name) {
-                    $file = [
-                        'name' => $files['name'][$key],
-                        'type' => $files['type'][$key],
-                        'tmp_name' => $files['tmp_name'][$key],
-                        'error' => $files['error'][$key],
-                        'size' => $files['size'][$key]
-                    ];
-                    $upload = FileService::upload($file, $uploadDir);
-                    if (isset($upload['path'])) {
-                        $this->needModel->addImage($needId, $upload['path'], $key === 0 ? 1 : 0);
-                    }
-                }
-            }
-
-            // 2. Handle Base64 Images (from JSON)
-            if (!empty($data['images']) && is_array($data['images'])) {
-                foreach ($data['images'] as $key => $base64) {
-                    $upload = FileService::uploadBase64($base64, $uploadDir);
-                    if (isset($upload['path'])) {
-                        $this->needModel->addImage($needId, $upload['path'], $key === 0 ? 1 : 0);
-                    }
-                }
-            }
-
-            // Proximity Notifications
-            $nearbyUsers = $this->needModel->findNearbyUsers($data['latitude'], $data['longitude'], 5);
-            $notificationModel = new Notification($this->needModel->getPdo());
-            foreach ($nearbyUsers as $user) {
-                if ($user['id'] != $userId) {
-                    $notificationModel->create($user['id'], "Yakınında Yeni İlan!", $data['title'] . " ilanına göz at.");
-                }
-            }
-
-            http_response_code(201);
-            echo json_encode(["message" => "Need created successfully.", "id" => $needId]);
-        } else {
-            http_response_code(500);
-            echo json_encode(["error" => "Failed to create need."]);
+            echo json_encode(["error" => "Failed to create need: " . $e->getMessage()]);
         }
     }
 

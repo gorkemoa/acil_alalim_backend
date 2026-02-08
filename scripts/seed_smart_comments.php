@@ -91,17 +91,16 @@ if (empty($userIds) || empty($needs)) {
     die("User veya Need bulunamadı.\n");
 }
 
-echo "Akıllı yorumlar oluşturuluyor ve ekleniyor...\n";
+echo "Akıllı yorumlar oluşturuluyor...\n";
 
-// Clear old comments (Optional: user's choice, but usually better for "non-static" feel to refresh)
-// $pdo->exec("DELETE FROM comments");
+$sql_output = "USE acil_alalim;\nTRUNCATE TABLE comments;\n";
+$pdo->exec("TRUNCATE TABLE comments");
 
 $count = 0;
 foreach ($needs as $need) {
     $title = mb_strtolower($need['title'], 'UTF-8');
     $relevantPool = [];
     
-    // Find relevant pool based on keywords
     foreach ($contextTemplates as $category => $data) {
         if ($category === 'genel') continue;
         foreach ($data['keywords'] as $keyword) {
@@ -112,26 +111,26 @@ foreach ($needs as $need) {
         }
     }
     
-    // Always mix with general comments
     $finalPool = array_merge($relevantPool, $contextTemplates['genel']['comments']);
     
-    // Add 5-10 random comments per need
-    $numAdd = rand(5, 12);
+    $numAdd = rand(8, 15);
     for ($i = 0; $i < $numAdd; $i++) {
         $sender = $users[array_rand($users)];
         $commentRaw = $finalPool[array_rand($finalPool)];
         
-        // Add some dynamic variety to the text (non-static)
         $prefixes = ["", "Merhaba, ", "Selamlar, ", "Hayırlı işler, ", "İyi günler, "];
         $suffixes = ["", " :)", " ?", "...", "!", " Teşekkürler."];
         
         $commentText = $prefixes[array_rand($prefixes)] . $commentRaw . $suffixes[array_rand($suffixes)];
+        $date = date('Y-m-d H:i:s', strtotime('-' . rand(0, 43200) . ' minutes'));
         
+        // Prepare SQL for file
+        $safeComment = str_replace("'", "''", $commentText);
+        $sql_output .= "INSERT INTO comments (sender_id, need_id, comment, created_at) VALUES ({$sender['id']}, {$need['id']}, '{$safeComment}', '{$date}');\n";
+        
+        // Execute in DB
         $sql = "INSERT INTO comments (sender_id, need_id, comment, created_at) VALUES (:sender_id, :need_id, :comment, :created_at)";
         $stmt = $pdo->prepare($sql);
-        
-        // Random date in the last 15 days
-        $date = date('Y-m-d H:i:s', strtotime('-' . rand(0, 21600) . ' minutes'));
         
         try {
             $stmt->execute([
@@ -141,14 +140,11 @@ foreach ($needs as $need) {
                 'created_at' => $date
             ]);
             $count++;
-        } catch (Exception $e) {
-            // Skip duplicates if there's a constraint, but here it's fine
-        }
+        } catch (Exception $e) {}
     }
 }
 
-echo "Toplam $count adet bağlam duyarlı (dinamik) yorum eklendi.\n";
-echo "İpuçları: \n";
-echo "- Yorumlar ilan başlıklarına göre (Matkap, Gitar, Laptop vb.) özelleştirildi.\n";
-echo "- Selamlamalar ve emojiler rastgele eklendi.\n";
-echo "- Tarihler son 15 güne rastgele yayıldı.\n";
+// Write to SQL file
+file_put_contents(__DIR__ . '/../seed_smart_comments.sql', $sql_output);
+
+echo "Toplam $count adet bağlam duyarlı (dinamik) yorum hem DB'ye eklendi hem de seed_smart_comments.sql dosyasına yazıldı.\n";

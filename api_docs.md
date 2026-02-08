@@ -69,5 +69,13 @@
 
 | Özellik | Metot | Endpoint | Açıklama |
 | :--- | :--- | :--- | :--- |
-| **Yorum Ekle** | POST | `/comments` | İlan altına halka açık yorum yazar. |
-| **Yorumları Gör** | GET | `/comments/{need_id}` | İlana ait tüm yorumları listeler. |
+| **Yorum / Yanıt Ekle** | POST | `/comments` | İlan altına yeni yorum ekler veya mevcut yoruma yanıt verir (`parent_id` isteğe bağlı). |
+| **Yorumları Gör** | GET | `/comments/{need_id}` | İlana ait tüm yorumları hem düz liste hem de ağaç (threads) olarak döner. |
+
+**POST /comments**  
+Body: `{ "need_id": 12, "comment": "..." , "parent_id": 55 }` (`parent_id` verilirse yanıt, verilmezse yeni yorum).  
+Response: `{ message, id, comment }`
+
+**GET /comments/{need_id}**  
+Response: `{ allow_comments, count, data: [...flat...], threads: [...nested...] }`  
+`data` geri uyumludur; `threads` iç içe yanıtları içerir.

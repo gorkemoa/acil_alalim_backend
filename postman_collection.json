@@ -753,7 +753,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"need_id\": 1,\n    \"comment\": \"Bende var, verebilirim.\"\n}",
+                            "raw": "{\n    \"need_id\": 1,\n    \"comment\": \"Bende var, verebilirim.\",\n    \"parent_id\": 42\n}",
                             "options": {
                                 "raw": {
                                     "language": "json"

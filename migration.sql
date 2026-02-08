@@ -47,3 +47,7 @@ CREATE TABLE reports (
     FOREIGN KEY (reported_user_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (reported_need_id) REFERENCES needs(id) ON DELETE CASCADE
 );
+
+-- Enable threaded comment replies
+ALTER TABLE comments ADD COLUMN parent_id INT NULL AFTER need_id;
+ALTER TABLE comments ADD CONSTRAINT fk_comments_parent FOREIGN KEY (parent_id) REFERENCES comments(id) ON DELETE CASCADE;

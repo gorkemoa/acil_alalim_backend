@@ -3,6 +3,7 @@
 
 class Need {
     private $pdo;
+    private $hasAllowCommentsColumn = null;
 
     public function __construct($pdo) {
         $this->pdo = $pdo;
@@ -152,7 +153,7 @@ class Need {
         return (int)$stmt->fetchColumn();
     }
 
-    public function getById($id) {
+    public function getById($id, $viewerId = null) {
         $sql = "SELECT n.*, u.name as user_name, u.profile_photo as user_avatar, u.karma_score as user_karma,
                 p.name as province_name, d.name as district_name, c.name as category_name,
                 up.name as user_province_name, ud.name as user_district_name
@@ -189,24 +190,14 @@ class Need {
             // Comments (public thread)
             $allowComments = isset($need['allow_comments']) ? (bool)$need['allow_comments'] : true;
             if ($allowComments) {
-                $stmtComments = $this->pdo->prepare(
-                    "SELECT c.id, c.comment, c.created_at, u.id as user_id, u.name as user_name, u.profile_photo 
-                     FROM comments c 
-                     JOIN users u ON c.sender_id = u.id 
-                     WHERE c.need_id = :need_id 
-                     ORDER BY c.created_at ASC"
-                );
-                $stmtComments->execute(['need_id' => $id]);
-                $comments = $stmtComments->fetchAll();
-                foreach ($comments as &$c) {
-                    if (!empty($c['profile_photo'])) {
-                        $c['profile_photo_url'] = $this->buildUploadUrl('profiles', $c['profile_photo']);
-                    }
-                }
+                $commentModel = new Comment($this->pdo);
+                $comments = $commentModel->getByNeed($id, $viewerId);
                 $need['comments'] = $comments;
+                $need['comments_tree'] = $commentModel->getThreadByNeed($id, $viewerId);
                 $need['comments_count'] = count($comments);
             } else {
                 $need['comments'] = [];
+                $need['comments_tree'] = [];
                 $need['comments_count'] = 0;
             }
         }
@@ -237,12 +228,17 @@ class Need {
 
     public function create($data) {
         if (!$this->categoryExists($data['category_id'])) {
-            throw new InvalidArgumentException("Invalid category_id");
+            throw new InvalidArgumentException("Invalid category_id: " . $data['category_id']);
         }
-        $sql = "INSERT INTO needs (user_id, title, description, category_id, latitude, longitude, province_id, district_id, allow_comments) 
-                VALUES (:user_id, :title, :description, :category_id, :latitude, :longitude, :province_id, :district_id, :allow_comments)";
-        $stmt = $this->pdo->prepare($sql);
-        if ($stmt->execute([
+        if (!$this->provinceExists($data['province_id'])) {
+            throw new InvalidArgumentException("Invalid province_id: " . $data['province_id']);
+        }
+        if (!$this->districtExists($data['district_id'])) {
+            throw new InvalidArgumentException("Invalid district_id: " . $data['district_id']);
+        }
+
+        $columns = ['user_id', 'title', 'description', 'category_id', 'latitude', 'longitude', 'province_id', 'district_id'];
+        $params = [
             'user_id' => $data['user_id'],
             'title' => $data['title'],
             'description' => $data['description'],
@@ -250,10 +246,27 @@ class Need {
             'latitude' => $data['latitude'],
             'longitude' => $data['longitude'],
             'province_id' => $data['province_id'],
-            'district_id' => $data['district_id'],
-            'allow_comments' => isset($data['allow_comments']) ? (int)$data['allow_comments'] : 1
-        ])) {
-            return $this->pdo->lastInsertId();
+            'district_id' => $data['district_id']
+        ];
+
+        if ($this->hasNeedsAllowCommentsColumn()) {
+            $columns[] = 'allow_comments';
+            $params['allow_comments'] = isset($data['allow_comments']) ? (int)$data['allow_comments'] : 1;
+        }
+
+        $sql = "INSERT INTO needs (" . implode(', ', $columns) . ") 
+                VALUES (:" . implode(', :', $columns) . ")";
+        $stmt = $this->pdo->prepare($sql);
+        try {
+            if ($stmt->execute($params)) {
+                $id = $this->pdo->lastInsertId();
+                if (!$id) {
+                    throw new Exception("Insert succeeded but no ID returned. SQL: $sql");
+                }
+                return $id;
+            }
+        } catch (PDOException $e) {
+            throw new Exception("Database error while creating need: " . $e->getMessage() . " | SQL: $sql | Params: " . json_encode($params));
         }
         return false;
     }
@@ -262,6 +275,20 @@ class Need {
         if (empty($categoryId)) return false;
         $stmt = $this->pdo->prepare("SELECT 1 FROM categories WHERE id = :id");
         $stmt->execute(['id' => $categoryId]);
+        return (bool)$stmt->fetchColumn();
+    }
+
+    private function provinceExists($provinceId) {
+        if (empty($provinceId)) return false;
+        $stmt = $this->pdo->prepare("SELECT 1 FROM provinces WHERE id = :id");
+        $stmt->execute(['id' => $provinceId]);
+        return (bool)$stmt->fetchColumn();
+    }
+
+    private function districtExists($districtId) {
+        if (empty($districtId)) return false;
+        $stmt = $this->pdo->prepare("SELECT 1 FROM districts WHERE id = :id");
+        $stmt->execute(['id' => $districtId]);
         return (bool)$stmt->fetchColumn();
     }
 
@@ -313,7 +340,10 @@ class Need {
     public function update($id, $data) {
         $fields = [];
         $params = ['id' => $id];
-        $allowed = ['title', 'description', 'category_id', 'latitude', 'longitude', 'province_id', 'district_id', 'status', 'is_sponsor', 'allow_comments'];
+        $allowed = ['title', 'description', 'category_id', 'latitude', 'longitude', 'province_id', 'district_id', 'status', 'is_sponsor'];
+        if ($this->hasNeedsAllowCommentsColumn()) {
+            $allowed[] = 'allow_comments';
+        }
         foreach ($allowed as $field) {
             if (isset($data[$field])) {
                 $fields[] = "$field = :$field";
@@ -414,5 +444,15 @@ class Need {
             }
         }
         return $needs;
+    }
+
+    private function hasNeedsAllowCommentsColumn() {
+        if ($this->hasAllowCommentsColumn !== null) {
+            return $this->hasAllowCommentsColumn;
+        }
+
+        $stmt = $this->pdo->query("SHOW COLUMNS FROM needs LIKE 'allow_comments'");
+        $this->hasAllowCommentsColumn = (bool)$stmt->fetch();
+        return $this->hasAllowCommentsColumn;
     }
 }
