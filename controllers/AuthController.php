@@ -26,8 +26,18 @@ class AuthController {
         }
 
         if ($this->userModel->create($data)) {
+            $user = $this->userModel->findByEmail($data['email']);
+            $token = TokenService::create(['id' => $user['id'], 'email' => $user['email']], 86400);
             http_response_code(201);
-            echo json_encode(["message" => "User registered successfully."]);
+            echo json_encode([
+                "message" => "User registered successfully.",
+                "token" => $token,
+                "user" => [
+                    "id" => $user['id'],
+                    "name" => $user['name'],
+                    "email" => $user['email']
+                ]
+            ]);
         } else {
             http_response_code(500);
             echo json_encode(["error" => "Registration failed."]);
@@ -147,7 +157,13 @@ class AuthController {
         }
 
         if ($this->userModel->updateProfile($userId, $data)) {
-            echo json_encode(["message" => "Profile updated successfully."]);
+            $user = $this->userModel->findById($userId);
+            $token = TokenService::create(['id' => $user['id'], 'email' => $user['email']], 86400);
+            echo json_encode([
+                "message" => "Profile updated successfully.",
+                "token" => $token,
+                "user" => $user
+            ]);
         } else {
             http_response_code(500);
             echo json_encode(["error" => "Failed to update profile."]);
