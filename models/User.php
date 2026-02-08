@@ -3,28 +3,46 @@
 
 class User {
     private $pdo;
+    private $userColumns;
 
     public function __construct($pdo) {
         $this->pdo = $pdo;
     }
 
+    private function getUserColumns() {
+        if ($this->userColumns !== null) {
+            return $this->userColumns;
+        }
+
+        $stmt = $this->pdo->query("SHOW COLUMNS FROM users");
+        $this->userColumns = array_column($stmt->fetchAll(), 'Field');
+        return $this->userColumns;
+    }
+
+    private function hasUserColumn($column) {
+        return in_array($column, $this->getUserColumns(), true);
+    }
+
     public function create($data) {
-        $sql = "INSERT INTO users (name, email, password, province_id, district_id, latitude, longitude, phone, whatsapp, bio, website) 
-                VALUES (:name, :email, :password, :province_id, :district_id, :latitude, :longitude, :phone, :whatsapp, :bio, :website)";
-        $stmt = $this->pdo->prepare($sql);
-        return $stmt->execute([
+        $columns = ['name', 'email', 'password'];
+        $params = [
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => password_hash($data['password'], PASSWORD_DEFAULT),
-            'province_id' => $data['province_id'] ?? null,
-            'district_id' => $data['district_id'] ?? null,
-            'latitude' => $data['latitude'] ?? null,
-            'longitude' => $data['longitude'] ?? null,
-            'phone' => $data['phone'] ?? null,
-            'whatsapp' => $data['whatsapp'] ?? null,
-            'bio' => $data['bio'] ?? null,
-            'website' => $data['website'] ?? null
-        ]);
+            'password' => password_hash($data['password'], PASSWORD_DEFAULT)
+        ];
+
+        $optionalColumns = ['province_id', 'district_id', 'latitude', 'longitude', 'phone', 'whatsapp', 'bio', 'website'];
+        foreach ($optionalColumns as $column) {
+            if ($this->hasUserColumn($column)) {
+                $columns[] = $column;
+                $params[$column] = $data[$column] ?? null;
+            }
+        }
+
+        $placeholders = array_map(fn($c) => ':' . $c, $columns);
+        $sql = "INSERT INTO users (" . implode(', ', $columns) . ") VALUES (" . implode(', ', $placeholders) . ")";
+        $stmt = $this->pdo->prepare($sql);
+        return $stmt->execute($params);
     }
 
     public function updateProfile($id, $data) {
@@ -33,6 +51,9 @@ class User {
         
         foreach (['name', 'province_id', 'district_id', 'profile_photo', 'latitude', 'longitude', 'phone', 'whatsapp', 'bio', 'website'] as $field) {
             if (isset($data[$field])) {
+                if (!$this->hasUserColumn($field)) {
+                    continue;
+                }
                 $fields[] = "$field = :$field";
                 $params[$field] = $data[$field];
             }
@@ -45,6 +66,9 @@ class User {
     }
 
     public function updateKarma($id, $points) {
+        if (!$this->hasUserColumn('karma_score')) {
+            return true;
+        }
         $sql = "UPDATE users SET karma_score = karma_score + :points WHERE id = :id";
         return $this->pdo->prepare($sql)->execute(['id' => $id, 'points' => $points]);
     }
@@ -57,7 +81,15 @@ class User {
     }
 
     public function findById($id) {
-        $sql = "SELECT id, name, email, profile_photo, province_id, district_id, karma_score, latitude, longitude, phone, whatsapp, bio, website, created_at FROM users WHERE id = :id";
+        $selectColumns = ['id', 'name', 'email', 'created_at'];
+        $optionalColumns = ['profile_photo', 'province_id', 'district_id', 'karma_score', 'latitude', 'longitude', 'phone', 'whatsapp', 'bio', 'website'];
+        foreach ($optionalColumns as $column) {
+            if ($this->hasUserColumn($column)) {
+                $selectColumns[] = $column;
+            }
+        }
+
+        $sql = "SELECT " . implode(', ', $selectColumns) . " FROM users WHERE id = :id";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['id' => $id]);
         return $stmt->fetch();
