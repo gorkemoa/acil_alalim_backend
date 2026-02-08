@@ -1,0 +1,6738 @@
+[
+  {
+    "id": 15705,
+    "parent_id": 0,
+    "ad": "Araba",
+    "slug": "araba",
+    "url_path": "araba",
+    "parent_name": null
+  },
+  {
+    "id": 15706,
+    "parent_id": 15705,
+    "ad": "Araba",
+    "slug": "arabalar",
+    "url_path": "arabalar",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15707,
+    "parent_id": 15705,
+    "ad": "Oto Yedek Parça",
+    "slug": "oto-yedek-parca",
+    "url_path": "araba/oto-yedek-parca",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15714,
+    "parent_id": 15707,
+    "ad": "Kaporta & Karoser",
+    "slug": "kaporta-karoser",
+    "url_path": "araba/oto-yedek-parca/kaporta-karoser",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15710,
+    "parent_id": 15707,
+    "ad": "Elektrik",
+    "slug": "elektrik",
+    "url_path": "araba/oto-yedek-parca/elektrik",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15716,
+    "parent_id": 15707,
+    "ad": "Motor & Mekanik",
+    "slug": "motor",
+    "url_path": "araba/oto-yedek-parca/motor",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15718,
+    "parent_id": 15707,
+    "ad": "Yürüyen & Direksiyon",
+    "slug": "yuruyen-direksiyon",
+    "url_path": "araba/oto-yedek-parca/yuruyen-direksiyon",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15713,
+    "parent_id": 15707,
+    "ad": "Isıtma & Havalandırma & Klima",
+    "slug": "isitma-havalandirma-klima",
+    "url_path": "araba/oto-yedek-parca/isitma-havalandirma-klima",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15717,
+    "parent_id": 15707,
+    "ad": "Şanzıman & Vites",
+    "slug": "sanziman-vites",
+    "url_path": "araba/oto-yedek-parca/sanziman-vites",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15708,
+    "parent_id": 15707,
+    "ad": "Ateşleme & Yakıt",
+    "slug": "atesleme-yakit",
+    "url_path": "araba/oto-yedek-parca/atesleme-yakit",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15712,
+    "parent_id": 15707,
+    "ad": "Fren & Debriyaj",
+    "slug": "fren-debriyaj",
+    "url_path": "araba/oto-yedek-parca/fren-debriyaj",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15711,
+    "parent_id": 15707,
+    "ad": "Filtre",
+    "slug": "filtre",
+    "url_path": "araba/oto-yedek-parca/filtre",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15709,
+    "parent_id": 15707,
+    "ad": "Egzoz",
+    "slug": "egzoz",
+    "url_path": "araba/oto-yedek-parca/egzoz",
+    "parent_name": "Oto Yedek Parça"
+  },
+  {
+    "id": 15725,
+    "parent_id": 15705,
+    "ad": "Jant & Lastik",
+    "slug": "jant-lastik",
+    "url_path": "araba/jant-lastik",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15726,
+    "parent_id": 15725,
+    "ad": "Jant",
+    "slug": "jant",
+    "url_path": "araba/jant-lastik/jant",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 15727,
+    "parent_id": 15725,
+    "ad": "Lastik",
+    "slug": "lastik",
+    "url_path": "araba/jant-lastik/lastik",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 15728,
+    "parent_id": 15725,
+    "ad": "Jant & Lastik Takımları",
+    "slug": "jant-lastik-takimlari",
+    "url_path": "araba/jant-lastik/jant-lastik-takimlari",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 15729,
+    "parent_id": 15725,
+    "ad": "Jant Kapakları",
+    "slug": "jant-kapaklari",
+    "url_path": "araba/jant-lastik/jant-kapaklari",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 15730,
+    "parent_id": 15725,
+    "ad": "Aksesuar & Ekipman",
+    "slug": "aksesuar-ekipman",
+    "url_path": "araba/jant-lastik/aksesuar-ekipman",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 15719,
+    "parent_id": 15705,
+    "ad": "Aksesuar & Tuning",
+    "slug": "aksesuar-tuning",
+    "url_path": "araba/aksesuar-tuning",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15720,
+    "parent_id": 15719,
+    "ad": "İç Aksesuar",
+    "slug": "ic-aksesuar",
+    "url_path": "aksesuar-tuning/araba/ic-aksesuar",
+    "parent_name": "Aksesuar & Tuning"
+  },
+  {
+    "id": 15721,
+    "parent_id": 15719,
+    "ad": "Dış Aksesuar",
+    "slug": "dis-aksesuar",
+    "url_path": "aksesuar-tuning/araba/dis-aksesuar",
+    "parent_name": "Aksesuar & Tuning"
+  },
+  {
+    "id": 15722,
+    "parent_id": 15719,
+    "ad": "Performans",
+    "slug": "performans",
+    "url_path": "aksesuar-tuning/araba/performans",
+    "parent_name": "Aksesuar & Tuning"
+  },
+  {
+    "id": 15723,
+    "parent_id": 15719,
+    "ad": "Elektronik",
+    "slug": "elektronik-15723",
+    "url_path": "aksesuar-tuning/araba/elektronik-15723",
+    "parent_name": "Aksesuar & Tuning"
+  },
+  {
+    "id": 15724,
+    "parent_id": 15719,
+    "ad": "Bakım & Onarım Ürünleri",
+    "slug": "bakim-onarim-urunleri",
+    "url_path": "aksesuar-tuning/araba/bakim-onarim-urunleri",
+    "parent_name": "Aksesuar & Tuning"
+  },
+  {
+    "id": 15731,
+    "parent_id": 15705,
+    "ad": "Ses & Görüntü Sistemleri",
+    "slug": "ses-goruntu-sistemleri",
+    "url_path": "araba/ses-goruntu-sistemleri",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15742,
+    "parent_id": 15705,
+    "ad": "Kiralık Araçlar",
+    "slug": "kiralik-araclar",
+    "url_path": "araba/kiralik-araclar",
+    "parent_name": "Araba"
+  },
+  {
+    "id": 15000,
+    "parent_id": 0,
+    "ad": "Telefon",
+    "slug": "telefon",
+    "url_path": "telefon",
+    "parent_name": null
+  },
+  {
+    "id": 15001,
+    "parent_id": 15000,
+    "ad": "iPhone iOS Telefon",
+    "slug": "iphone-ios-telefon",
+    "url_path": "telefon/iphone-ios-telefon",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15002,
+    "parent_id": 15000,
+    "ad": "Android Telefon",
+    "slug": "android-telefon",
+    "url_path": "telefon/android-telefon",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15003,
+    "parent_id": 15000,
+    "ad": "Diğer Cep Telefonları",
+    "slug": "diger-cep-telefonlari",
+    "url_path": "telefon/diger-cep-telefonlari",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15004,
+    "parent_id": 15000,
+    "ad": "Telsiz & Masaüstü Telefon",
+    "slug": "telsiz-masaustu-telefon",
+    "url_path": "telefon/telsiz-masaustu-telefon",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15005,
+    "parent_id": 15000,
+    "ad": "Telefon Aksesuarları",
+    "slug": "telefon-aksesuarlari",
+    "url_path": "telefon/telefon-aksesuarlari",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15006,
+    "parent_id": 15005,
+    "ad": "Şarj Cihazı",
+    "slug": "sarj-cihazi",
+    "url_path": "telefon/telefon-aksesuarlari/sarj-cihazi",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15007,
+    "parent_id": 15005,
+    "ad": "Bluetooth Kulaklık",
+    "slug": "bluetooth-kulaklik",
+    "url_path": "telefon/telefon-aksesuarlari/bluetooth-kulaklik",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15008,
+    "parent_id": 15005,
+    "ad": "Kablolu Kulaklık",
+    "slug": "kablolu-kulaklik",
+    "url_path": "telefon/telefon-aksesuarlari/kablolu-kulaklik",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15009,
+    "parent_id": 15005,
+    "ad": "Telefon Kılıfı",
+    "slug": "telefon-kilifi",
+    "url_path": "telefon/telefon-aksesuarlari/telefon-kilifi",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15010,
+    "parent_id": 15005,
+    "ad": "Ekran Koruyucu",
+    "slug": "ekran-koruyucu",
+    "url_path": "telefon/telefon-aksesuarlari/ekran-koruyucu",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15011,
+    "parent_id": 15005,
+    "ad": "Selfie Çubuğu & Stand",
+    "slug": "selfie-cubugu-stand",
+    "url_path": "telefon/telefon-aksesuarlari/selfie-cubugu-stand",
+    "parent_name": "Telefon Aksesuarları"
+  },
+  {
+    "id": 15012,
+    "parent_id": 15000,
+    "ad": "Telefon Yedek Parçaları",
+    "slug": "telefon-yedek-parcalari",
+    "url_path": "telefon/telefon-yedek-parcalari",
+    "parent_name": "Telefon"
+  },
+  {
+    "id": 15013,
+    "parent_id": 15012,
+    "ad": "Batarya",
+    "slug": "batarya",
+    "url_path": "telefon/telefon-yedek-parcalari/batarya",
+    "parent_name": "Telefon Yedek Parçaları"
+  },
+  {
+    "id": 15014,
+    "parent_id": 15012,
+    "ad": "Ekran",
+    "slug": "ekran",
+    "url_path": "telefon/telefon-yedek-parcalari/ekran",
+    "parent_name": "Telefon Yedek Parçaları"
+  },
+  {
+    "id": 15015,
+    "parent_id": 15012,
+    "ad": "Anakart",
+    "slug": "anakart",
+    "url_path": "telefon/telefon-yedek-parcalari/anakart",
+    "parent_name": "Telefon Yedek Parçaları"
+  },
+  {
+    "id": 15016,
+    "parent_id": 15012,
+    "ad": "Kasa & Kapak",
+    "slug": "kasa-kapak",
+    "url_path": "telefon/telefon-yedek-parcalari/kasa-kapak",
+    "parent_name": "Telefon Yedek Parçaları"
+  },
+  {
+    "id": 15017,
+    "parent_id": 15012,
+    "ad": "Diğer",
+    "slug": "diger",
+    "url_path": "telefon/telefon-yedek-parcalari/diger",
+    "parent_name": "Telefon Yedek Parçaları"
+  },
+  {
+    "id": 15018,
+    "parent_id": 0,
+    "ad": "Elektronik",
+    "slug": "elektronik",
+    "url_path": "elektronik",
+    "parent_name": null
+  },
+  {
+    "id": 15019,
+    "parent_id": 15018,
+    "ad": "Bilgisayar",
+    "slug": "bilgisayar",
+    "url_path": "elektronik/bilgisayar",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15020,
+    "parent_id": 15019,
+    "ad": "Dizüstü Bilgisayar",
+    "slug": "dizustu-bilgisayar",
+    "url_path": "elektronik/bilgisayar/dizustu-bilgisayar",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15021,
+    "parent_id": 15019,
+    "ad": "Masaüstü Bilgisayar",
+    "slug": "masaustu-bilgisayar",
+    "url_path": "elektronik/bilgisayar/masaustu-bilgisayar",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15022,
+    "parent_id": 15019,
+    "ad": "Monitör",
+    "slug": "monitor",
+    "url_path": "elektronik/bilgisayar/monitor",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15023,
+    "parent_id": 15019,
+    "ad": "Sunucu",
+    "slug": "sunucu",
+    "url_path": "elektronik/bilgisayar/sunucu",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15024,
+    "parent_id": 15019,
+    "ad": "Yazıcı & Tarayıcı",
+    "slug": "yazici-tarayici",
+    "url_path": "elektronik/bilgisayar/yazici-tarayici",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15025,
+    "parent_id": 15019,
+    "ad": "Bilgisayar Aksesuarları",
+    "slug": "bilgisayar-aksesuarlari",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15026,
+    "parent_id": 15025,
+    "ad": "Mouse",
+    "slug": "mouse",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/mouse",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15027,
+    "parent_id": 15025,
+    "ad": "Klavye",
+    "slug": "klavye",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/klavye",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15028,
+    "parent_id": 15025,
+    "ad": "USB Bellek",
+    "slug": "usb-bellek",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/usb-bellek",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15029,
+    "parent_id": 15025,
+    "ad": "Webcam",
+    "slug": "webcam",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/webcam",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15030,
+    "parent_id": 15025,
+    "ad": "Hoparlör",
+    "slug": "hoparlor",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/hoparlor",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15031,
+    "parent_id": 15025,
+    "ad": "Mikrofon",
+    "slug": "mikrofon",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/mikrofon",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15032,
+    "parent_id": 15025,
+    "ad": "Kulaklık",
+    "slug": "kulaklik",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/kulaklik",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15033,
+    "parent_id": 15025,
+    "ad": "Taşınabilir Disk",
+    "slug": "tasinabilir-disk",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/tasinabilir-disk",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15034,
+    "parent_id": 15025,
+    "ad": "Ses Kayıt Cihazı",
+    "slug": "ses-kayit-cihazi",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/ses-kayit-cihazi",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15035,
+    "parent_id": 15025,
+    "ad": "Kablo Adaptör",
+    "slug": "kablo-adaptor",
+    "url_path": "elektronik/bilgisayar/bilgisayar-aksesuarlari/kablo-adaptor",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 21864,
+    "parent_id": 15025,
+    "ad": "Bilgisayar Çantası",
+    "slug": "bilgisayar-cantasi",
+    "url_path": "bilgisayar/elektronik/bilgisayar-aksesuarlari/bilgisayar-cantasi",
+    "parent_name": "Bilgisayar Aksesuarları"
+  },
+  {
+    "id": 15036,
+    "parent_id": 15019,
+    "ad": "Modem",
+    "slug": "modem",
+    "url_path": "elektronik/bilgisayar/modem",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15037,
+    "parent_id": 15019,
+    "ad": "Bilgisayar Bileşenleri",
+    "slug": "bilgisayar-bilesenleri",
+    "url_path": "elektronik/bilgisayar/bilgisayar-bilesenleri",
+    "parent_name": "Bilgisayar"
+  },
+  {
+    "id": 15038,
+    "parent_id": 15018,
+    "ad": "Tablet",
+    "slug": "tablet",
+    "url_path": "elektronik/tablet",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15039,
+    "parent_id": 15038,
+    "ad": "Tablet",
+    "slug": "tablet-15039",
+    "url_path": "elektronik/tablet/tablet",
+    "parent_name": "Tablet"
+  },
+  {
+    "id": 15040,
+    "parent_id": 15038,
+    "ad": "E-Kitap Okuyucu",
+    "slug": "e-kitap-okuyucu",
+    "url_path": "elektronik/tablet/e-kitap-okuyucu",
+    "parent_name": "Tablet"
+  },
+  {
+    "id": 15041,
+    "parent_id": 15038,
+    "ad": "Tablet Aksesuarları",
+    "slug": "tablet-aksesuarlari",
+    "url_path": "elektronik/tablet/tablet-aksesuarlari",
+    "parent_name": "Tablet"
+  },
+  {
+    "id": 15090,
+    "parent_id": 15018,
+    "ad": "Oyunculara Özel",
+    "slug": "oyunculara-ozel",
+    "url_path": "elektronik/oyunculara-ozel",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15091,
+    "parent_id": 15090,
+    "ad": "Oyun Konsolu",
+    "slug": "oyun-konsolu",
+    "url_path": "elektronik/oyunculara-ozel/oyun-konsolu",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15092,
+    "parent_id": 15091,
+    "ad": "PlayStation",
+    "slug": "playstation",
+    "url_path": "elektronik/oyunculara-ozel/oyun-konsolu/playstation",
+    "parent_name": "Oyun Konsolu"
+  },
+  {
+    "id": 15093,
+    "parent_id": 15091,
+    "ad": "Xbox",
+    "slug": "xbox",
+    "url_path": "elektronik/oyunculara-ozel/oyun-konsolu/xbox",
+    "parent_name": "Oyun Konsolu"
+  },
+  {
+    "id": 15094,
+    "parent_id": 15091,
+    "ad": "Nintendo",
+    "slug": "nintendo",
+    "url_path": "elektronik/oyunculara-ozel/oyun-konsolu/nintendo",
+    "parent_name": "Oyun Konsolu"
+  },
+  {
+    "id": 15095,
+    "parent_id": 15091,
+    "ad": "Diğer Oyun Konsolları",
+    "slug": "diger-oyun-konsollari",
+    "url_path": "elektronik/oyunculara-ozel/oyun-konsolu/diger-oyun-konsollari",
+    "parent_name": "Oyun Konsolu"
+  },
+  {
+    "id": 15096,
+    "parent_id": 15090,
+    "ad": "Konsol Oyunu",
+    "slug": "konsol-oyunu",
+    "url_path": "elektronik/oyunculara-ozel/konsol-oyunu",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15097,
+    "parent_id": 15096,
+    "ad": "PlayStation",
+    "slug": "playstation-15097",
+    "url_path": "elektronik/oyunculara-ozel/konsol-oyunu/playstation",
+    "parent_name": "Konsol Oyunu"
+  },
+  {
+    "id": 15098,
+    "parent_id": 15096,
+    "ad": "Xbox",
+    "slug": "xbox-15098",
+    "url_path": "elektronik/oyunculara-ozel/konsol-oyunu/xbox",
+    "parent_name": "Konsol Oyunu"
+  },
+  {
+    "id": 15099,
+    "parent_id": 15096,
+    "ad": "Nintendo",
+    "slug": "nintendo-15099",
+    "url_path": "elektronik/oyunculara-ozel/konsol-oyunu/nintendo",
+    "parent_name": "Konsol Oyunu"
+  },
+  {
+    "id": 15100,
+    "parent_id": 15096,
+    "ad": "Diğer Konsol Oyunları",
+    "slug": "diger-konsol-oyunlari",
+    "url_path": "elektronik/oyunculara-ozel/konsol-oyunu/diger-konsol-oyunlari",
+    "parent_name": "Konsol Oyunu"
+  },
+  {
+    "id": 15101,
+    "parent_id": 15090,
+    "ad": "Konsol Aksesuarları",
+    "slug": "konsol-aksesuarlari",
+    "url_path": "elektronik/oyunculara-ozel/konsol-aksesuarlari",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15102,
+    "parent_id": 15101,
+    "ad": "PlayStation",
+    "slug": "playstation-15102",
+    "url_path": "elektronik/oyunculara-ozel/konsol-aksesuarlari/playstation",
+    "parent_name": "Konsol Aksesuarları"
+  },
+  {
+    "id": 15103,
+    "parent_id": 15101,
+    "ad": "Xbox",
+    "slug": "xbox-15103",
+    "url_path": "elektronik/oyunculara-ozel/konsol-aksesuarlari/xbox",
+    "parent_name": "Konsol Aksesuarları"
+  },
+  {
+    "id": 15104,
+    "parent_id": 15101,
+    "ad": "Nintendo",
+    "slug": "nintendo-15104",
+    "url_path": "elektronik/oyunculara-ozel/konsol-aksesuarlari/nintendo",
+    "parent_name": "Konsol Aksesuarları"
+  },
+  {
+    "id": 15105,
+    "parent_id": 15101,
+    "ad": "Diğer Konsol Aksesuarları",
+    "slug": "diger-konsol-aksesuarlari",
+    "url_path": "elektronik/oyunculara-ozel/konsol-aksesuarlari/diger-konsol-aksesuarlari",
+    "parent_name": "Konsol Aksesuarları"
+  },
+  {
+    "id": 15106,
+    "parent_id": 15090,
+    "ad": "Oyun Bilgisayarı",
+    "slug": "oyun-bilgisayari",
+    "url_path": "elektronik/oyunculara-ozel/oyun-bilgisayari",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15107,
+    "parent_id": 15106,
+    "ad": "Oyuncu Dizüstü Bilgisayarı",
+    "slug": "oyuncu-dizustu-bilgisayari",
+    "url_path": "elektronik/oyunculara-ozel/oyun-bilgisayari/oyuncu-dizustu-bilgisayari",
+    "parent_name": "Oyun Bilgisayarı"
+  },
+  {
+    "id": 15108,
+    "parent_id": 15106,
+    "ad": "Oyuncu Masaüstü Bilgisayarı",
+    "slug": "oyuncu-masaustu-bilgisayari",
+    "url_path": "elektronik/oyunculara-ozel/oyun-bilgisayari/oyuncu-masaustu-bilgisayari",
+    "parent_name": "Oyun Bilgisayarı"
+  },
+  {
+    "id": 15109,
+    "parent_id": 15090,
+    "ad": "Bilgisayar Oyunu",
+    "slug": "bilgisayar-oyunu",
+    "url_path": "elektronik/oyunculara-ozel/bilgisayar-oyunu",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15110,
+    "parent_id": 15090,
+    "ad": "Oyuncu Donanımları",
+    "slug": "oyuncu-donanimlari",
+    "url_path": "elektronik/oyunculara-ozel/oyuncu-donanimlari",
+    "parent_name": "Oyunculara Özel"
+  },
+  {
+    "id": 15111,
+    "parent_id": 15018,
+    "ad": "TV, Görüntü & Ses Sistemi",
+    "slug": "tv-goruntu-ses-sistemi",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15112,
+    "parent_id": 15111,
+    "ad": "Televizyon",
+    "slug": "televizyon",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/televizyon",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15113,
+    "parent_id": 15111,
+    "ad": "Hoparlör & Ev Sinema Sistemi",
+    "slug": "hoparlor-ev-sinema-sistemi",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/hoparlor-ev-sinema-sistemi",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15114,
+    "parent_id": 15113,
+    "ad": "Bluetooth Hoparlör",
+    "slug": "bluetooth-hoparlor",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/hoparlor-ev-sinema-sistemi/bluetooth-hoparlor",
+    "parent_name": "Hoparlör & Ev Sinema Sistemi"
+  },
+  {
+    "id": 15115,
+    "parent_id": 15113,
+    "ad": "Projeksiyon Cihazı",
+    "slug": "projeksiyon-cihazi",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/hoparlor-ev-sinema-sistemi/projeksiyon-cihazi",
+    "parent_name": "Hoparlör & Ev Sinema Sistemi"
+  },
+  {
+    "id": 15116,
+    "parent_id": 15113,
+    "ad": "Ev Sinema Sistemi",
+    "slug": "ev-sinema-sistemi",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/hoparlor-ev-sinema-sistemi/ev-sinema-sistemi",
+    "parent_name": "Hoparlör & Ev Sinema Sistemi"
+  },
+  {
+    "id": 15117,
+    "parent_id": 15111,
+    "ad": "Media Player & Akıllı TV Kutusu",
+    "slug": "media-player-akilli-tv-kutusu",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/media-player-akilli-tv-kutusu",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15118,
+    "parent_id": 15111,
+    "ad": "Güvenlik Kamera Sistemi",
+    "slug": "guvenlik-kamera-sistemi",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/guvenlik-kamera-sistemi",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15119,
+    "parent_id": 15111,
+    "ad": "Uydu Ekipmanları",
+    "slug": "uydu-ekipmanlari",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/uydu-ekipmanlari",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15120,
+    "parent_id": 15111,
+    "ad": "Televizyon Aksesuarları",
+    "slug": "televizyon-aksesuarlari",
+    "url_path": "elektronik/tv-goruntu-ses-sistemi/televizyon-aksesuarlari",
+    "parent_name": "TV, Görüntü & Ses Sistemi"
+  },
+  {
+    "id": 15042,
+    "parent_id": 15018,
+    "ad": "Elektrikli Ev Aletleri",
+    "slug": "elektrikli-ev-aletleri",
+    "url_path": "elektronik/elektrikli-ev-aletleri",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15043,
+    "parent_id": 15042,
+    "ad": "İçecek Hazırlama",
+    "slug": "icecek-hazirlama",
+    "url_path": "elektronik/elektrikli-ev-aletleri/icecek-hazirlama",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15044,
+    "parent_id": 15043,
+    "ad": "Kahve Makinesi",
+    "slug": "kahve-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/icecek-hazirlama/kahve-makinesi",
+    "parent_name": "İçecek Hazırlama"
+  },
+  {
+    "id": 15045,
+    "parent_id": 15043,
+    "ad": "Çay Makinesi",
+    "slug": "cay-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/icecek-hazirlama/cay-makinesi",
+    "parent_name": "İçecek Hazırlama"
+  },
+  {
+    "id": 15046,
+    "parent_id": 15043,
+    "ad": "Kettle & Su Isıtıcı",
+    "slug": "kettle-su-isitici",
+    "url_path": "elektronik/elektrikli-ev-aletleri/icecek-hazirlama/kettle-su-isitici",
+    "parent_name": "İçecek Hazırlama"
+  },
+  {
+    "id": 15047,
+    "parent_id": 15043,
+    "ad": "Narenciye Sıkacağı",
+    "slug": "narenciye-sikacagi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/icecek-hazirlama/narenciye-sikacagi",
+    "parent_name": "İçecek Hazırlama"
+  },
+  {
+    "id": 15048,
+    "parent_id": 15042,
+    "ad": "Yiyecek Hazırlama",
+    "slug": "yiyecek-hazirlama",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15049,
+    "parent_id": 15048,
+    "ad": "Blender & Mikser",
+    "slug": "blender-mikser",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/blender-mikser",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15050,
+    "parent_id": 15048,
+    "ad": "Mısır Patlatma Makinesi",
+    "slug": "misir-patlatma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/misir-patlatma-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15051,
+    "parent_id": 15048,
+    "ad": "Waffle Makinesi",
+    "slug": "waffle-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/waffle-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15052,
+    "parent_id": 15048,
+    "ad": "Yoğurt Makinesi",
+    "slug": "yogurt-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/yogurt-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15053,
+    "parent_id": 15048,
+    "ad": "Kıyma Makinesi",
+    "slug": "kiyma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/kiyma-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15054,
+    "parent_id": 15048,
+    "ad": "Ekmek Yapma Makinesi",
+    "slug": "ekmek-yapma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/ekmek-yapma-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15055,
+    "parent_id": 15048,
+    "ad": "Hamur Yoğurma Makinesi",
+    "slug": "hamur-yogurma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/hamur-yogurma-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15056,
+    "parent_id": 15048,
+    "ad": "Dondurma Makinesi",
+    "slug": "dondurma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/dondurma-makinesi",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15057,
+    "parent_id": 15048,
+    "ad": "Mutfak Robotu",
+    "slug": "mutfak-robotu",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yiyecek-hazirlama/mutfak-robotu",
+    "parent_name": "Yiyecek Hazırlama"
+  },
+  {
+    "id": 15058,
+    "parent_id": 15042,
+    "ad": "Pişirme",
+    "slug": "pisirme",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15059,
+    "parent_id": 15058,
+    "ad": "Airfryer & Fritöz",
+    "slug": "airfryer-fritoz",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/airfryer-fritoz",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15060,
+    "parent_id": 15058,
+    "ad": "Tost Makinesi",
+    "slug": "tost-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/tost-makinesi",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15061,
+    "parent_id": 15058,
+    "ad": "Ekmek Kızartma Makinesi",
+    "slug": "ekmek-kizartma-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/ekmek-kizartma-makinesi",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15062,
+    "parent_id": 15058,
+    "ad": "Elektrikli Izgara",
+    "slug": "elektrikli-izgara",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/elektrikli-izgara",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15063,
+    "parent_id": 15058,
+    "ad": "Elektrikli Tencere & Tava",
+    "slug": "elektrikli-tencere-tava",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/elektrikli-tencere-tava",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15064,
+    "parent_id": 15058,
+    "ad": "Yumurta Pişirme Makinesi",
+    "slug": "yumurta-pisirme-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/pisirme/yumurta-pisirme-makinesi",
+    "parent_name": "Pişirme"
+  },
+  {
+    "id": 15065,
+    "parent_id": 15042,
+    "ad": "Ütü",
+    "slug": "utu",
+    "url_path": "elektronik/elektrikli-ev-aletleri/utu",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15066,
+    "parent_id": 15042,
+    "ad": "Süpürge",
+    "slug": "supurge",
+    "url_path": "elektronik/elektrikli-ev-aletleri/supurge",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15067,
+    "parent_id": 15042,
+    "ad": "Dikiş Makinesi",
+    "slug": "dikis-makinesi",
+    "url_path": "elektronik/elektrikli-ev-aletleri/dikis-makinesi",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15068,
+    "parent_id": 15042,
+    "ad": "Yedek Parça & Aksesuar",
+    "slug": "yedek-parca-aksesuar",
+    "url_path": "elektronik/elektrikli-ev-aletleri/yedek-parca-aksesuar",
+    "parent_name": "Elektrikli Ev Aletleri"
+  },
+  {
+    "id": 15069,
+    "parent_id": 15018,
+    "ad": "Beyaz Eşya",
+    "slug": "beyaz-esya",
+    "url_path": "elektronik/beyaz-esya",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15070,
+    "parent_id": 15069,
+    "ad": "Buzdolabı",
+    "slug": "buzdolabi",
+    "url_path": "elektronik/beyaz-esya/buzdolabi",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15071,
+    "parent_id": 15069,
+    "ad": "Çamaşır Makinesi",
+    "slug": "camasir-makinesi",
+    "url_path": "elektronik/beyaz-esya/camasir-makinesi",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15072,
+    "parent_id": 15069,
+    "ad": "Bulaşık Makinesi",
+    "slug": "bulasik-makinesi",
+    "url_path": "elektronik/beyaz-esya/bulasik-makinesi",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15073,
+    "parent_id": 15069,
+    "ad": "Ocak",
+    "slug": "ocak",
+    "url_path": "elektronik/beyaz-esya/ocak",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15074,
+    "parent_id": 15069,
+    "ad": "Fırın",
+    "slug": "firin",
+    "url_path": "elektronik/beyaz-esya/firin",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15075,
+    "parent_id": 15069,
+    "ad": "Çamaşır Kurutma Makinesi",
+    "slug": "camasir-kurutma-makinesi",
+    "url_path": "elektronik/beyaz-esya/camasir-kurutma-makinesi",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15076,
+    "parent_id": 15069,
+    "ad": "Aspiratör & Davlumbaz",
+    "slug": "aspirator-davlumbaz",
+    "url_path": "elektronik/beyaz-esya/aspirator-davlumbaz",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15077,
+    "parent_id": 15069,
+    "ad": "Mikrodalga Fırın",
+    "slug": "mikrodalga-firin",
+    "url_path": "elektronik/beyaz-esya/mikrodalga-firin",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15078,
+    "parent_id": 15069,
+    "ad": "Derin Dondurucu",
+    "slug": "derin-dondurucu",
+    "url_path": "elektronik/beyaz-esya/derin-dondurucu",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15079,
+    "parent_id": 15069,
+    "ad": "Su Sebili",
+    "slug": "su-sebili",
+    "url_path": "elektronik/beyaz-esya/su-sebili",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15080,
+    "parent_id": 15069,
+    "ad": "Yedek Parça",
+    "slug": "yedek-parca",
+    "url_path": "elektronik/beyaz-esya/yedek-parca",
+    "parent_name": "Beyaz Eşya"
+  },
+  {
+    "id": 15081,
+    "parent_id": 15018,
+    "ad": "Isıtma & Soğutma",
+    "slug": "isitma-sogutma",
+    "url_path": "elektronik/isitma-sogutma",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15082,
+    "parent_id": 15081,
+    "ad": "Klima",
+    "slug": "klima",
+    "url_path": "elektronik/isitma-sogutma/klima",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15083,
+    "parent_id": 15081,
+    "ad": "Kombi",
+    "slug": "kombi",
+    "url_path": "elektronik/isitma-sogutma/kombi",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15084,
+    "parent_id": 15081,
+    "ad": "Soba & Isıtıcı",
+    "slug": "soba-isitici",
+    "url_path": "elektronik/isitma-sogutma/soba-isitici",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15085,
+    "parent_id": 15081,
+    "ad": "Vantilatör",
+    "slug": "vantilator",
+    "url_path": "elektronik/isitma-sogutma/vantilator",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15086,
+    "parent_id": 15081,
+    "ad": "Hava Temizleyici ve Nemlendirici",
+    "slug": "hava-temizleyici-ve-nemlendirici",
+    "url_path": "elektronik/isitma-sogutma/hava-temizleyici-ve-nemlendirici",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15087,
+    "parent_id": 15081,
+    "ad": "Şofben & Termosifon",
+    "slug": "sofben-termosifon",
+    "url_path": "elektronik/isitma-sogutma/sofben-termosifon",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15088,
+    "parent_id": 15081,
+    "ad": "Elektrikli Şömine",
+    "slug": "elektrikli-somine",
+    "url_path": "elektronik/isitma-sogutma/elektrikli-somine",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15089,
+    "parent_id": 15081,
+    "ad": "Yedek Parça",
+    "slug": "yedek-parca-15089",
+    "url_path": "elektronik/isitma-sogutma/yedek-parca",
+    "parent_name": "Isıtma & Soğutma"
+  },
+  {
+    "id": 15121,
+    "parent_id": 15018,
+    "ad": "Fotoğraf & Kamera",
+    "slug": "fotograf-kamera",
+    "url_path": "elektronik/fotograf-kamera",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15122,
+    "parent_id": 15121,
+    "ad": "Dijital Fotoğraf Makinesi",
+    "slug": "dijital-fotograf-makinesi",
+    "url_path": "elektronik/fotograf-kamera/dijital-fotograf-makinesi",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15123,
+    "parent_id": 15121,
+    "ad": "Analog Fotoğraf Makinesi",
+    "slug": "analog-fotograf-makinesi",
+    "url_path": "elektronik/fotograf-kamera/analog-fotograf-makinesi",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15124,
+    "parent_id": 15121,
+    "ad": "Video Kamera",
+    "slug": "video-kamera",
+    "url_path": "elektronik/fotograf-kamera/video-kamera",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15125,
+    "parent_id": 15121,
+    "ad": "Lens & Filtre",
+    "slug": "lens-filtre",
+    "url_path": "elektronik/fotograf-kamera/lens-filtre",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15126,
+    "parent_id": 15121,
+    "ad": "Aksiyon Kamerası & Gimbal",
+    "slug": "aksiyon-kamerasi-gimbal",
+    "url_path": "elektronik/fotograf-kamera/aksiyon-kamerasi-gimbal",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15127,
+    "parent_id": 15121,
+    "ad": "Dürbün & Teleskop",
+    "slug": "durbun-teleskop",
+    "url_path": "elektronik/fotograf-kamera/durbun-teleskop",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15128,
+    "parent_id": 15121,
+    "ad": "Stüdyo & Işık Ekipmanları",
+    "slug": "studyo-isik-ekipmanlari",
+    "url_path": "elektronik/fotograf-kamera/studyo-isik-ekipmanlari",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15129,
+    "parent_id": 15121,
+    "ad": "Fotoğraf & Kamera Aksesuarları",
+    "slug": "fotograf-kamera-aksesuarlari",
+    "url_path": "elektronik/fotograf-kamera/fotograf-kamera-aksesuarlari",
+    "parent_name": "Fotoğraf & Kamera"
+  },
+  {
+    "id": 15130,
+    "parent_id": 15018,
+    "ad": "Giyilebilir Teknoloji",
+    "slug": "giyilebilir-teknoloji",
+    "url_path": "elektronik/giyilebilir-teknoloji",
+    "parent_name": "Elektronik"
+  },
+  {
+    "id": 15131,
+    "parent_id": 15130,
+    "ad": "Akıllı Bileklik",
+    "slug": "akilli-bileklik",
+    "url_path": "elektronik/giyilebilir-teknoloji/akilli-bileklik",
+    "parent_name": "Giyilebilir Teknoloji"
+  },
+  {
+    "id": 15132,
+    "parent_id": 15130,
+    "ad": "Akıllı Saat",
+    "slug": "akilli-saat",
+    "url_path": "elektronik/giyilebilir-teknoloji/akilli-saat",
+    "parent_name": "Giyilebilir Teknoloji"
+  },
+  {
+    "id": 15133,
+    "parent_id": 15130,
+    "ad": "Sanal Gerçeklik Gözlüğü",
+    "slug": "sanal-gerceklik-gozlugu",
+    "url_path": "elektronik/giyilebilir-teknoloji/sanal-gerceklik-gozlugu",
+    "parent_name": "Giyilebilir Teknoloji"
+  },
+  {
+    "id": 15134,
+    "parent_id": 0,
+    "ad": "Ev & Yaşam",
+    "slug": "ev-yasam",
+    "url_path": "ev-yasam",
+    "parent_name": null
+  },
+  {
+    "id": 15135,
+    "parent_id": 15134,
+    "ad": "Mobilya",
+    "slug": "mobilya",
+    "url_path": "ev-yasam/mobilya",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15136,
+    "parent_id": 15135,
+    "ad": "Oturma Odası & Salon",
+    "slug": "oturma-odasi-salon",
+    "url_path": "ev-yasam/mobilya/oturma-odasi-salon",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15137,
+    "parent_id": 15136,
+    "ad": "Koltuk",
+    "slug": "koltuk",
+    "url_path": "ev-yasam/mobilya/oturma-odasi-salon/koltuk",
+    "parent_name": "Oturma Odası & Salon"
+  },
+  {
+    "id": 15138,
+    "parent_id": 15136,
+    "ad": "TV Ünitesi",
+    "slug": "tv-unitesi",
+    "url_path": "ev-yasam/mobilya/oturma-odasi-salon/tv-unitesi",
+    "parent_name": "Oturma Odası & Salon"
+  },
+  {
+    "id": 15139,
+    "parent_id": 15136,
+    "ad": "Sehpa",
+    "slug": "sehpa",
+    "url_path": "ev-yasam/mobilya/oturma-odasi-salon/sehpa",
+    "parent_name": "Oturma Odası & Salon"
+  },
+  {
+    "id": 15140,
+    "parent_id": 15135,
+    "ad": "Yatak Odası",
+    "slug": "yatak-odasi",
+    "url_path": "ev-yasam/mobilya/yatak-odasi",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15141,
+    "parent_id": 15140,
+    "ad": "Yatak",
+    "slug": "yatak",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/yatak",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15142,
+    "parent_id": 15140,
+    "ad": "Gardırop",
+    "slug": "gardirop",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/gardirop",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15143,
+    "parent_id": 15140,
+    "ad": "Komodin & Şifonyer",
+    "slug": "komodin-sifonyer",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/komodin-sifonyer",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15144,
+    "parent_id": 15140,
+    "ad": "Baza",
+    "slug": "baza",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/baza",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15145,
+    "parent_id": 15140,
+    "ad": "Karyola",
+    "slug": "karyola",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/karyola",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15146,
+    "parent_id": 15140,
+    "ad": "Takı & Makyaj Dolabı",
+    "slug": "taki-makyaj-dolabi",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/taki-makyaj-dolabi",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15147,
+    "parent_id": 15140,
+    "ad": "Yatak Odası Takımı",
+    "slug": "yatak-odasi-takimi",
+    "url_path": "ev-yasam/mobilya/yatak-odasi/yatak-odasi-takimi",
+    "parent_name": "Yatak Odası"
+  },
+  {
+    "id": 15148,
+    "parent_id": 15135,
+    "ad": "Yemek Odası",
+    "slug": "yemek-odasi",
+    "url_path": "ev-yasam/mobilya/yemek-odasi",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15149,
+    "parent_id": 15148,
+    "ad": "Yemek Masası",
+    "slug": "yemek-masasi",
+    "url_path": "ev-yasam/mobilya/yemek-odasi/yemek-masasi",
+    "parent_name": "Yemek Odası"
+  },
+  {
+    "id": 15150,
+    "parent_id": 15148,
+    "ad": "Sandalye",
+    "slug": "sandalye",
+    "url_path": "ev-yasam/mobilya/yemek-odasi/sandalye",
+    "parent_name": "Yemek Odası"
+  },
+  {
+    "id": 15151,
+    "parent_id": 15148,
+    "ad": "Konsol & Vitrin",
+    "slug": "konsol-vitrin",
+    "url_path": "ev-yasam/mobilya/yemek-odasi/konsol-vitrin",
+    "parent_name": "Yemek Odası"
+  },
+  {
+    "id": 15152,
+    "parent_id": 15148,
+    "ad": "Yemek Odası Takımı",
+    "slug": "yemek-odasi-takimi",
+    "url_path": "ev-yasam/mobilya/yemek-odasi/yemek-odasi-takimi",
+    "parent_name": "Yemek Odası"
+  },
+  {
+    "id": 15153,
+    "parent_id": 15135,
+    "ad": "Mutfak & Banyo",
+    "slug": "mutfak-banyo",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15154,
+    "parent_id": 15153,
+    "ad": "Mutfak Masası",
+    "slug": "mutfak-masasi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/mutfak-masasi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15155,
+    "parent_id": 15153,
+    "ad": "Mutfak Sandalyesi",
+    "slug": "mutfak-sandalyesi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/mutfak-sandalyesi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15156,
+    "parent_id": 15153,
+    "ad": "Mutfak Dolabı",
+    "slug": "mutfak-dolabi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/mutfak-dolabi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15157,
+    "parent_id": 15153,
+    "ad": "Mutfak Rafı",
+    "slug": "mutfak-rafi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/mutfak-rafi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15158,
+    "parent_id": 15153,
+    "ad": "Mutfak Masa Takımı",
+    "slug": "mutfak-masa-takimi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/mutfak-masa-takimi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15159,
+    "parent_id": 15153,
+    "ad": "Banyo Dolabı",
+    "slug": "banyo-dolabi",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/banyo-dolabi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15160,
+    "parent_id": 15153,
+    "ad": "Banyo Rafları",
+    "slug": "banyo-raflari",
+    "url_path": "ev-yasam/mobilya/mutfak-banyo/banyo-raflari",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 21876,
+    "parent_id": 15153,
+    "ad": "Mutfak Tezgahı",
+    "slug": "mutfak-tezgahi",
+    "url_path": "mutfak-banyo/ev-yasam/mobilya/mutfak-tezgahi",
+    "parent_name": "Mutfak & Banyo"
+  },
+  {
+    "id": 15161,
+    "parent_id": 15135,
+    "ad": "Çocuk & Genç Odası",
+    "slug": "cocuk-genc-odasi",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15162,
+    "parent_id": 15161,
+    "ad": "Gardırop",
+    "slug": "gardirop-15162",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/gardirop",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15163,
+    "parent_id": 15161,
+    "ad": "Karyola",
+    "slug": "karyola-15163",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/karyola",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15164,
+    "parent_id": 15161,
+    "ad": "Komodin & Şifonyer",
+    "slug": "komodin-sifonyer-15164",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/komodin-sifonyer",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15165,
+    "parent_id": 15161,
+    "ad": "Sandalye",
+    "slug": "sandalye-15165",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/sandalye",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15166,
+    "parent_id": 15161,
+    "ad": "Kitaplık",
+    "slug": "kitaplik",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/kitaplik",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15167,
+    "parent_id": 15161,
+    "ad": "Çalışma Masası",
+    "slug": "calisma-masasi",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/calisma-masasi",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15168,
+    "parent_id": 15161,
+    "ad": "Bilgisayar Masası",
+    "slug": "bilgisayar-masasi",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/bilgisayar-masasi",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15169,
+    "parent_id": 15161,
+    "ad": "Ranza",
+    "slug": "ranza",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/ranza",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15170,
+    "parent_id": 15161,
+    "ad": "Çocuk & Genç Oda Takımı",
+    "slug": "cocuk-genc-oda-takimi",
+    "url_path": "ev-yasam/mobilya/cocuk-genc-odasi/cocuk-genc-oda-takimi",
+    "parent_name": "Çocuk & Genç Odası"
+  },
+  {
+    "id": 15171,
+    "parent_id": 15135,
+    "ad": "Bahçe Mobilyası",
+    "slug": "bahce-mobilyasi",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15172,
+    "parent_id": 15171,
+    "ad": "Masa & Sehpa",
+    "slug": "masa-sehpa",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/masa-sehpa",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15173,
+    "parent_id": 15171,
+    "ad": "Sandalye",
+    "slug": "sandalye-15173",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/sandalye",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15174,
+    "parent_id": 15171,
+    "ad": "Koltuk",
+    "slug": "koltuk-15174",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/koltuk",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15175,
+    "parent_id": 15171,
+    "ad": "Puf & Minder",
+    "slug": "puf-minder",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/puf-minder",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15176,
+    "parent_id": 15171,
+    "ad": "Salıncak & Hamak",
+    "slug": "salincak-hamak",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/salincak-hamak",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15177,
+    "parent_id": 15171,
+    "ad": "Şezlong & Şemsiye",
+    "slug": "sezlong-semsiye",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/sezlong-semsiye",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15178,
+    "parent_id": 15171,
+    "ad": "Tente",
+    "slug": "tente",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/tente",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15179,
+    "parent_id": 15171,
+    "ad": "Bahçe Takımı",
+    "slug": "bahce-takimi",
+    "url_path": "ev-yasam/mobilya/bahce-mobilyasi/bahce-takimi",
+    "parent_name": "Bahçe Mobilyası"
+  },
+  {
+    "id": 15180,
+    "parent_id": 15135,
+    "ad": "Antre & Hol",
+    "slug": "antre-hol",
+    "url_path": "ev-yasam/mobilya/antre-hol",
+    "parent_name": "Mobilya"
+  },
+  {
+    "id": 15186,
+    "parent_id": 15134,
+    "ad": "Mutfak Gereçleri & Sofra",
+    "slug": "mutfak-gerecleri-sofra",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15187,
+    "parent_id": 15186,
+    "ad": "Bardak & Kadeh",
+    "slug": "bardak-kadeh",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/bardak-kadeh",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15188,
+    "parent_id": 15186,
+    "ad": "Tabak & Kase",
+    "slug": "tabak-kase",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/tabak-kase",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15189,
+    "parent_id": 15186,
+    "ad": "Çatal & Kaşık & Bıçak",
+    "slug": "catal-kasik-bicak",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/catal-kasik-bicak",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15190,
+    "parent_id": 15186,
+    "ad": "Tencere & Tava",
+    "slug": "tencere-tava",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/tencere-tava",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15191,
+    "parent_id": 15186,
+    "ad": "Çaydanlık",
+    "slug": "caydanlik",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/caydanlik",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15192,
+    "parent_id": 15186,
+    "ad": "Cezve",
+    "slug": "cezve",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/cezve",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15193,
+    "parent_id": 15186,
+    "ad": "Baharat Takımı",
+    "slug": "baharat-takimi",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/baharat-takimi",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15194,
+    "parent_id": 15186,
+    "ad": "Yemek Takımı",
+    "slug": "yemek-takimi",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/yemek-takimi",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15195,
+    "parent_id": 15186,
+    "ad": "Saklama Kabı",
+    "slug": "saklama-kabi",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/saklama-kabi",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15196,
+    "parent_id": 15186,
+    "ad": "Fırın & Kek Kalıpları",
+    "slug": "firin-kek-kaliplari",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/firin-kek-kaliplari",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15197,
+    "parent_id": 15186,
+    "ad": "French Press",
+    "slug": "french-press",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/french-press",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15198,
+    "parent_id": 15186,
+    "ad": "Tepsi",
+    "slug": "tepsi",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/tepsi",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15199,
+    "parent_id": 15186,
+    "ad": "Sofra, Servis & Sunum",
+    "slug": "sofra-servis-sunum",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/sofra-servis-sunum",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 21875,
+    "parent_id": 15186,
+    "ad": "Sürahi & Karaf",
+    "slug": "surahi-karaf",
+    "url_path": "ev-yasam/mutfak-gerecleri-sofra/surahi-karaf",
+    "parent_name": "Mutfak Gereçleri & Sofra"
+  },
+  {
+    "id": 15213,
+    "parent_id": 15134,
+    "ad": "Ev Tekstili",
+    "slug": "ev-tekstili",
+    "url_path": "ev-yasam/ev-tekstili",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15214,
+    "parent_id": 15213,
+    "ad": "Banyo Tekstili",
+    "slug": "banyo-tekstili",
+    "url_path": "ev-yasam/ev-tekstili/banyo-tekstili",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15215,
+    "parent_id": 15213,
+    "ad": "Mutfak Tekstili",
+    "slug": "mutfak-tekstili",
+    "url_path": "ev-yasam/ev-tekstili/mutfak-tekstili",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15216,
+    "parent_id": 15213,
+    "ad": "Yatak Odası Tekstili",
+    "slug": "yatak-odasi-tekstili",
+    "url_path": "ev-yasam/ev-tekstili/yatak-odasi-tekstili",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15217,
+    "parent_id": 15213,
+    "ad": "Salon Tekstili",
+    "slug": "salon-tekstili",
+    "url_path": "ev-yasam/ev-tekstili/salon-tekstili",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15218,
+    "parent_id": 15213,
+    "ad": "Halı & Kilim",
+    "slug": "hali-kilim",
+    "url_path": "ev-yasam/ev-tekstili/hali-kilim",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15219,
+    "parent_id": 15213,
+    "ad": "Perde",
+    "slug": "perde",
+    "url_path": "ev-yasam/ev-tekstili/perde",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15220,
+    "parent_id": 15213,
+    "ad": "Bohça & Hurç",
+    "slug": "bohca-hurc",
+    "url_path": "ev-yasam/ev-tekstili/bohca-hurc",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15221,
+    "parent_id": 15213,
+    "ad": "Seccade",
+    "slug": "seccade",
+    "url_path": "ev-yasam/ev-tekstili/seccade",
+    "parent_name": "Ev Tekstili"
+  },
+  {
+    "id": 15200,
+    "parent_id": 15134,
+    "ad": "Ev Dekorasyonu",
+    "slug": "ev-dekorasyonu",
+    "url_path": "ev-yasam/ev-dekorasyonu",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15201,
+    "parent_id": 15200,
+    "ad": "Duvar & Masa Saati",
+    "slug": "duvar-masa-saati",
+    "url_path": "ev-yasam/ev-dekorasyonu/duvar-masa-saati",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15202,
+    "parent_id": 15200,
+    "ad": "Ayna",
+    "slug": "ayna",
+    "url_path": "ev-yasam/ev-dekorasyonu/ayna",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15203,
+    "parent_id": 15200,
+    "ad": "Tablo",
+    "slug": "tablo",
+    "url_path": "ev-yasam/ev-dekorasyonu/tablo",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15204,
+    "parent_id": 15200,
+    "ad": "Biblo",
+    "slug": "biblo",
+    "url_path": "ev-yasam/ev-dekorasyonu/biblo",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15205,
+    "parent_id": 15200,
+    "ad": "Vazo",
+    "slug": "vazo",
+    "url_path": "ev-yasam/ev-dekorasyonu/vazo",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15206,
+    "parent_id": 15200,
+    "ad": "Çerçeve",
+    "slug": "cerceve",
+    "url_path": "ev-yasam/ev-dekorasyonu/cerceve",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15207,
+    "parent_id": 15200,
+    "ad": "Şamdan & Mumluk",
+    "slug": "samdan-mumluk",
+    "url_path": "ev-yasam/ev-dekorasyonu/samdan-mumluk",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15208,
+    "parent_id": 15200,
+    "ad": "Dekoratif Saksı",
+    "slug": "dekoratif-saksi",
+    "url_path": "ev-yasam/ev-dekorasyonu/dekoratif-saksi",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15209,
+    "parent_id": 15200,
+    "ad": "Mum & Koku",
+    "slug": "mum-koku",
+    "url_path": "ev-yasam/ev-dekorasyonu/mum-koku",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15210,
+    "parent_id": 15200,
+    "ad": "Yapay Çiçek",
+    "slug": "yapay-cicek",
+    "url_path": "ev-yasam/ev-dekorasyonu/yapay-cicek",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15211,
+    "parent_id": 15200,
+    "ad": "Duvar Kağıdı",
+    "slug": "duvar-kagidi",
+    "url_path": "ev-yasam/ev-dekorasyonu/duvar-kagidi",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15212,
+    "parent_id": 15200,
+    "ad": "Parti Malzemeleri",
+    "slug": "parti-malzemeleri",
+    "url_path": "ev-yasam/ev-dekorasyonu/parti-malzemeleri",
+    "parent_name": "Ev Dekorasyonu"
+  },
+  {
+    "id": 15181,
+    "parent_id": 15134,
+    "ad": "Aydınlatma",
+    "slug": "aydinlatma",
+    "url_path": "ev-yasam/aydinlatma",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15182,
+    "parent_id": 15181,
+    "ad": "Lambader",
+    "slug": "lambader",
+    "url_path": "ev-yasam/aydinlatma/lambader",
+    "parent_name": "Aydınlatma"
+  },
+  {
+    "id": 15183,
+    "parent_id": 15181,
+    "ad": "Abajur & Masa Lambası",
+    "slug": "abajur-masa-lambasi",
+    "url_path": "ev-yasam/aydinlatma/abajur-masa-lambasi",
+    "parent_name": "Aydınlatma"
+  },
+  {
+    "id": 15184,
+    "parent_id": 15181,
+    "ad": "Ampul",
+    "slug": "ampul",
+    "url_path": "ev-yasam/aydinlatma/ampul",
+    "parent_name": "Aydınlatma"
+  },
+  {
+    "id": 15185,
+    "parent_id": 15181,
+    "ad": "Aplik",
+    "slug": "aplik",
+    "url_path": "ev-yasam/aydinlatma/aplik",
+    "parent_name": "Aydınlatma"
+  },
+  {
+    "id": 21865,
+    "parent_id": 15181,
+    "ad": "Avize",
+    "slug": "avize",
+    "url_path": "ev-yasam/aydinlatma/avize",
+    "parent_name": "Aydınlatma"
+  },
+  {
+    "id": 15222,
+    "parent_id": 15134,
+    "ad": "Ev Gereçleri",
+    "slug": "ev-gerecleri",
+    "url_path": "ev-yasam/ev-gerecleri",
+    "parent_name": "Ev & Yaşam"
+  },
+  {
+    "id": 15223,
+    "parent_id": 15222,
+    "ad": "Ütü Masası",
+    "slug": "utu-masasi",
+    "url_path": "ev-yasam/ev-gerecleri/utu-masasi",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15224,
+    "parent_id": 15222,
+    "ad": "Çöp Kutusu",
+    "slug": "cop-kutusu",
+    "url_path": "ev-yasam/ev-gerecleri/cop-kutusu",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15225,
+    "parent_id": 15222,
+    "ad": "Çamaşırlık",
+    "slug": "camasirlik",
+    "url_path": "ev-yasam/ev-gerecleri/camasirlik",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15226,
+    "parent_id": 15222,
+    "ad": "Askı",
+    "slug": "aski",
+    "url_path": "ev-yasam/ev-gerecleri/aski",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15227,
+    "parent_id": 15222,
+    "ad": "Pazar Arabası & Çantası",
+    "slug": "pazar-arabasi-cantasi",
+    "url_path": "ev-yasam/ev-gerecleri/pazar-arabasi-cantasi",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15228,
+    "parent_id": 15222,
+    "ad": "Pratik Ev Eşyaları",
+    "slug": "pratik-ev-esyalari",
+    "url_path": "ev-yasam/ev-gerecleri/pratik-ev-esyalari",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 15229,
+    "parent_id": 15222,
+    "ad": "Temizlik Malzemeleri",
+    "slug": "temizlik-malzemeleri",
+    "url_path": "ev-yasam/ev-gerecleri/temizlik-malzemeleri",
+    "parent_name": "Ev Gereçleri"
+  },
+  {
+    "id": 21762,
+    "parent_id": 0,
+    "ad": "Motosiklet",
+    "slug": "motosiklet",
+    "url_path": "motosiklet",
+    "parent_name": null
+  },
+  {
+    "id": 21763,
+    "parent_id": 21762,
+    "ad": "Motosiklet",
+    "slug": "motosiklet-21763",
+    "url_path": "motosiklet/motosiklet-21763",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21764,
+    "parent_id": 21762,
+    "ad": "Aksesuarlar",
+    "slug": "aksesuarlar",
+    "url_path": "motosiklet/aksesuarlar",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21765,
+    "parent_id": 21764,
+    "ad": "Elektronik Ürünler",
+    "slug": "elektronik-urunler",
+    "url_path": "motosiklet/aksesuarlar/elektronik-urunler",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21766,
+    "parent_id": 21764,
+    "ad": "Dış Aksesuar",
+    "slug": "dis-aksesuar-21766",
+    "url_path": "motosiklet/aksesuarlar/dis-aksesuar-21766",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21767,
+    "parent_id": 21764,
+    "ad": "Koruma",
+    "slug": "koruma",
+    "url_path": "motosiklet/aksesuarlar/koruma",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21768,
+    "parent_id": 21764,
+    "ad": "Bakım Ürünleri",
+    "slug": "bakim-urunleri",
+    "url_path": "motosiklet/aksesuarlar/bakim-urunleri",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21769,
+    "parent_id": 21764,
+    "ad": "Bağlama & Taşıma",
+    "slug": "baglama-tasima",
+    "url_path": "motosiklet/aksesuarlar/baglama-tasima",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21770,
+    "parent_id": 21764,
+    "ad": "Reflektif Ürünler",
+    "slug": "reflektif-urunler",
+    "url_path": "motosiklet/aksesuarlar/reflektif-urunler",
+    "parent_name": "Aksesuarlar"
+  },
+  {
+    "id": 21771,
+    "parent_id": 21762,
+    "ad": "Yedek Parça",
+    "slug": "yedek-parca-21771",
+    "url_path": "motosiklet/yedek-parca-21771",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21772,
+    "parent_id": 21762,
+    "ad": "Jant & Lastik",
+    "slug": "jant-lastik-21772",
+    "url_path": "motosiklet/jant-lastik-21772",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21773,
+    "parent_id": 21772,
+    "ad": "Jant",
+    "slug": "jant-21773",
+    "url_path": "motosiklet/jant-lastik-21772/jant-21773",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 21774,
+    "parent_id": 21772,
+    "ad": "Lastik",
+    "slug": "lastik-21774",
+    "url_path": "motosiklet/jant-lastik-21772/lastik-21774",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 21775,
+    "parent_id": 21772,
+    "ad": "Jant & Lastik Takımı",
+    "slug": "jant-lastik-takimi",
+    "url_path": "motosiklet/jant-lastik-21772/jant-lastik-takimi",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 21776,
+    "parent_id": 21772,
+    "ad": "Aksesuar & Ekipman",
+    "slug": "aksesuar-ekipman-21776",
+    "url_path": "motosiklet/jant-lastik-21772/aksesuar-ekipman-21776",
+    "parent_name": "Jant & Lastik"
+  },
+  {
+    "id": 21777,
+    "parent_id": 21762,
+    "ad": "Kask",
+    "slug": "kask",
+    "url_path": "motosiklet/kask",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21778,
+    "parent_id": 21777,
+    "ad": "Açık Kask",
+    "slug": "acik-kask",
+    "url_path": "motosiklet/kask/acik-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21779,
+    "parent_id": 21777,
+    "ad": "Kapalı Kask",
+    "slug": "kapali-kask",
+    "url_path": "motosiklet/kask/kapali-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21780,
+    "parent_id": 21777,
+    "ad": "Çeneden Açılır Kask",
+    "slug": "ceneden-acilir-kask",
+    "url_path": "motosiklet/kask/ceneden-acilir-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21781,
+    "parent_id": 21777,
+    "ad": "Kross Kask",
+    "slug": "kross-kask",
+    "url_path": "motosiklet/kask/kross-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21782,
+    "parent_id": 21777,
+    "ad": "Motosiklet Chopper Kask",
+    "slug": "motosiklet-chopper-kask",
+    "url_path": "motosiklet/kask/motosiklet-chopper-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21783,
+    "parent_id": 21777,
+    "ad": "Çocuk Kask",
+    "slug": "cocuk-kask",
+    "url_path": "motosiklet/kask/cocuk-kask",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21784,
+    "parent_id": 21777,
+    "ad": "Vizör",
+    "slug": "vizor",
+    "url_path": "motosiklet/kask/vizor",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21785,
+    "parent_id": 21777,
+    "ad": "Kask Askısı",
+    "slug": "kask-askisi",
+    "url_path": "motosiklet/kask/kask-askisi",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21786,
+    "parent_id": 21777,
+    "ad": "Kask Filesi",
+    "slug": "kask-filesi",
+    "url_path": "motosiklet/kask/kask-filesi",
+    "parent_name": "Kask"
+  },
+  {
+    "id": 21787,
+    "parent_id": 21762,
+    "ad": "Giyim & Ekipman",
+    "slug": "giyim-ekipman",
+    "url_path": "motosiklet/giyim-ekipman",
+    "parent_name": "Motosiklet"
+  },
+  {
+    "id": 21788,
+    "parent_id": 21787,
+    "ad": "Boyunluk",
+    "slug": "boyunluk",
+    "url_path": "motosiklet/giyim-ekipman/boyunluk",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21789,
+    "parent_id": 21787,
+    "ad": "Bellik",
+    "slug": "bellik",
+    "url_path": "motosiklet/giyim-ekipman/bellik",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21790,
+    "parent_id": 21787,
+    "ad": "Dirseklik",
+    "slug": "dirseklik",
+    "url_path": "motosiklet/giyim-ekipman/dirseklik",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21791,
+    "parent_id": 21787,
+    "ad": "Dizlik",
+    "slug": "dizlik",
+    "url_path": "motosiklet/giyim-ekipman/dizlik",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21792,
+    "parent_id": 21787,
+    "ad": "Sırtlık",
+    "slug": "sirtlik",
+    "url_path": "motosiklet/giyim-ekipman/sirtlik",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21793,
+    "parent_id": 21787,
+    "ad": "Ayakkabı & Bot",
+    "slug": "ayakkabi-bot",
+    "url_path": "motosiklet/giyim-ekipman/ayakkabi-bot",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21794,
+    "parent_id": 21787,
+    "ad": "Mont",
+    "slug": "mont-21794",
+    "url_path": "motosiklet/giyim-ekipman/mont-21794",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21795,
+    "parent_id": 21787,
+    "ad": "Pantolon",
+    "slug": "pantolon-21795",
+    "url_path": "motosiklet/giyim-ekipman/pantolon-21795",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21796,
+    "parent_id": 21787,
+    "ad": "Tulum",
+    "slug": "tulum-21796",
+    "url_path": "motosiklet/giyim-ekipman/tulum-21796",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21797,
+    "parent_id": 21787,
+    "ad": "Eldiven",
+    "slug": "eldiven",
+    "url_path": "motosiklet/giyim-ekipman/eldiven",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21798,
+    "parent_id": 21787,
+    "ad": "Baf",
+    "slug": "baf",
+    "url_path": "motosiklet/giyim-ekipman/baf",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21799,
+    "parent_id": 21787,
+    "ad": "Balaklava & Bandana & Maske",
+    "slug": "balaklava-bandana-maske",
+    "url_path": "motosiklet/giyim-ekipman/balaklava-bandana-maske",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21800,
+    "parent_id": 21787,
+    "ad": "Diz Örtüsü",
+    "slug": "diz-ortusu",
+    "url_path": "motosiklet/giyim-ekipman/diz-ortusu",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21801,
+    "parent_id": 21787,
+    "ad": "Gözlük",
+    "slug": "gozluk-21801",
+    "url_path": "motosiklet/giyim-ekipman/gozluk-21801",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 21802,
+    "parent_id": 21787,
+    "ad": "Çanta",
+    "slug": "canta-21802",
+    "url_path": "motosiklet/giyim-ekipman/canta-21802",
+    "parent_name": "Giyim & Ekipman"
+  },
+  {
+    "id": 15308,
+    "parent_id": 0,
+    "ad": "Giyim & Aksesuar",
+    "slug": "giyim-aksesuar",
+    "url_path": "giyim-aksesuar",
+    "parent_name": null
+  },
+  {
+    "id": 15309,
+    "parent_id": 15308,
+    "ad": "Kadın",
+    "slug": "kadin",
+    "url_path": "giyim-aksesuar/kadin",
+    "parent_name": "Giyim & Aksesuar"
+  },
+  {
+    "id": 15310,
+    "parent_id": 15309,
+    "ad": "Üst Giyim",
+    "slug": "ust-giyim-15310",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15311,
+    "parent_id": 15310,
+    "ad": "Bluz & Büstiyer",
+    "slug": "bluz-bustiyer",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/bluz-bustiyer",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15312,
+    "parent_id": 15310,
+    "ad": "Gömlek",
+    "slug": "gomlek-15312",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/gomlek",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15313,
+    "parent_id": 15310,
+    "ad": "Tshirt",
+    "slug": "tshirt-15313",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/tshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15314,
+    "parent_id": 15310,
+    "ad": "Hırka & Kazak",
+    "slug": "hirka-kazak-15314",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/hirka-kazak",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15315,
+    "parent_id": 15310,
+    "ad": "Tunik",
+    "slug": "tunik",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/tunik",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15316,
+    "parent_id": 15310,
+    "ad": "Sweatshirt",
+    "slug": "sweatshirt",
+    "url_path": "giyim-aksesuar/kadin/ust-giyim/sweatshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15317,
+    "parent_id": 15309,
+    "ad": "Alt Giyim",
+    "slug": "alt-giyim-15317",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15318,
+    "parent_id": 15317,
+    "ad": "Jean",
+    "slug": "jean",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/jean",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15319,
+    "parent_id": 15317,
+    "ad": "Pantolon",
+    "slug": "pantolon-15319",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/pantolon",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15320,
+    "parent_id": 15317,
+    "ad": "Etek",
+    "slug": "etek-15320",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/etek",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15321,
+    "parent_id": 15317,
+    "ad": "Şort",
+    "slug": "sort-15321",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/sort",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15322,
+    "parent_id": 15317,
+    "ad": "Tulum",
+    "slug": "tulum-15322",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/tulum",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15323,
+    "parent_id": 15317,
+    "ad": "Tayt",
+    "slug": "tayt-15323",
+    "url_path": "giyim-aksesuar/kadin/alt-giyim/tayt",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15324,
+    "parent_id": 15309,
+    "ad": "Dış Giyim",
+    "slug": "dis-giyim-15324",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15325,
+    "parent_id": 15324,
+    "ad": "Kaban & Palto",
+    "slug": "kaban-palto",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/kaban-palto",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15326,
+    "parent_id": 15324,
+    "ad": "Mont",
+    "slug": "mont",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/mont",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15327,
+    "parent_id": 15324,
+    "ad": "Trençkot & Pardösü",
+    "slug": "trenckot-pardosu",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/trenckot-pardosu",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15328,
+    "parent_id": 15324,
+    "ad": "Ceket",
+    "slug": "ceket",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/ceket",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15329,
+    "parent_id": 15324,
+    "ad": "Yağmurluk",
+    "slug": "yagmurluk-15329",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/yagmurluk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15330,
+    "parent_id": 15324,
+    "ad": "Yelek",
+    "slug": "yelek-15330",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/yelek",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15331,
+    "parent_id": 15324,
+    "ad": "Parka",
+    "slug": "parka",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/parka",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15332,
+    "parent_id": 15324,
+    "ad": "Peluş Kürk",
+    "slug": "pelus-kurk",
+    "url_path": "giyim-aksesuar/kadin/dis-giyim/pelus-kurk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15333,
+    "parent_id": 15309,
+    "ad": "Ev Giyim",
+    "slug": "ev-giyim-15333",
+    "url_path": "giyim-aksesuar/kadin/ev-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15334,
+    "parent_id": 15333,
+    "ad": "Pijama",
+    "slug": "pijama",
+    "url_path": "giyim-aksesuar/kadin/ev-giyim/pijama",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15335,
+    "parent_id": 15333,
+    "ad": "Eşofman",
+    "slug": "esofman-15335",
+    "url_path": "giyim-aksesuar/kadin/ev-giyim/esofman",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15336,
+    "parent_id": 15333,
+    "ad": "Sabahlık & Gecelik",
+    "slug": "sabahlik-gecelik",
+    "url_path": "giyim-aksesuar/kadin/ev-giyim/sabahlik-gecelik",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15337,
+    "parent_id": 15309,
+    "ad": "Plaj Giyim",
+    "slug": "plaj-giyim-15337",
+    "url_path": "giyim-aksesuar/kadin/plaj-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15338,
+    "parent_id": 15309,
+    "ad": "Tesettür Giyim",
+    "slug": "tesettur-giyim",
+    "url_path": "giyim-aksesuar/kadin/tesettur-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15339,
+    "parent_id": 15309,
+    "ad": "Hamile Giyim",
+    "slug": "hamile-giyim",
+    "url_path": "giyim-aksesuar/kadin/hamile-giyim",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15340,
+    "parent_id": 15309,
+    "ad": "Elbise",
+    "slug": "elbise-15340",
+    "url_path": "giyim-aksesuar/kadin/elbise",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15341,
+    "parent_id": 15309,
+    "ad": "Gelinlik",
+    "slug": "gelinlik",
+    "url_path": "giyim-aksesuar/kadin/gelinlik",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15342,
+    "parent_id": 15309,
+    "ad": "Ayakkabı",
+    "slug": "ayakkabi-15342",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15343,
+    "parent_id": 15342,
+    "ad": "Topuklu Ayakkabı",
+    "slug": "topuklu-ayakkabi",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/topuklu-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15344,
+    "parent_id": 15342,
+    "ad": "Spor Ayakkabı",
+    "slug": "spor-ayakkabi-15344",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/spor-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15345,
+    "parent_id": 15342,
+    "ad": "Bot",
+    "slug": "bot-15345",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/bot",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15346,
+    "parent_id": 15342,
+    "ad": "Çizme",
+    "slug": "cizme",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/cizme",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15347,
+    "parent_id": 15342,
+    "ad": "Babet",
+    "slug": "babet",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/babet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15348,
+    "parent_id": 15342,
+    "ad": "Sandalet",
+    "slug": "sandalet-15348",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/sandalet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15349,
+    "parent_id": 15342,
+    "ad": "Terlik",
+    "slug": "terlik",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/terlik",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15350,
+    "parent_id": 15342,
+    "ad": "Oxford & Loafer",
+    "slug": "oxford-loafer",
+    "url_path": "giyim-aksesuar/kadin/ayakkabi/oxford-loafer",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15351,
+    "parent_id": 15309,
+    "ad": "Çanta",
+    "slug": "canta",
+    "url_path": "giyim-aksesuar/kadin/canta",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15352,
+    "parent_id": 15351,
+    "ad": "Kol Çantası",
+    "slug": "kol-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/kol-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15353,
+    "parent_id": 15351,
+    "ad": "Askılı Çanta",
+    "slug": "askili-canta",
+    "url_path": "giyim-aksesuar/kadin/canta/askili-canta",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15354,
+    "parent_id": 15351,
+    "ad": "Sırt Çantası",
+    "slug": "sirt-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/sirt-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15355,
+    "parent_id": 15351,
+    "ad": "Bel Çantası",
+    "slug": "bel-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/bel-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15356,
+    "parent_id": 15351,
+    "ad": "Portföy & El Çantası",
+    "slug": "portfoy-el-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/portfoy-el-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15357,
+    "parent_id": 15351,
+    "ad": "Makyaj Çantası",
+    "slug": "makyaj-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/makyaj-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15358,
+    "parent_id": 15351,
+    "ad": "Plaj Çantası",
+    "slug": "plaj-cantasi",
+    "url_path": "giyim-aksesuar/kadin/canta/plaj-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15359,
+    "parent_id": 15351,
+    "ad": "Valiz & Bavul",
+    "slug": "valiz-bavul",
+    "url_path": "giyim-aksesuar/kadin/canta/valiz-bavul",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15360,
+    "parent_id": 15351,
+    "ad": "Cüzdan",
+    "slug": "cuzdan",
+    "url_path": "giyim-aksesuar/kadin/canta/cuzdan",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15361,
+    "parent_id": 15309,
+    "ad": "Aksesuar",
+    "slug": "aksesuar-15361",
+    "url_path": "giyim-aksesuar/kadin/aksesuar",
+    "parent_name": "Kadın"
+  },
+  {
+    "id": 15362,
+    "parent_id": 15361,
+    "ad": "Saat",
+    "slug": "saat",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/saat",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15363,
+    "parent_id": 15361,
+    "ad": "Gözlük",
+    "slug": "gozluk",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/gozluk",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15364,
+    "parent_id": 15361,
+    "ad": "Takı",
+    "slug": "taki",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/taki",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15365,
+    "parent_id": 15361,
+    "ad": "Kemer",
+    "slug": "kemer",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/kemer",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15366,
+    "parent_id": 15361,
+    "ad": "Şapka",
+    "slug": "sapka-15366",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/sapka",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15367,
+    "parent_id": 15361,
+    "ad": "Atkı & Bere & Eldiven",
+    "slug": "atki-bere-eldiven-15367",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/atki-bere-eldiven",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15368,
+    "parent_id": 15361,
+    "ad": "Eşarp & Şal & Fular",
+    "slug": "esarp-sal-fular",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/esarp-sal-fular",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15369,
+    "parent_id": 15361,
+    "ad": "Çorap",
+    "slug": "corap-15369",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/corap",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15370,
+    "parent_id": 15361,
+    "ad": "Saç Aksesuarları",
+    "slug": "sac-aksesuarlari-15370",
+    "url_path": "giyim-aksesuar/kadin/aksesuar/sac-aksesuarlari",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15371,
+    "parent_id": 15308,
+    "ad": "Erkek",
+    "slug": "erkek",
+    "url_path": "giyim-aksesuar/erkek",
+    "parent_name": "Giyim & Aksesuar"
+  },
+  {
+    "id": 15372,
+    "parent_id": 15371,
+    "ad": "Üst Giyim",
+    "slug": "ust-giyim-15372",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15373,
+    "parent_id": 15372,
+    "ad": "Gömlek",
+    "slug": "gomlek-15373",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim/gomlek",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15374,
+    "parent_id": 15372,
+    "ad": "Tshirt",
+    "slug": "tshirt-15374",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim/tshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15375,
+    "parent_id": 15372,
+    "ad": "Hırka & Kazak",
+    "slug": "hirka-kazak-15375",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim/hirka-kazak",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15376,
+    "parent_id": 15372,
+    "ad": "Süveter",
+    "slug": "suveter",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim/suveter",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 21830,
+    "parent_id": 15372,
+    "ad": "Sweatshirt",
+    "slug": "sweatshirt-21830",
+    "url_path": "giyim-aksesuar/erkek/ust-giyim-15372/sweatshirt-21830",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15377,
+    "parent_id": 15371,
+    "ad": "Alt Giyim",
+    "slug": "alt-giyim-15377",
+    "url_path": "giyim-aksesuar/erkek/alt-giyim",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15378,
+    "parent_id": 15377,
+    "ad": "Jean",
+    "slug": "jean-15378",
+    "url_path": "giyim-aksesuar/erkek/alt-giyim/jean",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15379,
+    "parent_id": 15377,
+    "ad": "Pantolon",
+    "slug": "pantolon-15379",
+    "url_path": "giyim-aksesuar/erkek/alt-giyim/pantolon",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15380,
+    "parent_id": 15377,
+    "ad": "Şort",
+    "slug": "sort-15380",
+    "url_path": "giyim-aksesuar/erkek/alt-giyim/sort",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15381,
+    "parent_id": 15371,
+    "ad": "Dış Giyim",
+    "slug": "dis-giyim-15381",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15382,
+    "parent_id": 15381,
+    "ad": "Kaban & Palto",
+    "slug": "kaban-palto-15382",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/kaban-palto",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15383,
+    "parent_id": 15381,
+    "ad": "Mont",
+    "slug": "mont-15383",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/mont",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15384,
+    "parent_id": 15381,
+    "ad": "Trençkot & Pardösü",
+    "slug": "trenckot-pardosu-15384",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/trenckot-pardosu",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15385,
+    "parent_id": 15381,
+    "ad": "Ceket",
+    "slug": "ceket-15385",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/ceket",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15386,
+    "parent_id": 15381,
+    "ad": "Yağmurluk",
+    "slug": "yagmurluk-15386",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/yagmurluk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15387,
+    "parent_id": 15381,
+    "ad": "Yelek",
+    "slug": "yelek-15387",
+    "url_path": "giyim-aksesuar/erkek/dis-giyim/yelek",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15388,
+    "parent_id": 15371,
+    "ad": "Ev Giyim",
+    "slug": "ev-giyim-15388",
+    "url_path": "giyim-aksesuar/erkek/ev-giyim",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15389,
+    "parent_id": 15388,
+    "ad": "Pijama",
+    "slug": "pijama-15389",
+    "url_path": "giyim-aksesuar/erkek/ev-giyim/pijama",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15390,
+    "parent_id": 15388,
+    "ad": "Eşofman",
+    "slug": "esofman-15390",
+    "url_path": "giyim-aksesuar/erkek/ev-giyim/esofman",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15391,
+    "parent_id": 15371,
+    "ad": "Plaj Giyim",
+    "slug": "plaj-giyim-15391",
+    "url_path": "giyim-aksesuar/erkek/plaj-giyim",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15392,
+    "parent_id": 15391,
+    "ad": "Mayo & Deniz Şortu",
+    "slug": "mayo-deniz-sortu",
+    "url_path": "giyim-aksesuar/erkek/plaj-giyim/mayo-deniz-sortu",
+    "parent_name": "Plaj Giyim"
+  },
+  {
+    "id": 15393,
+    "parent_id": 15371,
+    "ad": "Takım Elbise",
+    "slug": "takim-elbise",
+    "url_path": "giyim-aksesuar/erkek/takim-elbise",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15394,
+    "parent_id": 15371,
+    "ad": "Damatlık",
+    "slug": "damatlik",
+    "url_path": "giyim-aksesuar/erkek/damatlik",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15395,
+    "parent_id": 15371,
+    "ad": "Ayakkabı",
+    "slug": "ayakkabi-15395",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15396,
+    "parent_id": 15395,
+    "ad": "Spor Ayakkabı",
+    "slug": "spor-ayakkabi-15396",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi/spor-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15397,
+    "parent_id": 15395,
+    "ad": "Günlük Ayakkabı",
+    "slug": "gunluk-ayakkabi",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi/gunluk-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15398,
+    "parent_id": 15395,
+    "ad": "Bot",
+    "slug": "bot-15398",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi/bot",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15399,
+    "parent_id": 15395,
+    "ad": "Sandalet",
+    "slug": "sandalet-15399",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi/sandalet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15400,
+    "parent_id": 15395,
+    "ad": "Terlik",
+    "slug": "terlik-15400",
+    "url_path": "giyim-aksesuar/erkek/ayakkabi/terlik",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15401,
+    "parent_id": 15371,
+    "ad": "Çanta",
+    "slug": "canta-15401",
+    "url_path": "giyim-aksesuar/erkek/canta",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15402,
+    "parent_id": 15401,
+    "ad": "Sırt Çantası",
+    "slug": "sirt-cantasi-15402",
+    "url_path": "giyim-aksesuar/erkek/canta/sirt-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15403,
+    "parent_id": 15401,
+    "ad": "Spor Çantası",
+    "slug": "spor-cantasi",
+    "url_path": "giyim-aksesuar/erkek/canta/spor-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15404,
+    "parent_id": 15401,
+    "ad": "Bel Çantası",
+    "slug": "bel-cantasi-15404",
+    "url_path": "giyim-aksesuar/erkek/canta/bel-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15405,
+    "parent_id": 15401,
+    "ad": "Postacı Çantası",
+    "slug": "postaci-cantasi",
+    "url_path": "giyim-aksesuar/erkek/canta/postaci-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15406,
+    "parent_id": 15401,
+    "ad": "Evrak Çantası",
+    "slug": "evrak-cantasi",
+    "url_path": "giyim-aksesuar/erkek/canta/evrak-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15407,
+    "parent_id": 15401,
+    "ad": "Valiz & Bavul",
+    "slug": "valiz-bavul-15407",
+    "url_path": "giyim-aksesuar/erkek/canta/valiz-bavul",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 21866,
+    "parent_id": 15401,
+    "ad": "Cüzdan",
+    "slug": "cuzdan-21866",
+    "url_path": "giyim-aksesuar/erkek/canta-15401/cuzdan-21866",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15408,
+    "parent_id": 15371,
+    "ad": "Aksesuar",
+    "slug": "aksesuar-15408",
+    "url_path": "giyim-aksesuar/erkek/aksesuar",
+    "parent_name": "Erkek"
+  },
+  {
+    "id": 15409,
+    "parent_id": 15408,
+    "ad": "Saat",
+    "slug": "saat-15409",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/saat",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15410,
+    "parent_id": 15408,
+    "ad": "Gözlük",
+    "slug": "gozluk-15410",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/gozluk",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15411,
+    "parent_id": 15408,
+    "ad": "Kemer",
+    "slug": "kemer-15411",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/kemer",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15412,
+    "parent_id": 15408,
+    "ad": "Kravat & Papyon",
+    "slug": "kravat-papyon-15412",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/kravat-papyon",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15413,
+    "parent_id": 15408,
+    "ad": "Şapka",
+    "slug": "sapka-15413",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/sapka",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15414,
+    "parent_id": 15408,
+    "ad": "Kol Düğmesi",
+    "slug": "kol-dugmesi",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/kol-dugmesi",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15415,
+    "parent_id": 15408,
+    "ad": "Pantolon Askısı",
+    "slug": "pantolon-askisi",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/pantolon-askisi",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15416,
+    "parent_id": 15408,
+    "ad": "Atkı & Bere & Eldiven",
+    "slug": "atki-bere-eldiven-15416",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/atki-bere-eldiven",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15417,
+    "parent_id": 15408,
+    "ad": "Çorap",
+    "slug": "corap-15417",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/corap",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15418,
+    "parent_id": 15408,
+    "ad": "Tesbih",
+    "slug": "tesbih",
+    "url_path": "giyim-aksesuar/erkek/aksesuar/tesbih",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 21870,
+    "parent_id": 15408,
+    "ad": "Takı",
+    "slug": "taki-21870",
+    "url_path": "giyim-aksesuar/erkek/aksesuar-15408/taki-21870",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15419,
+    "parent_id": 15308,
+    "ad": "Kız Çocuk",
+    "slug": "kiz-cocuk",
+    "url_path": "giyim-aksesuar/kiz-cocuk",
+    "parent_name": "Giyim & Aksesuar"
+  },
+  {
+    "id": 15420,
+    "parent_id": 15419,
+    "ad": "Üst Giyim",
+    "slug": "ust-giyim-15420",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ust-giyim",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15421,
+    "parent_id": 15420,
+    "ad": "Gömlek",
+    "slug": "gomlek-15421",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ust-giyim/gomlek",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15422,
+    "parent_id": 15420,
+    "ad": "Tshirt",
+    "slug": "tshirt-15422",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ust-giyim/tshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15423,
+    "parent_id": 15420,
+    "ad": "Hırka & Kazak",
+    "slug": "hirka-kazak-15423",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ust-giyim/hirka-kazak",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15424,
+    "parent_id": 15420,
+    "ad": "Süveter",
+    "slug": "suveter-15424",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ust-giyim/suveter",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 21831,
+    "parent_id": 15420,
+    "ad": "Sweatshirt",
+    "slug": "sweatshirt-21831",
+    "url_path": "giyim-aksesuar/ust-giyim-15420/kiz-cocuk/sweatshirt-21831",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15425,
+    "parent_id": 15419,
+    "ad": "Alt Giyim",
+    "slug": "alt-giyim-15425",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15426,
+    "parent_id": 15425,
+    "ad": "Jean",
+    "slug": "jean-15426",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/jean",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15427,
+    "parent_id": 15425,
+    "ad": "Pantolon",
+    "slug": "pantolon-15427",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/pantolon",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15428,
+    "parent_id": 15425,
+    "ad": "Etek",
+    "slug": "etek-15428",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/etek",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15429,
+    "parent_id": 15425,
+    "ad": "Şort",
+    "slug": "sort-15429",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/sort",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15430,
+    "parent_id": 15425,
+    "ad": "Tulum",
+    "slug": "tulum-15430",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/tulum",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15431,
+    "parent_id": 15425,
+    "ad": "Tayt",
+    "slug": "tayt-15431",
+    "url_path": "giyim-aksesuar/kiz-cocuk/alt-giyim/tayt",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15432,
+    "parent_id": 15419,
+    "ad": "Dış Giyim",
+    "slug": "dis-giyim-15432",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15433,
+    "parent_id": 15432,
+    "ad": "Mont",
+    "slug": "mont-15433",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/mont",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15434,
+    "parent_id": 15432,
+    "ad": "Trençkot & Pardösü",
+    "slug": "trenckot-pardosu-15434",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/trenckot-pardosu",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15435,
+    "parent_id": 15432,
+    "ad": "Kaban & Palto",
+    "slug": "kaban-palto-15435",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/kaban-palto",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15436,
+    "parent_id": 15432,
+    "ad": "Ceket",
+    "slug": "ceket-15436",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/ceket",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15437,
+    "parent_id": 15432,
+    "ad": "Yağmurluk",
+    "slug": "yagmurluk-15437",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/yagmurluk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15438,
+    "parent_id": 15432,
+    "ad": "Yelek",
+    "slug": "yelek-15438",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/yelek",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15439,
+    "parent_id": 15432,
+    "ad": "Kostüm",
+    "slug": "kostum-15439",
+    "url_path": "giyim-aksesuar/kiz-cocuk/dis-giyim/kostum",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15440,
+    "parent_id": 15419,
+    "ad": "Ev Giyim",
+    "slug": "ev-giyim-15440",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ev-giyim",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15441,
+    "parent_id": 15440,
+    "ad": "Pijama",
+    "slug": "pijama-15441",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ev-giyim/pijama",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15442,
+    "parent_id": 15440,
+    "ad": "Eşofman",
+    "slug": "esofman-15442",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ev-giyim/esofman",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15443,
+    "parent_id": 15419,
+    "ad": "Plaj Giyim",
+    "slug": "plaj-giyim-15443",
+    "url_path": "giyim-aksesuar/kiz-cocuk/plaj-giyim",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15444,
+    "parent_id": 15419,
+    "ad": "Elbise",
+    "slug": "elbise-15444",
+    "url_path": "giyim-aksesuar/kiz-cocuk/elbise",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15445,
+    "parent_id": 15419,
+    "ad": "Ayakkabı",
+    "slug": "ayakkabi-15445",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15446,
+    "parent_id": 15445,
+    "ad": "Spor Ayakkabı",
+    "slug": "spor-ayakkabi-15446",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/spor-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15447,
+    "parent_id": 15445,
+    "ad": "Bot",
+    "slug": "bot-15447",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/bot",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15448,
+    "parent_id": 15445,
+    "ad": "Çizme",
+    "slug": "cizme-15448",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/cizme",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15449,
+    "parent_id": 15445,
+    "ad": "Babet",
+    "slug": "babet-15449",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/babet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15450,
+    "parent_id": 15445,
+    "ad": "Sandalet",
+    "slug": "sandalet-15450",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/sandalet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15451,
+    "parent_id": 15445,
+    "ad": "Terlik",
+    "slug": "terlik-15451",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/terlik",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15452,
+    "parent_id": 15445,
+    "ad": "Oxford & Loafer",
+    "slug": "oxford-loafer-15452",
+    "url_path": "giyim-aksesuar/kiz-cocuk/ayakkabi/oxford-loafer",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15453,
+    "parent_id": 15419,
+    "ad": "Çanta",
+    "slug": "canta-15453",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15454,
+    "parent_id": 15453,
+    "ad": "Kol Çantası",
+    "slug": "kol-cantasi-15454",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/kol-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15455,
+    "parent_id": 15453,
+    "ad": "Askılı Çanta",
+    "slug": "askili-canta-15455",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/askili-canta",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15456,
+    "parent_id": 15453,
+    "ad": "Sırt Çantası",
+    "slug": "sirt-cantasi-15456",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/sirt-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15457,
+    "parent_id": 15453,
+    "ad": "Bel Çantası",
+    "slug": "bel-cantasi-15457",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/bel-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15458,
+    "parent_id": 15453,
+    "ad": "Plaj Çantası",
+    "slug": "plaj-cantasi-15458",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/plaj-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15459,
+    "parent_id": 15453,
+    "ad": "Valiz & Bavul",
+    "slug": "valiz-bavul-15459",
+    "url_path": "giyim-aksesuar/kiz-cocuk/canta/valiz-bavul",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 21867,
+    "parent_id": 15453,
+    "ad": "Cüzdan",
+    "slug": "cuzdan-21867",
+    "url_path": "giyim-aksesuar/canta-15453/kiz-cocuk/cuzdan-21867",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15460,
+    "parent_id": 15419,
+    "ad": "Aksesuar",
+    "slug": "aksesuar-15460",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar",
+    "parent_name": "Kız Çocuk"
+  },
+  {
+    "id": 15461,
+    "parent_id": 15460,
+    "ad": "Saat",
+    "slug": "saat-15461",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/saat",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15462,
+    "parent_id": 15460,
+    "ad": "Gözlük",
+    "slug": "gozluk-15462",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/gozluk",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15463,
+    "parent_id": 15460,
+    "ad": "Takı",
+    "slug": "taki-15463",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/taki",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15464,
+    "parent_id": 15460,
+    "ad": "Saç Aksesuarı",
+    "slug": "sac-aksesuari",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/sac-aksesuari",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15465,
+    "parent_id": 15460,
+    "ad": "Şapka",
+    "slug": "sapka-15465",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/sapka",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15466,
+    "parent_id": 15460,
+    "ad": "Atkı & Bere & Eldiven",
+    "slug": "atki-bere-eldiven-15466",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/atki-bere-eldiven",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15467,
+    "parent_id": 15460,
+    "ad": "Çorap",
+    "slug": "corap-15467",
+    "url_path": "giyim-aksesuar/kiz-cocuk/aksesuar/corap",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 21869,
+    "parent_id": 15460,
+    "ad": "Kemer",
+    "slug": "kemer-21869",
+    "url_path": "giyim-aksesuar/aksesuar-15460/kiz-cocuk/kemer-21869",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15468,
+    "parent_id": 15308,
+    "ad": "Erkek Çocuk",
+    "slug": "erkek-cocuk",
+    "url_path": "giyim-aksesuar/erkek-cocuk",
+    "parent_name": "Giyim & Aksesuar"
+  },
+  {
+    "id": 15469,
+    "parent_id": 15468,
+    "ad": "Üst Giyim",
+    "slug": "ust-giyim-15469",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ust-giyim",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15470,
+    "parent_id": 15469,
+    "ad": "Gömlek",
+    "slug": "gomlek-15470",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ust-giyim/gomlek",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15471,
+    "parent_id": 15469,
+    "ad": "Tshirt",
+    "slug": "tshirt-15471",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ust-giyim/tshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15472,
+    "parent_id": 15469,
+    "ad": "Hırka & Kazak",
+    "slug": "hirka-kazak-15472",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ust-giyim/hirka-kazak",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15473,
+    "parent_id": 15469,
+    "ad": "Süveter",
+    "slug": "suveter-15473",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ust-giyim/suveter",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 21832,
+    "parent_id": 15469,
+    "ad": "Sweatshirt",
+    "slug": "sweatshirt-21832",
+    "url_path": "giyim-aksesuar/ust-giyim-15469/erkek-cocuk/sweatshirt-21832",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15474,
+    "parent_id": 15468,
+    "ad": "Alt Giyim",
+    "slug": "alt-giyim-15474",
+    "url_path": "giyim-aksesuar/erkek-cocuk/alt-giyim",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15475,
+    "parent_id": 15474,
+    "ad": "Jean",
+    "slug": "jean-15475",
+    "url_path": "giyim-aksesuar/erkek-cocuk/alt-giyim/jean",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15476,
+    "parent_id": 15474,
+    "ad": "Pantolon",
+    "slug": "pantolon-15476",
+    "url_path": "giyim-aksesuar/erkek-cocuk/alt-giyim/pantolon",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15477,
+    "parent_id": 15474,
+    "ad": "Şort",
+    "slug": "sort-15477",
+    "url_path": "giyim-aksesuar/erkek-cocuk/alt-giyim/sort",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15478,
+    "parent_id": 15468,
+    "ad": "Dış Giyim",
+    "slug": "dis-giyim-15478",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15479,
+    "parent_id": 15478,
+    "ad": "Kaban & Palto",
+    "slug": "kaban-palto-15479",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/kaban-palto",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15480,
+    "parent_id": 15478,
+    "ad": "Mont",
+    "slug": "mont-15480",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/mont",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15481,
+    "parent_id": 15478,
+    "ad": "Trençkot & Pardösü",
+    "slug": "trenckot-pardosu-15481",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/trenckot-pardosu",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15482,
+    "parent_id": 15478,
+    "ad": "Ceket",
+    "slug": "ceket-15482",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/ceket",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15483,
+    "parent_id": 15478,
+    "ad": "Yağmurluk",
+    "slug": "yagmurluk-15483",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/yagmurluk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15484,
+    "parent_id": 15478,
+    "ad": "Yelek",
+    "slug": "yelek-15484",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/yelek",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15485,
+    "parent_id": 15478,
+    "ad": "Kostüm",
+    "slug": "kostum-15485",
+    "url_path": "giyim-aksesuar/erkek-cocuk/dis-giyim/kostum",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15486,
+    "parent_id": 15468,
+    "ad": "Ev Giyim",
+    "slug": "ev-giyim-15486",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ev-giyim",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15487,
+    "parent_id": 15486,
+    "ad": "Pijama",
+    "slug": "pijama-15487",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ev-giyim/pijama",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15488,
+    "parent_id": 15468,
+    "ad": "Plaj Giyim",
+    "slug": "plaj-giyim-15488",
+    "url_path": "giyim-aksesuar/erkek-cocuk/plaj-giyim",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15489,
+    "parent_id": 15488,
+    "ad": "Mayo & Deniz Şortu",
+    "slug": "mayo-deniz-sortu-15489",
+    "url_path": "giyim-aksesuar/erkek-cocuk/plaj-giyim/mayo-deniz-sortu",
+    "parent_name": "Plaj Giyim"
+  },
+  {
+    "id": 15490,
+    "parent_id": 15468,
+    "ad": "Takım Elbise",
+    "slug": "takim-elbise-15490",
+    "url_path": "giyim-aksesuar/erkek-cocuk/takim-elbise",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15491,
+    "parent_id": 15468,
+    "ad": "Ayakkabı",
+    "slug": "ayakkabi-15491",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15492,
+    "parent_id": 15491,
+    "ad": "Spor Ayakkabı",
+    "slug": "spor-ayakkabi-15492",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi/spor-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15493,
+    "parent_id": 15491,
+    "ad": "Günlük Ayakkabı",
+    "slug": "gunluk-ayakkabi-15493",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi/gunluk-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15494,
+    "parent_id": 15491,
+    "ad": "Bot",
+    "slug": "bot-15494",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi/bot",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15495,
+    "parent_id": 15491,
+    "ad": "Sandalet",
+    "slug": "sandalet-15495",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi/sandalet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15496,
+    "parent_id": 15491,
+    "ad": "Terlik",
+    "slug": "terlik-15496",
+    "url_path": "giyim-aksesuar/erkek-cocuk/ayakkabi/terlik",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15497,
+    "parent_id": 15468,
+    "ad": "Çanta",
+    "slug": "canta-15497",
+    "url_path": "giyim-aksesuar/erkek-cocuk/canta",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15498,
+    "parent_id": 15497,
+    "ad": "Sırt Çantası",
+    "slug": "sirt-cantasi-15498",
+    "url_path": "giyim-aksesuar/erkek-cocuk/canta/sirt-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15499,
+    "parent_id": 15497,
+    "ad": "Spor Çantası",
+    "slug": "spor-cantasi-15499",
+    "url_path": "giyim-aksesuar/erkek-cocuk/canta/spor-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15500,
+    "parent_id": 15497,
+    "ad": "Bel Çantası",
+    "slug": "bel-cantasi-15500",
+    "url_path": "giyim-aksesuar/erkek-cocuk/canta/bel-cantasi",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15501,
+    "parent_id": 15497,
+    "ad": "Valiz & Bavul",
+    "slug": "valiz-bavul-15501",
+    "url_path": "giyim-aksesuar/erkek-cocuk/canta/valiz-bavul",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 21868,
+    "parent_id": 15497,
+    "ad": "Cüzdan",
+    "slug": "cuzdan-21868",
+    "url_path": "giyim-aksesuar/canta-15497/erkek-cocuk/cuzdan-21868",
+    "parent_name": "Çanta"
+  },
+  {
+    "id": 15502,
+    "parent_id": 15468,
+    "ad": "Aksesuar",
+    "slug": "aksesuar-15502",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar",
+    "parent_name": "Erkek Çocuk"
+  },
+  {
+    "id": 15503,
+    "parent_id": 15502,
+    "ad": "Saat",
+    "slug": "saat-15503",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/saat",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15504,
+    "parent_id": 15502,
+    "ad": "Gözlük",
+    "slug": "gozluk-15504",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/gozluk",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15505,
+    "parent_id": 15502,
+    "ad": "Kemer",
+    "slug": "kemer-15505",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/kemer",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15506,
+    "parent_id": 15502,
+    "ad": "Kravat & Papyon",
+    "slug": "kravat-papyon-15506",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/kravat-papyon",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15507,
+    "parent_id": 15502,
+    "ad": "Şapka",
+    "slug": "sapka-15507",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/sapka",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15508,
+    "parent_id": 15502,
+    "ad": "Pantolon Askısı",
+    "slug": "pantolon-askisi-15508",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/pantolon-askisi",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15509,
+    "parent_id": 15502,
+    "ad": "Atkı & Bere & Eldiven",
+    "slug": "atki-bere-eldiven-15509",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/atki-bere-eldiven",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15510,
+    "parent_id": 15502,
+    "ad": "Çorap",
+    "slug": "corap-15510",
+    "url_path": "giyim-aksesuar/erkek-cocuk/aksesuar/corap",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 21871,
+    "parent_id": 15502,
+    "ad": "Takı",
+    "slug": "taki-21871",
+    "url_path": "giyim-aksesuar/aksesuar-15502/erkek-cocuk/taki-21871",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15649,
+    "parent_id": 0,
+    "ad": "Kişisel Bakım & Kozmetik",
+    "slug": "kisisel-bakim-kozmetik",
+    "url_path": "kisisel-bakim-kozmetik",
+    "parent_name": null
+  },
+  {
+    "id": 15650,
+    "parent_id": 15649,
+    "ad": "Kişisel Bakım Aletleri",
+    "slug": "kisisel-bakim-aletleri",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15651,
+    "parent_id": 15650,
+    "ad": "Saç Kurutma Makinesi",
+    "slug": "sac-kurutma-makinesi",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/sac-kurutma-makinesi",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15652,
+    "parent_id": 15650,
+    "ad": "Saç Düzleştirici",
+    "slug": "sac-duzlestirici",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/sac-duzlestirici",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15653,
+    "parent_id": 15650,
+    "ad": "Saç Maşası",
+    "slug": "sac-masasi",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/sac-masasi",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15654,
+    "parent_id": 15650,
+    "ad": "Yüz Temizleme Cihazı",
+    "slug": "yuz-temizleme-cihazi",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/yuz-temizleme-cihazi",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15655,
+    "parent_id": 15650,
+    "ad": "Epilasyon Aleti",
+    "slug": "epilasyon-aleti",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/epilasyon-aleti",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15656,
+    "parent_id": 15650,
+    "ad": "Tıraş Makinesi",
+    "slug": "tiras-makinesi",
+    "url_path": "kisisel-bakim-kozmetik/kisisel-bakim-aletleri/tiras-makinesi",
+    "parent_name": "Kişisel Bakım Aletleri"
+  },
+  {
+    "id": 15657,
+    "parent_id": 15649,
+    "ad": "Makyaj",
+    "slug": "makyaj",
+    "url_path": "kisisel-bakim-kozmetik/makyaj",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15658,
+    "parent_id": 15657,
+    "ad": "Dudak",
+    "slug": "dudak",
+    "url_path": "kisisel-bakim-kozmetik/makyaj/dudak",
+    "parent_name": "Makyaj"
+  },
+  {
+    "id": 15659,
+    "parent_id": 15657,
+    "ad": "Göz",
+    "slug": "goz",
+    "url_path": "kisisel-bakim-kozmetik/makyaj/goz",
+    "parent_name": "Makyaj"
+  },
+  {
+    "id": 15660,
+    "parent_id": 15657,
+    "ad": "Yüz",
+    "slug": "yuz",
+    "url_path": "kisisel-bakim-kozmetik/makyaj/yuz",
+    "parent_name": "Makyaj"
+  },
+  {
+    "id": 15661,
+    "parent_id": 15657,
+    "ad": "Fırça & Aksesuar",
+    "slug": "firca-aksesuar",
+    "url_path": "kisisel-bakim-kozmetik/makyaj/firca-aksesuar",
+    "parent_name": "Makyaj"
+  },
+  {
+    "id": 15662,
+    "parent_id": 15649,
+    "ad": "Cilt Bakımı",
+    "slug": "cilt-bakimi",
+    "url_path": "kisisel-bakim-kozmetik/cilt-bakimi",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15663,
+    "parent_id": 15662,
+    "ad": "Güneş Ürünleri",
+    "slug": "gunes-urunleri",
+    "url_path": "kisisel-bakim-kozmetik/cilt-bakimi/gunes-urunleri",
+    "parent_name": "Cilt Bakımı"
+  },
+  {
+    "id": 15664,
+    "parent_id": 15662,
+    "ad": "Krem & Serum",
+    "slug": "krem-serum",
+    "url_path": "kisisel-bakim-kozmetik/cilt-bakimi/krem-serum",
+    "parent_name": "Cilt Bakımı"
+  },
+  {
+    "id": 15665,
+    "parent_id": 15662,
+    "ad": "Maske & Peeling",
+    "slug": "maske-peeling",
+    "url_path": "kisisel-bakim-kozmetik/cilt-bakimi/maske-peeling",
+    "parent_name": "Cilt Bakımı"
+  },
+  {
+    "id": 15666,
+    "parent_id": 15649,
+    "ad": "Saç Bakımı",
+    "slug": "sac-bakimi",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15667,
+    "parent_id": 15666,
+    "ad": "Boya",
+    "slug": "boya",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi/boya",
+    "parent_name": "Saç Bakımı"
+  },
+  {
+    "id": 15668,
+    "parent_id": 15666,
+    "ad": "Fırça & Tarak",
+    "slug": "firca-tarak",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi/firca-tarak",
+    "parent_name": "Saç Bakımı"
+  },
+  {
+    "id": 15669,
+    "parent_id": 15666,
+    "ad": "Şampuan & Saç Kremi",
+    "slug": "sampuan-sac-kremi",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi/sampuan-sac-kremi",
+    "parent_name": "Saç Bakımı"
+  },
+  {
+    "id": 15670,
+    "parent_id": 15666,
+    "ad": "Sprey & Jöle",
+    "slug": "sprey-jole",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi/sprey-jole",
+    "parent_name": "Saç Bakımı"
+  },
+  {
+    "id": 15671,
+    "parent_id": 15666,
+    "ad": "Peruk & Kaynak",
+    "slug": "peruk-kaynak",
+    "url_path": "kisisel-bakim-kozmetik/sac-bakimi/peruk-kaynak",
+    "parent_name": "Saç Bakımı"
+  },
+  {
+    "id": 15672,
+    "parent_id": 15649,
+    "ad": "Tırnak Bakımı",
+    "slug": "tirnak-bakimi",
+    "url_path": "kisisel-bakim-kozmetik/tirnak-bakimi",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15673,
+    "parent_id": 15672,
+    "ad": "Oje & Tırnak",
+    "slug": "oje-tirnak",
+    "url_path": "kisisel-bakim-kozmetik/tirnak-bakimi/oje-tirnak",
+    "parent_name": "Tırnak Bakımı"
+  },
+  {
+    "id": 15674,
+    "parent_id": 15672,
+    "ad": "Manikür & Pedikür Aletleri",
+    "slug": "manikur-pedikur-aletleri",
+    "url_path": "kisisel-bakim-kozmetik/tirnak-bakimi/manikur-pedikur-aletleri",
+    "parent_name": "Tırnak Bakımı"
+  },
+  {
+    "id": 15675,
+    "parent_id": 15649,
+    "ad": "Parfüm",
+    "slug": "parfum",
+    "url_path": "kisisel-bakim-kozmetik/parfum",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15676,
+    "parent_id": 15649,
+    "ad": "Deodorant",
+    "slug": "deodorant",
+    "url_path": "kisisel-bakim-kozmetik/deodorant",
+    "parent_name": "Kişisel Bakım & Kozmetik"
+  },
+  {
+    "id": 15245,
+    "parent_id": 0,
+    "ad": "Anne & Bebek & Oyuncak",
+    "slug": "anne-bebek-oyuncak",
+    "url_path": "anne-bebek-oyuncak",
+    "parent_name": null
+  },
+  {
+    "id": 15246,
+    "parent_id": 15245,
+    "ad": "Bebek Araç & Gereçleri",
+    "slug": "bebek-arac-gerecleri",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri",
+    "parent_name": "Anne & Bebek & Oyuncak"
+  },
+  {
+    "id": 15247,
+    "parent_id": 15246,
+    "ad": "Bebek Arabası & Puset",
+    "slug": "bebek-arabasi-puset",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/bebek-arabasi-puset",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15248,
+    "parent_id": 15246,
+    "ad": "Oto Koltuğu & Ana Kucağı",
+    "slug": "oto-koltugu-ana-kucagi",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/oto-koltugu-ana-kucagi",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15249,
+    "parent_id": 15246,
+    "ad": "Mama Sandalyesi",
+    "slug": "mama-sandalyesi",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/mama-sandalyesi",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15250,
+    "parent_id": 15246,
+    "ad": "Yürüteç",
+    "slug": "yurutec",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/yurutec",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15251,
+    "parent_id": 15246,
+    "ad": "Kanguru",
+    "slug": "kanguru",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/kanguru",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15252,
+    "parent_id": 15246,
+    "ad": "Park Yatak",
+    "slug": "park-yatak",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/park-yatak",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15253,
+    "parent_id": 15246,
+    "ad": "Bebek Telsizi & Kamera",
+    "slug": "bebek-telsizi-kamera",
+    "url_path": "anne-bebek-oyuncak/bebek-arac-gerecleri/bebek-telsizi-kamera",
+    "parent_name": "Bebek Araç & Gereçleri"
+  },
+  {
+    "id": 15254,
+    "parent_id": 15245,
+    "ad": "Anne & Bebek Bakım",
+    "slug": "anne-bebek-bakim",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim",
+    "parent_name": "Anne & Bebek & Oyuncak"
+  },
+  {
+    "id": 15255,
+    "parent_id": 15254,
+    "ad": "Bebek Banyo Gereçleri",
+    "slug": "bebek-banyo-gerecleri",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim/bebek-banyo-gerecleri",
+    "parent_name": "Anne & Bebek Bakım"
+  },
+  {
+    "id": 15256,
+    "parent_id": 15254,
+    "ad": "Bebek Kozmetik",
+    "slug": "bebek-kozmetik",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim/bebek-kozmetik",
+    "parent_name": "Anne & Bebek Bakım"
+  },
+  {
+    "id": 15257,
+    "parent_id": 15254,
+    "ad": "Bebek Bezi",
+    "slug": "bebek-bezi",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim/bebek-bezi",
+    "parent_name": "Anne & Bebek Bakım"
+  },
+  {
+    "id": 15258,
+    "parent_id": 15254,
+    "ad": "Bebek Beslenme Gereçleri",
+    "slug": "bebek-beslenme-gerecleri",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim/bebek-beslenme-gerecleri",
+    "parent_name": "Anne & Bebek Bakım"
+  },
+  {
+    "id": 15259,
+    "parent_id": 15254,
+    "ad": "Emzirme Ürünleri",
+    "slug": "emzirme-urunleri",
+    "url_path": "anne-bebek-oyuncak/anne-bebek-bakim/emzirme-urunleri",
+    "parent_name": "Anne & Bebek Bakım"
+  },
+  {
+    "id": 15260,
+    "parent_id": 15245,
+    "ad": "Bebek Odası & Mobilya",
+    "slug": "bebek-odasi-mobilya",
+    "url_path": "anne-bebek-oyuncak/bebek-odasi-mobilya",
+    "parent_name": "Anne & Bebek & Oyuncak"
+  },
+  {
+    "id": 15261,
+    "parent_id": 15245,
+    "ad": "Bebek Giyim",
+    "slug": "bebek-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim",
+    "parent_name": "Anne & Bebek & Oyuncak"
+  },
+  {
+    "id": 15262,
+    "parent_id": 15261,
+    "ad": "Üst Giyim",
+    "slug": "ust-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15263,
+    "parent_id": 15262,
+    "ad": "Yenidoğan Kıyafeti",
+    "slug": "yenidogan-kiyafeti",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/yenidogan-kiyafeti",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15264,
+    "parent_id": 15262,
+    "ad": "Bebek Takımı",
+    "slug": "bebek-takimi",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/bebek-takimi",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15265,
+    "parent_id": 15262,
+    "ad": "Gömlek",
+    "slug": "gomlek",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/gomlek",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15266,
+    "parent_id": 15262,
+    "ad": "Tshirt",
+    "slug": "tshirt",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/tshirt",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15267,
+    "parent_id": 15262,
+    "ad": "Body & Zıbın",
+    "slug": "body-zibin",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/body-zibin",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15268,
+    "parent_id": 15262,
+    "ad": "Hırka & Kazak",
+    "slug": "hirka-kazak",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ust-giyim/hirka-kazak",
+    "parent_name": "Üst Giyim"
+  },
+  {
+    "id": 15269,
+    "parent_id": 15261,
+    "ad": "Alt Giyim",
+    "slug": "alt-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15270,
+    "parent_id": 15269,
+    "ad": "Pantolon",
+    "slug": "pantolon",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim/pantolon",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15271,
+    "parent_id": 15269,
+    "ad": "Etek",
+    "slug": "etek",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim/etek",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15272,
+    "parent_id": 15269,
+    "ad": "Şort",
+    "slug": "sort",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim/sort",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15273,
+    "parent_id": 15269,
+    "ad": "Tayt",
+    "slug": "tayt",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim/tayt",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15274,
+    "parent_id": 15269,
+    "ad": "Tulum",
+    "slug": "tulum",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/alt-giyim/tulum",
+    "parent_name": "Alt Giyim"
+  },
+  {
+    "id": 15275,
+    "parent_id": 15261,
+    "ad": "Elbise",
+    "slug": "elbise",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/elbise",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15276,
+    "parent_id": 15261,
+    "ad": "Dış Giyim",
+    "slug": "dis-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/dis-giyim",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15277,
+    "parent_id": 15276,
+    "ad": "Mont & Ceket",
+    "slug": "mont-ceket",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/dis-giyim/mont-ceket",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15278,
+    "parent_id": 15276,
+    "ad": "Yağmurluk",
+    "slug": "yagmurluk",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/dis-giyim/yagmurluk",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15279,
+    "parent_id": 15276,
+    "ad": "Yelek",
+    "slug": "yelek",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/dis-giyim/yelek",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15280,
+    "parent_id": 15276,
+    "ad": "Kostüm",
+    "slug": "kostum",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/dis-giyim/kostum",
+    "parent_name": "Dış Giyim"
+  },
+  {
+    "id": 15281,
+    "parent_id": 15261,
+    "ad": "Ev Giyim",
+    "slug": "ev-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ev-giyim",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15282,
+    "parent_id": 15281,
+    "ad": "Pijama Takımı",
+    "slug": "pijama-takimi",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ev-giyim/pijama-takimi",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15283,
+    "parent_id": 15281,
+    "ad": "Eşofman",
+    "slug": "esofman",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ev-giyim/esofman",
+    "parent_name": "Ev Giyim"
+  },
+  {
+    "id": 15284,
+    "parent_id": 15261,
+    "ad": "Plaj Giyim",
+    "slug": "plaj-giyim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/plaj-giyim",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15285,
+    "parent_id": 15284,
+    "ad": "Mayo & Bikini",
+    "slug": "mayo-bikini",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/plaj-giyim/mayo-bikini",
+    "parent_name": "Plaj Giyim"
+  },
+  {
+    "id": 15286,
+    "parent_id": 15261,
+    "ad": "Ayakkabı",
+    "slug": "ayakkabi",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15287,
+    "parent_id": 15286,
+    "ad": "Patik & Panduf",
+    "slug": "patik-panduf",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi/patik-panduf",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15288,
+    "parent_id": 15286,
+    "ad": "İlk Adım",
+    "slug": "ilk-adim",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi/ilk-adim",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15289,
+    "parent_id": 15286,
+    "ad": "Spor Ayakkabı",
+    "slug": "spor-ayakkabi",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi/spor-ayakkabi",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15290,
+    "parent_id": 15286,
+    "ad": "Sandalet",
+    "slug": "sandalet",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi/sandalet",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15291,
+    "parent_id": 15286,
+    "ad": "Bot",
+    "slug": "bot",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/ayakkabi/bot",
+    "parent_name": "Ayakkabı"
+  },
+  {
+    "id": 15292,
+    "parent_id": 15261,
+    "ad": "Aksesuar",
+    "slug": "aksesuar",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar",
+    "parent_name": "Bebek Giyim"
+  },
+  {
+    "id": 15293,
+    "parent_id": 15292,
+    "ad": "Atkı & Bere & Eldiven",
+    "slug": "atki-bere-eldiven",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar/atki-bere-eldiven",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15294,
+    "parent_id": 15292,
+    "ad": "Şapka",
+    "slug": "sapka",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar/sapka",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15295,
+    "parent_id": 15292,
+    "ad": "Çorap",
+    "slug": "corap",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar/corap",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15296,
+    "parent_id": 15292,
+    "ad": "Kravat & Papyon",
+    "slug": "kravat-papyon",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar/kravat-papyon",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15297,
+    "parent_id": 15292,
+    "ad": "Saç Aksesuarları",
+    "slug": "sac-aksesuarlari",
+    "url_path": "anne-bebek-oyuncak/bebek-giyim/aksesuar/sac-aksesuarlari",
+    "parent_name": "Aksesuar"
+  },
+  {
+    "id": 15298,
+    "parent_id": 15245,
+    "ad": "Oyuncak",
+    "slug": "oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak",
+    "parent_name": "Anne & Bebek & Oyuncak"
+  },
+  {
+    "id": 15299,
+    "parent_id": 15298,
+    "ad": "Peluş Oyuncak",
+    "slug": "pelus-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/pelus-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15300,
+    "parent_id": 15298,
+    "ad": "Eğitici Oyuncak",
+    "slug": "egitici-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/egitici-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15301,
+    "parent_id": 15298,
+    "ad": "Figür Oyuncak",
+    "slug": "figur-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/figur-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15302,
+    "parent_id": 15298,
+    "ad": "Oyuncak Bebek",
+    "slug": "oyuncak-bebek",
+    "url_path": "anne-bebek-oyuncak/oyuncak/oyuncak-bebek",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15303,
+    "parent_id": 15298,
+    "ad": "Oyuncak Araba",
+    "slug": "oyuncak-araba",
+    "url_path": "anne-bebek-oyuncak/oyuncak/oyuncak-araba",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15304,
+    "parent_id": 15298,
+    "ad": "Akülü Araç",
+    "slug": "akulu-arac",
+    "url_path": "anne-bebek-oyuncak/oyuncak/akulu-arac",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15305,
+    "parent_id": 15298,
+    "ad": "Yapı Oyuncak",
+    "slug": "yapi-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/yapi-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15306,
+    "parent_id": 15298,
+    "ad": "Ahşap Oyuncak",
+    "slug": "ahsap-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/ahsap-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15307,
+    "parent_id": 15298,
+    "ad": "Plaj & Bahçe Oyuncak",
+    "slug": "plaj-bahce-oyuncak",
+    "url_path": "anne-bebek-oyuncak/oyuncak/plaj-bahce-oyuncak",
+    "parent_name": "Oyuncak"
+  },
+  {
+    "id": 15568,
+    "parent_id": 0,
+    "ad": "Hobi & Kitap & Müzik",
+    "slug": "hobi-kitap-muzik",
+    "url_path": "hobi-kitap-muzik",
+    "parent_name": null
+  },
+  {
+    "id": 15569,
+    "parent_id": 15568,
+    "ad": "Hobi",
+    "slug": "hobi",
+    "url_path": "hobi-kitap-muzik/hobi",
+    "parent_name": "Hobi & Kitap & Müzik"
+  },
+  {
+    "id": 15570,
+    "parent_id": 15569,
+    "ad": "Kutu ve Masa Oyunları",
+    "slug": "kutu-ve-masa-oyunlari",
+    "url_path": "hobi-kitap-muzik/hobi/kutu-ve-masa-oyunlari",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15571,
+    "parent_id": 15569,
+    "ad": "Puzzle",
+    "slug": "puzzle",
+    "url_path": "hobi-kitap-muzik/hobi/puzzle",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15572,
+    "parent_id": 15569,
+    "ad": "Film & Müzik",
+    "slug": "film-muzik",
+    "url_path": "hobi-kitap-muzik/hobi/film-muzik",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15573,
+    "parent_id": 15572,
+    "ad": "Film",
+    "slug": "film",
+    "url_path": "hobi-kitap-muzik/hobi/film-muzik/film",
+    "parent_name": "Film & Müzik"
+  },
+  {
+    "id": 15574,
+    "parent_id": 15572,
+    "ad": "Müzik Albümleri",
+    "slug": "muzik-albumleri",
+    "url_path": "hobi-kitap-muzik/hobi/film-muzik/muzik-albumleri",
+    "parent_name": "Film & Müzik"
+  },
+  {
+    "id": 15575,
+    "parent_id": 15572,
+    "ad": "Poster",
+    "slug": "poster",
+    "url_path": "hobi-kitap-muzik/hobi/film-muzik/poster",
+    "parent_name": "Film & Müzik"
+  },
+  {
+    "id": 15576,
+    "parent_id": 15569,
+    "ad": "Koleksiyon",
+    "slug": "koleksiyon",
+    "url_path": "hobi-kitap-muzik/hobi/koleksiyon",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15577,
+    "parent_id": 15569,
+    "ad": "Model Araçlar",
+    "slug": "model-araclar",
+    "url_path": "hobi-kitap-muzik/hobi/model-araclar",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15578,
+    "parent_id": 15569,
+    "ad": "Örgü & El işi",
+    "slug": "orgu-el-isi",
+    "url_path": "hobi-kitap-muzik/hobi/orgu-el-isi",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15579,
+    "parent_id": 15569,
+    "ad": "Drone",
+    "slug": "drone",
+    "url_path": "hobi-kitap-muzik/hobi/drone",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15580,
+    "parent_id": 15569,
+    "ad": "Nargile Aksesuarları",
+    "slug": "nargile-aksesuarlari",
+    "url_path": "hobi-kitap-muzik/hobi/nargile-aksesuarlari",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15581,
+    "parent_id": 15568,
+    "ad": "Kitap",
+    "slug": "kitap",
+    "url_path": "hobi-kitap-muzik/kitap",
+    "parent_name": "Hobi & Kitap & Müzik"
+  },
+  {
+    "id": 15582,
+    "parent_id": 15581,
+    "ad": "Roman & Edebiyat",
+    "slug": "roman-edebiyat",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15583,
+    "parent_id": 15582,
+    "ad": "Klasikler",
+    "slug": "klasikler",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/klasikler",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15584,
+    "parent_id": 15582,
+    "ad": "Polisiye",
+    "slug": "polisiye",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/polisiye",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15585,
+    "parent_id": 15582,
+    "ad": "Fantastik",
+    "slug": "fantastik",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/fantastik",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15586,
+    "parent_id": 15582,
+    "ad": "Romantik",
+    "slug": "romantik",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/romantik",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15587,
+    "parent_id": 15582,
+    "ad": "Bilim Kurgu",
+    "slug": "bilim-kurgu",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/bilim-kurgu",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15588,
+    "parent_id": 15582,
+    "ad": "Şiir",
+    "slug": "siir",
+    "url_path": "hobi-kitap-muzik/kitap/roman-edebiyat/siir",
+    "parent_name": "Roman & Edebiyat"
+  },
+  {
+    "id": 15589,
+    "parent_id": 15581,
+    "ad": "Eğitim & Ders",
+    "slug": "egitim-ders",
+    "url_path": "hobi-kitap-muzik/kitap/egitim-ders",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15590,
+    "parent_id": 15589,
+    "ad": "Yardımcı Ders Kitapları",
+    "slug": "yardimci-ders-kitaplari",
+    "url_path": "hobi-kitap-muzik/kitap/egitim-ders/yardimci-ders-kitaplari",
+    "parent_name": "Eğitim & Ders"
+  },
+  {
+    "id": 15591,
+    "parent_id": 15589,
+    "ad": "Sınav Kitapları",
+    "slug": "sinav-kitaplari",
+    "url_path": "hobi-kitap-muzik/kitap/egitim-ders/sinav-kitaplari",
+    "parent_name": "Eğitim & Ders"
+  },
+  {
+    "id": 15592,
+    "parent_id": 15589,
+    "ad": "Yabancı Dil Kitapları",
+    "slug": "yabanci-dil-kitaplari",
+    "url_path": "hobi-kitap-muzik/kitap/egitim-ders/yabanci-dil-kitaplari",
+    "parent_name": "Eğitim & Ders"
+  },
+  {
+    "id": 15593,
+    "parent_id": 15589,
+    "ad": "Akademik Kitaplar",
+    "slug": "akademik-kitaplar",
+    "url_path": "hobi-kitap-muzik/kitap/egitim-ders/akademik-kitaplar",
+    "parent_name": "Eğitim & Ders"
+  },
+  {
+    "id": 15594,
+    "parent_id": 15581,
+    "ad": "Kişisel Gelişim",
+    "slug": "kisisel-gelisim",
+    "url_path": "hobi-kitap-muzik/kitap/kisisel-gelisim",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15595,
+    "parent_id": 15581,
+    "ad": "Çizgi Roman & Manga",
+    "slug": "cizgi-roman-manga",
+    "url_path": "hobi-kitap-muzik/kitap/cizgi-roman-manga",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15596,
+    "parent_id": 15581,
+    "ad": "Çocuk & Gençlik",
+    "slug": "cocuk-genclik",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15597,
+    "parent_id": 15596,
+    "ad": "Aktivite & Eğitici",
+    "slug": "aktivite-egitici",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik/aktivite-egitici",
+    "parent_name": "Çocuk & Gençlik"
+  },
+  {
+    "id": 15598,
+    "parent_id": 15596,
+    "ad": "Masal & Öykü",
+    "slug": "masal-oyku",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik/masal-oyku",
+    "parent_name": "Çocuk & Gençlik"
+  },
+  {
+    "id": 15599,
+    "parent_id": 15596,
+    "ad": "Bebek Kitapları",
+    "slug": "bebek-kitaplari",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik/bebek-kitaplari",
+    "parent_name": "Çocuk & Gençlik"
+  },
+  {
+    "id": 15600,
+    "parent_id": 15596,
+    "ad": "Sesli Kitap",
+    "slug": "sesli-kitap",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik/sesli-kitap",
+    "parent_name": "Çocuk & Gençlik"
+  },
+  {
+    "id": 15601,
+    "parent_id": 15596,
+    "ad": "Aile & Çocuk Bakımı",
+    "slug": "aile-cocuk-bakimi",
+    "url_path": "hobi-kitap-muzik/kitap/cocuk-genclik/aile-cocuk-bakimi",
+    "parent_name": "Çocuk & Gençlik"
+  },
+  {
+    "id": 15602,
+    "parent_id": 15581,
+    "ad": "İş, Ekonomi, Pazarlama",
+    "slug": "is-ekonomi-pazarlama",
+    "url_path": "hobi-kitap-muzik/kitap/is-ekonomi-pazarlama",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15603,
+    "parent_id": 15581,
+    "ad": "Tarih",
+    "slug": "tarih",
+    "url_path": "hobi-kitap-muzik/kitap/tarih",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15604,
+    "parent_id": 15581,
+    "ad": "Din & Tasavvuf",
+    "slug": "din-tasavvuf",
+    "url_path": "hobi-kitap-muzik/kitap/din-tasavvuf",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15605,
+    "parent_id": 15581,
+    "ad": "Hobi",
+    "slug": "hobi-15605",
+    "url_path": "hobi-kitap-muzik/kitap/hobi",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15606,
+    "parent_id": 15605,
+    "ad": "Sağlık, Spor & Diyet",
+    "slug": "saglik-spor-diyet",
+    "url_path": "hobi-kitap-muzik/kitap/hobi/saglik-spor-diyet",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15607,
+    "parent_id": 15605,
+    "ad": "Yemek",
+    "slug": "yemek",
+    "url_path": "hobi-kitap-muzik/kitap/hobi/yemek",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15608,
+    "parent_id": 15605,
+    "ad": "Moda & Sanat",
+    "slug": "sanat",
+    "url_path": "hobi-kitap-muzik/kitap/hobi/sanat",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15609,
+    "parent_id": 15605,
+    "ad": "Gezi & Turizm",
+    "slug": "gezi-turizm",
+    "url_path": "hobi-kitap-muzik/kitap/hobi/gezi-turizm",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15610,
+    "parent_id": 15605,
+    "ad": "Dergi",
+    "slug": "dergi",
+    "url_path": "hobi-kitap-muzik/kitap/hobi/dergi",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 21877,
+    "parent_id": 15605,
+    "ad": "Çiçek & Bahçe",
+    "slug": "cicek-bahce",
+    "url_path": "hobi-15605/hobi-kitap-muzik/kitap/cicek-bahce",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 21878,
+    "parent_id": 15605,
+    "ad": "Müzik",
+    "slug": "muzik",
+    "url_path": "hobi-15605/hobi-kitap-muzik/kitap/muzik",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 21879,
+    "parent_id": 15605,
+    "ad": "Mandala & Bulmaca",
+    "slug": "mandala-bulmaca",
+    "url_path": "hobi-15605/hobi-kitap-muzik/kitap/mandala-bulmaca",
+    "parent_name": "Hobi"
+  },
+  {
+    "id": 15611,
+    "parent_id": 15581,
+    "ad": "Kitap Okuma Aksesuarları",
+    "slug": "kitap-okuma-aksesuarlari",
+    "url_path": "hobi-kitap-muzik/kitap/kitap-okuma-aksesuarlari",
+    "parent_name": "Kitap"
+  },
+  {
+    "id": 15612,
+    "parent_id": 15568,
+    "ad": "Müzik & Müzik Aletleri",
+    "slug": "muzik-muzik-aletleri",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri",
+    "parent_name": "Hobi & Kitap & Müzik"
+  },
+  {
+    "id": 15613,
+    "parent_id": 15612,
+    "ad": "Pikap",
+    "slug": "pikap",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/pikap",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15614,
+    "parent_id": 15612,
+    "ad": "Plak",
+    "slug": "plak",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/plak",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15615,
+    "parent_id": 15612,
+    "ad": "Tuşlu Çalgılar",
+    "slug": "tuslu-calgilar",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/tuslu-calgilar",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15616,
+    "parent_id": 15612,
+    "ad": "Üflemeli Çalgılar",
+    "slug": "uflemeli-calgilar",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/uflemeli-calgilar",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15617,
+    "parent_id": 15612,
+    "ad": "Yaylı Çalgılar",
+    "slug": "yayli-calgilar",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/yayli-calgilar",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15618,
+    "parent_id": 15612,
+    "ad": "Vurmalı Çalgılar",
+    "slug": "vurmali-calgilar",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/vurmali-calgilar",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15619,
+    "parent_id": 15612,
+    "ad": "Telli Çalgılar",
+    "slug": "telli-calgilar",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/telli-calgilar",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15620,
+    "parent_id": 15612,
+    "ad": "Stüdyo & DJ Ekipmanları",
+    "slug": "studyo-dj-ekipmanlari",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/studyo-dj-ekipmanlari",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15621,
+    "parent_id": 15612,
+    "ad": "Müzik Sistemleri",
+    "slug": "muzik-sistemleri",
+    "url_path": "hobi-kitap-muzik/muzik-muzik-aletleri/muzik-sistemleri",
+    "parent_name": "Müzik & Müzik Aletleri"
+  },
+  {
+    "id": 15622,
+    "parent_id": 0,
+    "ad": "Ofis & Kırtasiye",
+    "slug": "ofis-kirtasiye",
+    "url_path": "ofis-kirtasiye",
+    "parent_name": null
+  },
+  {
+    "id": 15623,
+    "parent_id": 15622,
+    "ad": "Fotokopi Kağıdı",
+    "slug": "fotokopi-kagidi",
+    "url_path": "ofis-kirtasiye/fotokopi-kagidi",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15624,
+    "parent_id": 15622,
+    "ad": "Yazı Tahtası & Pano",
+    "slug": "yazi-tahtasi-pano",
+    "url_path": "ofis-kirtasiye/yazi-tahtasi-pano",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15625,
+    "parent_id": 15622,
+    "ad": "Okul & Kırtasiye",
+    "slug": "okul-kirtasiye",
+    "url_path": "ofis-kirtasiye/okul-kirtasiye",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15626,
+    "parent_id": 15622,
+    "ad": "Masa Üstü Gereçleri",
+    "slug": "masa-ustu-gerecleri",
+    "url_path": "ofis-kirtasiye/masa-ustu-gerecleri",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15627,
+    "parent_id": 15622,
+    "ad": "Sanatsal Boya & Malzeme",
+    "slug": "sanatsal-boya-malzeme",
+    "url_path": "ofis-kirtasiye/sanatsal-boya-malzeme",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15628,
+    "parent_id": 15622,
+    "ad": "Ofis Teknolojileri",
+    "slug": "ofis-teknolojileri",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15629,
+    "parent_id": 15628,
+    "ad": "Fotokopi Makinesi",
+    "slug": "fotokopi-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/fotokopi-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15630,
+    "parent_id": 15628,
+    "ad": "Faks Makinesi",
+    "slug": "faks-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/faks-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15631,
+    "parent_id": 15628,
+    "ad": "Slayt Makinesi",
+    "slug": "slayt-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/slayt-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15632,
+    "parent_id": 15628,
+    "ad": "Yazarkasa",
+    "slug": "yazarkasa",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/yazarkasa",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15633,
+    "parent_id": 15628,
+    "ad": "Para Kasası",
+    "slug": "para-kasasi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/para-kasasi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15634,
+    "parent_id": 15628,
+    "ad": "Para Sayma Makinesi",
+    "slug": "para-sayma-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/para-sayma-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15635,
+    "parent_id": 15628,
+    "ad": "Laminasyon Makinesi & Malzemeler",
+    "slug": "laminasyon-makinesi-malzemeler",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/laminasyon-makinesi-malzemeler",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15636,
+    "parent_id": 15628,
+    "ad": "Etiket Makineleri",
+    "slug": "etiket-makineleri",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/etiket-makineleri",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15637,
+    "parent_id": 15628,
+    "ad": "Evrak İmha Makinesi",
+    "slug": "evrak-imha-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/evrak-imha-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15638,
+    "parent_id": 15628,
+    "ad": "Hesap Makinesi",
+    "slug": "hesap-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/hesap-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15639,
+    "parent_id": 15628,
+    "ad": "Zımba Makinesi",
+    "slug": "zimba-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/zimba-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15640,
+    "parent_id": 15628,
+    "ad": "Bant Makinesi",
+    "slug": "bant-makinesi",
+    "url_path": "ofis-kirtasiye/ofis-teknolojileri/bant-makinesi",
+    "parent_name": "Ofis Teknolojileri"
+  },
+  {
+    "id": 15641,
+    "parent_id": 15622,
+    "ad": "Ofis Mobilyaları",
+    "slug": "ofis-mobilyalari",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari",
+    "parent_name": "Ofis & Kırtasiye"
+  },
+  {
+    "id": 15642,
+    "parent_id": 15641,
+    "ad": "Masa",
+    "slug": "masa",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/masa",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15643,
+    "parent_id": 15641,
+    "ad": "Sandalye",
+    "slug": "sandalye-15643",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/sandalye",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15644,
+    "parent_id": 15641,
+    "ad": "Koltuk",
+    "slug": "koltuk-15644",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/koltuk",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15645,
+    "parent_id": 15641,
+    "ad": "Kitaplık",
+    "slug": "kitaplik-15645",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/kitaplik",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15646,
+    "parent_id": 15641,
+    "ad": "Dolap",
+    "slug": "dolap",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/dolap",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15647,
+    "parent_id": 15641,
+    "ad": "Sehpa",
+    "slug": "sehpa-15647",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/sehpa",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15648,
+    "parent_id": 15641,
+    "ad": "Ofis Mobilya Takımı",
+    "slug": "ofis-mobilya-takimi",
+    "url_path": "ofis-kirtasiye/ofis-mobilyalari/ofis-mobilya-takimi",
+    "parent_name": "Ofis Mobilyaları"
+  },
+  {
+    "id": 15511,
+    "parent_id": 0,
+    "ad": "Spor & Outdoor",
+    "slug": "spor-outdoor",
+    "url_path": "spor-outdoor",
+    "parent_name": null
+  },
+  {
+    "id": 15512,
+    "parent_id": 15511,
+    "ad": "Bisiklet",
+    "slug": "bisiklet",
+    "url_path": "spor-outdoor/bisiklet",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15513,
+    "parent_id": 15512,
+    "ad": "Dağ Bisikleti",
+    "slug": "dag-bisikleti",
+    "url_path": "spor-outdoor/bisiklet/dag-bisikleti",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15514,
+    "parent_id": 15512,
+    "ad": "Şehir Bisikleti",
+    "slug": "sehir-bisikleti",
+    "url_path": "spor-outdoor/bisiklet/sehir-bisikleti",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15515,
+    "parent_id": 15512,
+    "ad": "Katlanır Bisiklet",
+    "slug": "katlanir-bisiklet",
+    "url_path": "spor-outdoor/bisiklet/katlanir-bisiklet",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15516,
+    "parent_id": 15512,
+    "ad": "Elektrikli Bisiklet",
+    "slug": "elektrikli-bisiklet",
+    "url_path": "spor-outdoor/bisiklet/elektrikli-bisiklet",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15517,
+    "parent_id": 15512,
+    "ad": "Çocuk Bisikleti",
+    "slug": "cocuk-bisikleti",
+    "url_path": "spor-outdoor/bisiklet/cocuk-bisikleti",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15518,
+    "parent_id": 15512,
+    "ad": "Bisiklet Aksesuar & Yedek Parça",
+    "slug": "bisiklet-aksesuar-yedek-parca",
+    "url_path": "spor-outdoor/bisiklet/bisiklet-aksesuar-yedek-parca",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 21872,
+    "parent_id": 15512,
+    "ad": "Yarış Bisikleti",
+    "slug": "yaris-bisikleti",
+    "url_path": "spor-outdoor/bisiklet/yaris-bisikleti",
+    "parent_name": "Bisiklet"
+  },
+  {
+    "id": 15519,
+    "parent_id": 15511,
+    "ad": "Fitness Sporları",
+    "slug": "fitness-sporlari",
+    "url_path": "spor-outdoor/fitness-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15520,
+    "parent_id": 15519,
+    "ad": "Koşu & Yürüyüş Bandı",
+    "slug": "kosu-yuruyus-bandi",
+    "url_path": "spor-outdoor/fitness-sporlari/kosu-yuruyus-bandi",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15521,
+    "parent_id": 15519,
+    "ad": "Kondisyon Bisikleti",
+    "slug": "kondisyon-bisikleti",
+    "url_path": "spor-outdoor/fitness-sporlari/kondisyon-bisikleti",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15522,
+    "parent_id": 15519,
+    "ad": "Pilates & Yoga",
+    "slug": "pilates-yoga",
+    "url_path": "spor-outdoor/fitness-sporlari/pilates-yoga",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15523,
+    "parent_id": 15519,
+    "ad": "Boks",
+    "slug": "boks",
+    "url_path": "spor-outdoor/fitness-sporlari/boks",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15524,
+    "parent_id": 15519,
+    "ad": "Trambolin",
+    "slug": "trambolin",
+    "url_path": "spor-outdoor/fitness-sporlari/trambolin",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15525,
+    "parent_id": 15519,
+    "ad": "Barfiks & Şınav Barı",
+    "slug": "barfiks-sinav-bari",
+    "url_path": "spor-outdoor/fitness-sporlari/barfiks-sinav-bari",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15526,
+    "parent_id": 15519,
+    "ad": "Mekik Aletleri",
+    "slug": "mekik-aletleri",
+    "url_path": "spor-outdoor/fitness-sporlari/mekik-aletleri",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15527,
+    "parent_id": 15519,
+    "ad": "Dambıl",
+    "slug": "dambil",
+    "url_path": "spor-outdoor/fitness-sporlari/dambil",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15528,
+    "parent_id": 15519,
+    "ad": "Fitness & Kondisyon Aksesuarları",
+    "slug": "fitness-kondisyon-aksesuarlari",
+    "url_path": "spor-outdoor/fitness-sporlari/fitness-kondisyon-aksesuarlari",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15529,
+    "parent_id": 15519,
+    "ad": "Masaj Koltuğu ve Cihazı",
+    "slug": "masaj-koltugu-ve-cihazi",
+    "url_path": "spor-outdoor/fitness-sporlari/masaj-koltugu-ve-cihazi",
+    "parent_name": "Fitness Sporları"
+  },
+  {
+    "id": 15530,
+    "parent_id": 15511,
+    "ad": "Kış Sporları",
+    "slug": "kis-sporlari",
+    "url_path": "spor-outdoor/kis-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15531,
+    "parent_id": 15530,
+    "ad": "Kayak & Kızak",
+    "slug": "kayak-kizak",
+    "url_path": "spor-outdoor/kis-sporlari/kayak-kizak",
+    "parent_name": "Kış Sporları"
+  },
+  {
+    "id": 15532,
+    "parent_id": 15530,
+    "ad": "Snowboard",
+    "slug": "snowboard",
+    "url_path": "spor-outdoor/kis-sporlari/snowboard",
+    "parent_name": "Kış Sporları"
+  },
+  {
+    "id": 15533,
+    "parent_id": 15530,
+    "ad": "Kayak Giyim",
+    "slug": "kayak-giyim",
+    "url_path": "spor-outdoor/kis-sporlari/kayak-giyim",
+    "parent_name": "Kış Sporları"
+  },
+  {
+    "id": 15534,
+    "parent_id": 15511,
+    "ad": "Su Sporları",
+    "slug": "su-sporlari",
+    "url_path": "spor-outdoor/su-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15535,
+    "parent_id": 15534,
+    "ad": "Tekne ve Yelken Ekipmanları",
+    "slug": "tekne-ve-yelken-ekipmanlari",
+    "url_path": "spor-outdoor/su-sporlari/tekne-ve-yelken-ekipmanlari",
+    "parent_name": "Su Sporları"
+  },
+  {
+    "id": 15536,
+    "parent_id": 15534,
+    "ad": "Yüzme Aksesuarları",
+    "slug": "yuzme-aksesuarlari",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari",
+    "parent_name": "Su Sporları"
+  },
+  {
+    "id": 15537,
+    "parent_id": 15536,
+    "ad": "Yüzücü Gözlüğü",
+    "slug": "yuzucu-gozlugu",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari/yuzucu-gozlugu",
+    "parent_name": "Yüzme Aksesuarları"
+  },
+  {
+    "id": 15538,
+    "parent_id": 15536,
+    "ad": "Palet",
+    "slug": "palet",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari/palet",
+    "parent_name": "Yüzme Aksesuarları"
+  },
+  {
+    "id": 15539,
+    "parent_id": 15536,
+    "ad": "Şnorkel",
+    "slug": "snorkel",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari/snorkel",
+    "parent_name": "Yüzme Aksesuarları"
+  },
+  {
+    "id": 15540,
+    "parent_id": 15536,
+    "ad": "Yüzme Giyim & Aksesuar",
+    "slug": "yuzme-giyim-aksesuar",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari/yuzme-giyim-aksesuar",
+    "parent_name": "Yüzme Aksesuarları"
+  },
+  {
+    "id": 15541,
+    "parent_id": 15536,
+    "ad": "Su Topu Ürünleri",
+    "slug": "su-topu-urunleri",
+    "url_path": "spor-outdoor/su-sporlari/yuzme-aksesuarlari/su-topu-urunleri",
+    "parent_name": "Yüzme Aksesuarları"
+  },
+  {
+    "id": 15542,
+    "parent_id": 15534,
+    "ad": "Öğretici Ürünler",
+    "slug": "ogretici-urunler",
+    "url_path": "spor-outdoor/su-sporlari/ogretici-urunler",
+    "parent_name": "Su Sporları"
+  },
+  {
+    "id": 15543,
+    "parent_id": 15542,
+    "ad": "Kolluk",
+    "slug": "kolluk",
+    "url_path": "spor-outdoor/su-sporlari/ogretici-urunler/kolluk",
+    "parent_name": "Öğretici Ürünler"
+  },
+  {
+    "id": 15544,
+    "parent_id": 15542,
+    "ad": "Yüzme Simidi",
+    "slug": "yuzme-simidi",
+    "url_path": "spor-outdoor/su-sporlari/ogretici-urunler/yuzme-simidi",
+    "parent_name": "Öğretici Ürünler"
+  },
+  {
+    "id": 15545,
+    "parent_id": 15542,
+    "ad": "Yüzme Tahtası",
+    "slug": "yuzme-tahtasi",
+    "url_path": "spor-outdoor/su-sporlari/ogretici-urunler/yuzme-tahtasi",
+    "parent_name": "Öğretici Ürünler"
+  },
+  {
+    "id": 15546,
+    "parent_id": 15542,
+    "ad": "Şişme Havuz",
+    "slug": "sisme-havuz",
+    "url_path": "spor-outdoor/su-sporlari/ogretici-urunler/sisme-havuz",
+    "parent_name": "Öğretici Ürünler"
+  },
+  {
+    "id": 15547,
+    "parent_id": 15534,
+    "ad": "Kano & Sörf",
+    "slug": "kano-sorf",
+    "url_path": "spor-outdoor/su-sporlari/kano-sorf",
+    "parent_name": "Su Sporları"
+  },
+  {
+    "id": 21804,
+    "parent_id": 15511,
+    "ad": "Doğa Sporları",
+    "slug": "doga-sporlari",
+    "url_path": "spor-outdoor/doga-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 21805,
+    "parent_id": 21804,
+    "ad": "Kampçılık",
+    "slug": "kampcilik",
+    "url_path": "spor-outdoor/doga-sporlari/kampcilik",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 21811,
+    "parent_id": 21805,
+    "ad": "Çadır",
+    "slug": "cadir-21811",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/cadir-21811",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21812,
+    "parent_id": 21805,
+    "ad": "Termos & Matara",
+    "slug": "termos-matara-21812",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/termos-matara-21812",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21813,
+    "parent_id": 21805,
+    "ad": "Kamp Sandalyesi",
+    "slug": "kamp-sandalyesi-21813",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/kamp-sandalyesi-21813",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21814,
+    "parent_id": 21805,
+    "ad": "Kamp Masası",
+    "slug": "kamp-masasi-21814",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/kamp-masasi-21814",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21815,
+    "parent_id": 21805,
+    "ad": "Kamp Matı & Uyku Tulumu",
+    "slug": "kamp-mati-uyku-tulumu-21815",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/kamp-mati-uyku-tulumu-21815",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21873,
+    "parent_id": 21805,
+    "ad": "El Feneri",
+    "slug": "el-feneri",
+    "url_path": "spor-outdoor/kampcilik/doga-sporlari/el-feneri",
+    "parent_name": "Kampçılık"
+  },
+  {
+    "id": 21806,
+    "parent_id": 21804,
+    "ad": "Balıkçılık",
+    "slug": "balikcilik",
+    "url_path": "spor-outdoor/doga-sporlari/balikcilik",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 21816,
+    "parent_id": 21806,
+    "ad": "Olta",
+    "slug": "olta",
+    "url_path": "spor-outdoor/doga-sporlari/balikcilik/olta",
+    "parent_name": "Balıkçılık"
+  },
+  {
+    "id": 21817,
+    "parent_id": 21806,
+    "ad": "Balıkçılık Malzemeleri",
+    "slug": "balikcilik-malzemeleri",
+    "url_path": "spor-outdoor/doga-sporlari/balikcilik/balikcilik-malzemeleri",
+    "parent_name": "Balıkçılık"
+  },
+  {
+    "id": 21807,
+    "parent_id": 21804,
+    "ad": "Avcılık",
+    "slug": "avcilik",
+    "url_path": "spor-outdoor/doga-sporlari/avcilik",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 21808,
+    "parent_id": 21804,
+    "ad": "Okçuluk",
+    "slug": "okculuk",
+    "url_path": "spor-outdoor/doga-sporlari/okculuk",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 21818,
+    "parent_id": 21808,
+    "ad": "Hedef Tahtası",
+    "slug": "hedef-tahtasi",
+    "url_path": "spor-outdoor/doga-sporlari/okculuk/hedef-tahtasi",
+    "parent_name": "Okçuluk"
+  },
+  {
+    "id": 21819,
+    "parent_id": 21808,
+    "ad": "Oklar",
+    "slug": "oklar",
+    "url_path": "spor-outdoor/doga-sporlari/okculuk/oklar",
+    "parent_name": "Okçuluk"
+  },
+  {
+    "id": 21820,
+    "parent_id": 21808,
+    "ad": "Yaylar",
+    "slug": "yaylar",
+    "url_path": "spor-outdoor/doga-sporlari/okculuk/yaylar",
+    "parent_name": "Okçuluk"
+  },
+  {
+    "id": 21809,
+    "parent_id": 21804,
+    "ad": "Binicilik",
+    "slug": "binicilik",
+    "url_path": "spor-outdoor/doga-sporlari/binicilik",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 21821,
+    "parent_id": 21809,
+    "ad": "At Bakım Malzemeleri",
+    "slug": "at-bakim-malzemeleri",
+    "url_path": "spor-outdoor/doga-sporlari/binicilik/at-bakim-malzemeleri",
+    "parent_name": "Binicilik"
+  },
+  {
+    "id": 21822,
+    "parent_id": 21809,
+    "ad": "Binicilik Malzemeleri",
+    "slug": "binicilik-malzemeleri",
+    "url_path": "spor-outdoor/doga-sporlari/binicilik/binicilik-malzemeleri",
+    "parent_name": "Binicilik"
+  },
+  {
+    "id": 21823,
+    "parent_id": 21809,
+    "ad": "Binici Kıyafetleri",
+    "slug": "binici-kiyafetleri",
+    "url_path": "spor-outdoor/doga-sporlari/binicilik/binici-kiyafetleri",
+    "parent_name": "Binicilik"
+  },
+  {
+    "id": 21810,
+    "parent_id": 21804,
+    "ad": "Golf",
+    "slug": "golf",
+    "url_path": "spor-outdoor/doga-sporlari/golf",
+    "parent_name": "Doğa Sporları"
+  },
+  {
+    "id": 15548,
+    "parent_id": 15511,
+    "ad": "Takım Sporları",
+    "slug": "takim-sporlari",
+    "url_path": "spor-outdoor/takim-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15549,
+    "parent_id": 15548,
+    "ad": "Futbol",
+    "slug": "futbol-topu",
+    "url_path": "spor-outdoor/takim-sporlari/futbol-topu",
+    "parent_name": "Takım Sporları"
+  },
+  {
+    "id": 21824,
+    "parent_id": 15549,
+    "ad": "Giyim & Ayakkabı",
+    "slug": "giyim-ayakkabi",
+    "url_path": "spor-outdoor/futbol-topu/takim-sporlari/giyim-ayakkabi",
+    "parent_name": "Futbol"
+  },
+  {
+    "id": 21825,
+    "parent_id": 15549,
+    "ad": "Aksesuar & Ekipman",
+    "slug": "aksesuar-ekipman-21825",
+    "url_path": "spor-outdoor/futbol-topu/takim-sporlari/aksesuar-ekipman-21825",
+    "parent_name": "Futbol"
+  },
+  {
+    "id": 15550,
+    "parent_id": 15548,
+    "ad": "Basketbol",
+    "slug": "basketbol-topu",
+    "url_path": "spor-outdoor/takim-sporlari/basketbol-topu",
+    "parent_name": "Takım Sporları"
+  },
+  {
+    "id": 21826,
+    "parent_id": 15550,
+    "ad": "Giyim & Ayakkabı",
+    "slug": "giyim-ayakkabi-21826",
+    "url_path": "spor-outdoor/basketbol-topu/takim-sporlari/giyim-ayakkabi-21826",
+    "parent_name": "Basketbol"
+  },
+  {
+    "id": 21827,
+    "parent_id": 15550,
+    "ad": "Aksesuar & Ekipman",
+    "slug": "aksesuar-ekipman-21827",
+    "url_path": "spor-outdoor/basketbol-topu/takim-sporlari/aksesuar-ekipman-21827",
+    "parent_name": "Basketbol"
+  },
+  {
+    "id": 15551,
+    "parent_id": 15548,
+    "ad": "Voleybol",
+    "slug": "voleybol-topu",
+    "url_path": "spor-outdoor/takim-sporlari/voleybol-topu",
+    "parent_name": "Takım Sporları"
+  },
+  {
+    "id": 21828,
+    "parent_id": 15551,
+    "ad": "Giyim & Ayakkabı",
+    "slug": "giyim-ayakkabi-21828",
+    "url_path": "spor-outdoor/voleybol-topu/takim-sporlari/giyim-ayakkabi-21828",
+    "parent_name": "Voleybol"
+  },
+  {
+    "id": 21829,
+    "parent_id": 15551,
+    "ad": "Aksesuar & Ekipman",
+    "slug": "aksesuar-ekipman-21829",
+    "url_path": "spor-outdoor/voleybol-topu/takim-sporlari/aksesuar-ekipman-21829",
+    "parent_name": "Voleybol"
+  },
+  {
+    "id": 15553,
+    "parent_id": 15511,
+    "ad": "Raket Sporları",
+    "slug": "raket-sporlari",
+    "url_path": "spor-outdoor/raket-sporlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15554,
+    "parent_id": 15553,
+    "ad": "Tenis",
+    "slug": "tenis",
+    "url_path": "spor-outdoor/raket-sporlari/tenis",
+    "parent_name": "Raket Sporları"
+  },
+  {
+    "id": 15555,
+    "parent_id": 15553,
+    "ad": "Masa Tenisi",
+    "slug": "masa-tenisi",
+    "url_path": "spor-outdoor/raket-sporlari/masa-tenisi",
+    "parent_name": "Raket Sporları"
+  },
+  {
+    "id": 15556,
+    "parent_id": 15553,
+    "ad": "Tenis Aksesuarları",
+    "slug": "tenis-aksesuarlari",
+    "url_path": "spor-outdoor/raket-sporlari/tenis-aksesuarlari",
+    "parent_name": "Raket Sporları"
+  },
+  {
+    "id": 15563,
+    "parent_id": 15511,
+    "ad": "Paten & Kaykay & Scooter",
+    "slug": "paten-kaykay-scooter",
+    "url_path": "spor-outdoor/paten-kaykay-scooter",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15564,
+    "parent_id": 15511,
+    "ad": "Salon Oyunları",
+    "slug": "salon-oyunlari",
+    "url_path": "spor-outdoor/salon-oyunlari",
+    "parent_name": "Spor & Outdoor"
+  },
+  {
+    "id": 15565,
+    "parent_id": 15564,
+    "ad": "Bilardo",
+    "slug": "bilardo",
+    "url_path": "spor-outdoor/salon-oyunlari/bilardo",
+    "parent_name": "Salon Oyunları"
+  },
+  {
+    "id": 15566,
+    "parent_id": 15564,
+    "ad": "Bowling",
+    "slug": "bowling",
+    "url_path": "spor-outdoor/salon-oyunlari/bowling",
+    "parent_name": "Salon Oyunları"
+  },
+  {
+    "id": 15567,
+    "parent_id": 15564,
+    "ad": "Dart",
+    "slug": "dart",
+    "url_path": "spor-outdoor/salon-oyunlari/dart",
+    "parent_name": "Salon Oyunları"
+  },
+  {
+    "id": 21874,
+    "parent_id": 15564,
+    "ad": "Langırt",
+    "slug": "langirt",
+    "url_path": "spor-outdoor/salon-oyunlari/langirt",
+    "parent_name": "Salon Oyunları"
+  },
+  {
+    "id": 21738,
+    "parent_id": 0,
+    "ad": "Diğer Araçlar",
+    "slug": "diger-araclar",
+    "url_path": "diger-araclar",
+    "parent_name": null
+  },
+  {
+    "id": 21739,
+    "parent_id": 21738,
+    "ad": "Kamyon",
+    "slug": "kamyon",
+    "url_path": "diger-araclar/kamyon",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 21740,
+    "parent_id": 21738,
+    "ad": "Karavan",
+    "slug": "karavan",
+    "url_path": "diger-araclar/karavan",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 21745,
+    "parent_id": 21740,
+    "ad": "Çekme Karavan",
+    "slug": "cekme-karavan",
+    "url_path": "diger-araclar/karavan/cekme-karavan",
+    "parent_name": "Karavan"
+  },
+  {
+    "id": 21746,
+    "parent_id": 21740,
+    "ad": "Moto Karavan",
+    "slug": "moto-karavan",
+    "url_path": "diger-araclar/karavan/moto-karavan",
+    "parent_name": "Karavan"
+  },
+  {
+    "id": 21741,
+    "parent_id": 21738,
+    "ad": "Otobüs",
+    "slug": "otobus",
+    "url_path": "diger-araclar/otobus",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 21742,
+    "parent_id": 21738,
+    "ad": "Tekne",
+    "slug": "tekne",
+    "url_path": "diger-araclar/tekne",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 21747,
+    "parent_id": 21742,
+    "ad": "Motoryat",
+    "slug": "motoryat",
+    "url_path": "diger-araclar/tekne/motoryat",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21748,
+    "parent_id": 21742,
+    "ad": "Yelkenli",
+    "slug": "yelkenli",
+    "url_path": "diger-araclar/tekne/yelkenli",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21749,
+    "parent_id": 21742,
+    "ad": "Katamaran",
+    "slug": "katamaran",
+    "url_path": "diger-araclar/tekne/katamaran",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21750,
+    "parent_id": 21742,
+    "ad": "Sürat Teknesi",
+    "slug": "surat-teknesi",
+    "url_path": "diger-araclar/tekne/surat-teknesi",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21751,
+    "parent_id": 21742,
+    "ad": "Bot",
+    "slug": "bot-21751",
+    "url_path": "diger-araclar/tekne/bot-21751",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21752,
+    "parent_id": 21742,
+    "ad": "Jet Ski",
+    "slug": "jet-ski",
+    "url_path": "diger-araclar/tekne/jet-ski",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21753,
+    "parent_id": 21742,
+    "ad": "Sandal",
+    "slug": "sandal",
+    "url_path": "diger-araclar/tekne/sandal",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21754,
+    "parent_id": 21742,
+    "ad": "Gezi Teknesi",
+    "slug": "gezi-teknesi",
+    "url_path": "diger-araclar/tekne/gezi-teknesi",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21755,
+    "parent_id": 21742,
+    "ad": "Gulet",
+    "slug": "gulet",
+    "url_path": "diger-araclar/tekne/gulet",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21756,
+    "parent_id": 21742,
+    "ad": "Balıkçı Teknesi",
+    "slug": "balikci-teknesi",
+    "url_path": "diger-araclar/tekne/balikci-teknesi",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21757,
+    "parent_id": 21742,
+    "ad": "Yolcu Gemisi",
+    "slug": "yolcu-gemisi",
+    "url_path": "diger-araclar/tekne/yolcu-gemisi",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21758,
+    "parent_id": 21742,
+    "ad": "Yük Gemisi & Tanker",
+    "slug": "yuk-gemisi-tanker",
+    "url_path": "diger-araclar/tekne/yuk-gemisi-tanker",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21759,
+    "parent_id": 21742,
+    "ad": "Hizmet Teknesi",
+    "slug": "hizmet-teknesi",
+    "url_path": "diger-araclar/tekne/hizmet-teknesi",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21760,
+    "parent_id": 21742,
+    "ad": "Denizaltı",
+    "slug": "denizalti",
+    "url_path": "diger-araclar/tekne/denizalti",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21761,
+    "parent_id": 21742,
+    "ad": "Hovercraft",
+    "slug": "hovercraft",
+    "url_path": "diger-araclar/tekne/hovercraft",
+    "parent_name": "Tekne"
+  },
+  {
+    "id": 21743,
+    "parent_id": 21738,
+    "ad": "Diğer Araç Parçaları",
+    "slug": "diger-arac-parcalari",
+    "url_path": "diger-araclar/diger-arac-parcalari",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 21744,
+    "parent_id": 21738,
+    "ad": "Diğer",
+    "slug": "diger-21744",
+    "url_path": "diger-araclar/diger-21744",
+    "parent_name": "Diğer Araçlar"
+  },
+  {
+    "id": 15230,
+    "parent_id": 0,
+    "ad": "Yapı Market & Bahçe",
+    "slug": "yapi-market-bahce",
+    "url_path": "yapi-market-bahce",
+    "parent_name": null
+  },
+  {
+    "id": 15231,
+    "parent_id": 15230,
+    "ad": "El Aletleri",
+    "slug": "el-aletleri",
+    "url_path": "yapi-market-bahce/el-aletleri",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15232,
+    "parent_id": 15231,
+    "ad": "Elektrikli El Aletleri",
+    "slug": "elektrikli-el-aletleri",
+    "url_path": "yapi-market-bahce/el-aletleri/elektrikli-el-aletleri",
+    "parent_name": "El Aletleri"
+  },
+  {
+    "id": 15233,
+    "parent_id": 15231,
+    "ad": "Manuel El Aletleri",
+    "slug": "manuel-el-aletleri",
+    "url_path": "yapi-market-bahce/el-aletleri/manuel-el-aletleri",
+    "parent_name": "El Aletleri"
+  },
+  {
+    "id": 15234,
+    "parent_id": 15231,
+    "ad": "Küçük El Aletleri",
+    "slug": "kucuk-el-aletleri",
+    "url_path": "yapi-market-bahce/el-aletleri/kucuk-el-aletleri",
+    "parent_name": "El Aletleri"
+  },
+  {
+    "id": 15235,
+    "parent_id": 15230,
+    "ad": "Hırdavat",
+    "slug": "hirdavat",
+    "url_path": "yapi-market-bahce/hirdavat",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15236,
+    "parent_id": 15230,
+    "ad": "Banyo Yapı Malzemeleri",
+    "slug": "banyo-yapi-malzemeleri",
+    "url_path": "yapi-market-bahce/banyo-yapi-malzemeleri",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15237,
+    "parent_id": 15230,
+    "ad": "Elektrik & Tesisat Malzemeleri",
+    "slug": "elektrik-tesisat-malzemeleri",
+    "url_path": "yapi-market-bahce/elektrik-tesisat-malzemeleri",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15238,
+    "parent_id": 15230,
+    "ad": "Güvenlik Ürünleri",
+    "slug": "guvenlik-urunleri",
+    "url_path": "yapi-market-bahce/guvenlik-urunleri",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15239,
+    "parent_id": 15230,
+    "ad": "Su Arıtma ve Sulama",
+    "slug": "su-aritma-ve-sulama",
+    "url_path": "yapi-market-bahce/su-aritma-ve-sulama",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15240,
+    "parent_id": 15230,
+    "ad": "Jeneratör",
+    "slug": "jenerator",
+    "url_path": "yapi-market-bahce/jenerator",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15241,
+    "parent_id": 15230,
+    "ad": "Mangal & Barbekü",
+    "slug": "mangal-barbeku",
+    "url_path": "yapi-market-bahce/mangal-barbeku",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15242,
+    "parent_id": 15230,
+    "ad": "Bahçe Makinesi",
+    "slug": "bahce-makinesi",
+    "url_path": "yapi-market-bahce/bahce-makinesi",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15243,
+    "parent_id": 15230,
+    "ad": "Bahçe Dekorasyonu",
+    "slug": "bahce-dekorasyonu",
+    "url_path": "yapi-market-bahce/bahce-dekorasyonu",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15244,
+    "parent_id": 15230,
+    "ad": "Çiçek Bakımı & Bitki Yetiştirme",
+    "slug": "cicek-bakimi-bitki-yetistirme",
+    "url_path": "yapi-market-bahce/cicek-bakimi-bitki-yetistirme",
+    "parent_name": "Yapı Market & Bahçe"
+  },
+  {
+    "id": 15677,
+    "parent_id": 0,
+    "ad": "Pet Shop",
+    "slug": "pet-shop",
+    "url_path": "pet-shop",
+    "parent_name": null
+  },
+  {
+    "id": 15678,
+    "parent_id": 15677,
+    "ad": "Köpek Ürünleri",
+    "slug": "kopek-urunleri",
+    "url_path": "pet-shop/kopek-urunleri",
+    "parent_name": "Pet Shop"
+  },
+  {
+    "id": 15679,
+    "parent_id": 15678,
+    "ad": "Köpek Oyuncağı",
+    "slug": "kopek-oyuncagi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-oyuncagi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15680,
+    "parent_id": 15678,
+    "ad": "Köpek Kıyafeti",
+    "slug": "kopek-kiyafeti",
+    "url_path": "pet-shop/kopek-urunleri/kopek-kiyafeti",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15681,
+    "parent_id": 15678,
+    "ad": "Köpek Tasması",
+    "slug": "kopek-tasmasi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-tasmasi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15682,
+    "parent_id": 15678,
+    "ad": "Köpek Yatağı",
+    "slug": "kopek-yatagi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-yatagi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15683,
+    "parent_id": 15678,
+    "ad": "Köpek Çiti",
+    "slug": "kopek-citi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-citi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15684,
+    "parent_id": 15678,
+    "ad": "Köpek Kulübesi",
+    "slug": "kopek-kulubesi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-kulubesi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15685,
+    "parent_id": 15678,
+    "ad": "Köpek Taşıma Çantası",
+    "slug": "kopek-tasima-cantasi",
+    "url_path": "pet-shop/kopek-urunleri/kopek-tasima-cantasi",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15686,
+    "parent_id": 15678,
+    "ad": "Mama & Su Kapları",
+    "slug": "mama-ve-su-kaplari",
+    "url_path": "pet-shop/kopek-urunleri/mama-ve-su-kaplari",
+    "parent_name": "Köpek Ürünleri"
+  },
+  {
+    "id": 15687,
+    "parent_id": 15677,
+    "ad": "Kedi Ürünleri",
+    "slug": "kedi-urunleri",
+    "url_path": "pet-shop/kedi-urunleri",
+    "parent_name": "Pet Shop"
+  },
+  {
+    "id": 15688,
+    "parent_id": 15687,
+    "ad": "Kedi Oyuncağı",
+    "slug": "kedi-oyuncagi",
+    "url_path": "pet-shop/kedi-urunleri/kedi-oyuncagi",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15689,
+    "parent_id": 15687,
+    "ad": "Kedi Kıyafeti",
+    "slug": "kedi-kiyafeti",
+    "url_path": "pet-shop/kedi-urunleri/kedi-kiyafeti",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15690,
+    "parent_id": 15687,
+    "ad": "Kedi Tasması",
+    "slug": "kedi-tasmasi",
+    "url_path": "pet-shop/kedi-urunleri/kedi-tasmasi",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15691,
+    "parent_id": 15687,
+    "ad": "Kedi Yatağı",
+    "slug": "kedi-yatagi",
+    "url_path": "pet-shop/kedi-urunleri/kedi-yatagi",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15692,
+    "parent_id": 15687,
+    "ad": "Kedi Tuvaleti",
+    "slug": "kedi-tuvaleti",
+    "url_path": "pet-shop/kedi-urunleri/kedi-tuvaleti",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15693,
+    "parent_id": 15687,
+    "ad": "Kedi Taşıma Çantası",
+    "slug": "kedi-tasima-cantasi",
+    "url_path": "pet-shop/kedi-urunleri/kedi-tasima-cantasi",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15694,
+    "parent_id": 15687,
+    "ad": "Kedi Evi & Kafesi",
+    "slug": "kedi-evi-ve-kafesi",
+    "url_path": "pet-shop/kedi-urunleri/kedi-evi-ve-kafesi",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15695,
+    "parent_id": 15687,
+    "ad": "Mama & Su Kapları",
+    "slug": "mama-ve-su-kaplari-15695",
+    "url_path": "pet-shop/kedi-urunleri/mama-ve-su-kaplari",
+    "parent_name": "Kedi Ürünleri"
+  },
+  {
+    "id": 15696,
+    "parent_id": 15677,
+    "ad": "Balık Ürünleri",
+    "slug": "balik-urunleri",
+    "url_path": "pet-shop/balik-urunleri",
+    "parent_name": "Pet Shop"
+  },
+  {
+    "id": 15697,
+    "parent_id": 15696,
+    "ad": "Akvaryum",
+    "slug": "akvaryum",
+    "url_path": "pet-shop/balik-urunleri/akvaryum",
+    "parent_name": "Balık Ürünleri"
+  },
+  {
+    "id": 15698,
+    "parent_id": 15696,
+    "ad": "Akvaryum Motoru",
+    "slug": "akvaryum-motoru",
+    "url_path": "pet-shop/balik-urunleri/akvaryum-motoru",
+    "parent_name": "Balık Ürünleri"
+  },
+  {
+    "id": 15699,
+    "parent_id": 15696,
+    "ad": "Akvaryum Dekor & Aksesuarı",
+    "slug": "akvaryum-dekor-ve-aksesuari",
+    "url_path": "pet-shop/balik-urunleri/akvaryum-dekor-ve-aksesuari",
+    "parent_name": "Balık Ürünleri"
+  },
+  {
+    "id": 15700,
+    "parent_id": 15677,
+    "ad": "Kuş Ürünleri",
+    "slug": "kus-urunleri",
+    "url_path": "pet-shop/kus-urunleri",
+    "parent_name": "Pet Shop"
+  },
+  {
+    "id": 15701,
+    "parent_id": 15700,
+    "ad": "Kuş Oyuncağı",
+    "slug": "kus-oyuncagi",
+    "url_path": "pet-shop/kus-urunleri/kus-oyuncagi",
+    "parent_name": "Kuş Ürünleri"
+  },
+  {
+    "id": 15702,
+    "parent_id": 15700,
+    "ad": "Kuş Kafesi",
+    "slug": "kus-kafesi",
+    "url_path": "pet-shop/kus-urunleri/kus-kafesi",
+    "parent_name": "Kuş Ürünleri"
+  },
+  {
+    "id": 15703,
+    "parent_id": 15700,
+    "ad": "Kuş Yemlik & Mamalığı",
+    "slug": "kus-yemlik-ve-mamaligi",
+    "url_path": "pet-shop/kus-urunleri/kus-yemlik-ve-mamaligi",
+    "parent_name": "Kuş Ürünleri"
+  },
+  {
+    "id": 15704,
+    "parent_id": 15677,
+    "ad": "Diğer Evcil Hayvan Ürünleri",
+    "slug": "diger-evcil-hayvan-urunleri",
+    "url_path": "pet-shop/diger-evcil-hayvan-urunleri",
+    "parent_name": "Pet Shop"
+  },
+  {
+    "id": 21880,
+    "parent_id": 0,
+    "ad": "Antika",
+    "slug": "antika",
+    "url_path": "antika",
+    "parent_name": null
+  },
+  {
+    "id": 21881,
+    "parent_id": 21880,
+    "ad": "Mobilya",
+    "slug": "mobilya-21881",
+    "url_path": "antika/mobilya-21881",
+    "parent_name": "Antika"
+  },
+  {
+    "id": 21882,
+    "parent_id": 21880,
+    "ad": "Dekorasyon Ürünleri",
+    "slug": "dekorasyon-urunleri",
+    "url_path": "antika/dekorasyon-urunleri",
+    "parent_name": "Antika"
+  },
+  {
+    "id": 21883,
+    "parent_id": 21880,
+    "ad": "Makine",
+    "slug": "makine",
+    "url_path": "antika/makine",
+    "parent_name": "Antika"
+  },
+  {
+    "id": 21884,
+    "parent_id": 21880,
+    "ad": "Aydınlatma",
+    "slug": "aydinlatma-21884",
+    "url_path": "antika/aydinlatma-21884",
+    "parent_name": "Antika"
+  },
+  {
+    "id": 21885,
+    "parent_id": 21880,
+    "ad": "Enstrüman",
+    "slug": "enstruman",
+    "url_path": "antika/enstruman",
+    "parent_name": "Antika"
+  },
+  {
+    "id": 21886,
+    "parent_id": 21880,
+    "ad": "Tekstil Ürünleri",
+    "slug": "tekstil-urunleri",
+    "url_path": "antika/tekstil-urunleri",
+    "parent_name": "Antika"
+  }
+]
